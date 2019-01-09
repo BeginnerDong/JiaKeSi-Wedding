@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss";
+.record_tlt{
+	width:100%;
+	height:88rpx;
+}
+.w33{
+	width:33.33%;
+	text-align:center;
+	height:62rpx;
+	line-height:62rpx;
+}
+.record_list{
+	width:100%;
+	height:62rpx;
+	border-bottom:solid 1px #f0f0f0;
+}
+.record_list .w33:nth-child(2n){
+	border-left:solid 1px #f0f0f0;
+	border-right:solid 1px #f0f0f0;
+}

@@ -1,0 +1,36 @@
+<view class="game" bindtap="intoPath" data-path="/pages/gameOneBegin/gameOneBegin">
+    <image src="/images/img3@2x.jpg"></image>
+    <view class="mask">
+       <view class="dialog flex">
+           <view class="dialog_cont">
+                <view class="close">
+                   <image src="/images/close.jpg"></image>
+                </view>
+                <view class="font30 color1" style="text-align: center;">活动暂未开始</view>
+           </view>
+       </view>
+    </view>
+</view>
+<view class="game">
+    <image src="/images/img3@2x.jpg"></image>
+    <view class="game_box">
+        <view class="game_tlt font28 color2">你已经发了<text>0</text>张</view>
+        <view class="game_cont">
+           <image src="/images/img4@2x.jpg"></image>
+        </view>
+    </view>
+    <view class="maskOne">
+        <view class="game_reward">
+            <view class="game_reward_tlt font32">
+                <view class="title_bg color1">你本轮第一名</view>
+                <view class="closeOne">
+                   <image src="/images/close.jpg"></image>
+                </view>
+            </view>
+            <view class="game_reward_cont font30 color1">
+                数钱已结束，感谢你参与
+            </view>
+            <view class="submit_info">确认</view>
+        </view>
+    </view>
+</view>

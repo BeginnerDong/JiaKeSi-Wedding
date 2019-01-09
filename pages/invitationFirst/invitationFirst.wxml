@@ -1,0 +1,39 @@
+
+<view class="invitation">
+	<image src="/images/invitation.jpg"></image>
+	<view class="invitation_cont bg1">
+		<view class="invitation_tlt">
+			邀请函
+		</view>
+		<view class="invitation_img">
+			<image src="/images/img7@2x.png"></image>
+		</view>
+		<view class="invitation_word">
+			<image src="/images/invitation-word.png"></image>
+		</view>
+		<view class="bride flexCenter">
+			<view class="flexCenter bride_item">
+				<view class="font28 color1 bride_before">新郎:</view>
+				<input type="" name="" placeholder="张三三" placeholder-class="placeholder"></input>
+			</view>
+			<view class="flexCenter bride_item">
+				<view class="font28 color1 bride_before">新娘:</view>
+				<input type="" name="" placeholder="张三三" placeholder-class="placeholder"></input>
+			</view>
+		</view>
+		<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
+		<view class="time flex">
+			<view class="color">时间：</view>
+			<view class="choose_time">
+				<picker    mode="date"    value="{{date}}"    start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+				   <view class="picker">{{date}}</view>
+				</picker>
+			</view>
+		</view>
+		<view class="address flex">
+			<view class="address_left color font28">地点:</view>
+			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+		</view>
+		<button class="submit_info" bindtap="intoPath" data-path="/pages/invitationFirstOne/invitationFirstOne">保存</button>
+	</view>
+</view>

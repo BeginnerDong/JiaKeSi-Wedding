@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f5f5f5;
+}
+.wishList{
+	height:140rpx;
+	border-radius:16rpx;
+	margin-top:30rpx;
+}
+.wishLeft{
+	width:16%;
+}
+.wishRight{
+	width:74%;
+}
+.user_img{
+	width:80rpx;
+	height:80rpx;
+	border-radius:50%;
+	overflow:hidden;
+}
+.search{
+	position:fixed;
+	left:0;
+	bottom:50rpx;
+}
+.search input{
+	width:94%;
+	height:60rpx;
+	line-height:60rpx;
+	border-radius:30rpx;
+	background:#7a7a7a;
+	color:#fff;
+	font-size:28rpx;
+	padding:0 3%;
+}
+.placeholder{
+	color:#fff;
+}

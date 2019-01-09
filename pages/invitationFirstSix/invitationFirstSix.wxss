@@ -1,0 +1,79 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f4f4f4;
+	overflow:hidden;
+}
+.color{
+	color:#490112;
+}
+.invitation_top,.invitation_bottom{
+	width:92%;
+	height:600rpx;
+	margin:0 auto;
+}
+.invitation_top{
+	transform:rotate(6deg);
+	-webkit-transform:rotate(6deg);
+	position:relative;
+	top:100rpx;
+}
+.invitation_bottom{
+	transform:rotate(-6deg);
+	-webkit-transform:rotate(-6deg);
+	position:relative;
+	top:-150rpx;
+}
+.invitation_Tleft{
+	width:30%;
+}
+.invitation_Tleft image{
+	width:168rpx;
+	height:110rpx;
+	position: absolute;
+	left:-20rpx;
+	top:160rpx;
+}
+.invitation_Tright{
+	border-radius:10rpx;
+	box-shadow:0 0 20rpx #999;
+	margin-left:40rpx;
+}
+.invitation_Tright image{
+	width:430rpx;
+	height:460rpx;
+	border:solid 20rpx #fff;
+}
+.invitation_Bleft image{
+	width:290rpx;
+	height:178rpx;
+}
+.invitation_Bright{
+	border-radius:10rpx;
+	box-shadow:0 0 20rpx #999;
+	width:70%;
+}
+.invitation_Bright image{
+	width:430rpx;
+	height:460rpx;
+	border:solid 20rpx #fff;
+}
+.invitation_Bleft{
+	width:30%;
+}
+.invitation_Bleft image{
+	position: absolute;
+	bottom:-100rpx;
+	right:20%;
+}
+.invitation_bg{
+	width:240rpx;
+	height:760rpx;
+	background:#f1e3e9;
+	position: absolute;
+	left:30%;
+	top:23%;
+	transform:rotate(-36deg);
+	-webkit-transform:rotate(-36deg);
+}

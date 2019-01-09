@@ -1,0 +1,63 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.color{
+	color:#490112;
+}
+.invitation{
+	height:500rpx;
+	margin-top:50rpx;
+}
+.invitation_left{
+	width:57%;
+	height:100%;
+}
+.invitation_right{
+	width:43%;
+	height:100%;
+}
+.invitation_left image{
+	width:100%;
+	height:100%;
+}
+.invitation_tit{
+	height:150rpx;
+	line-height:150rpx;
+	text-align: center;
+}
+.invitation_cont{
+	width:43%;
+	margin:0 auto;
+}
+.invitation_word{
+	text-align: center;
+	height:170rpx;
+	line-height:170rpx;
+	overflow: hidden;
+}
+.invitation_word image{
+	width:126rpx;
+	height:54rpx;
+}
+.invitation_bottom{
+	margin-top:80rpx;
+}
+
+.invitation_bottom image{
+	width:100%;
+	height:400rpx;
+}
+.save{
+	width:120rpx;
+	height:120rpx;
+	border-radius:50%;
+	text-align: center;
+	line-height:120rpx;
+	overflow: hidden;
+	position: fixed;
+	right:0;
+	bottom:20%;
+}

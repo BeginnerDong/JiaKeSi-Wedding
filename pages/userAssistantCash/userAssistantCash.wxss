@@ -1,0 +1,60 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f2f2f2;
+	overflow:hidden;
+}
+
+.cash{
+	padding-bottom:50rpx;
+}
+.cash_bank{
+	width:87%;
+	padding:0 6.5%;
+	height:170rpx;
+	line-height:170rpx;
+	background:#fcfcfc;
+}
+.cash_bank text{
+	margin-right:80rpx;
+}
+.cash_cont{
+	width:87%;
+	padding:0 6.5%;
+	margin:0 auto;
+}
+.cash_tlt{
+	width:87%;
+	padding:0 6.5%;
+	height:100rpx;
+	line-height:100rpx;
+}
+.input_masks{
+	width:10%;
+	font-size:60rpx;
+}
+.cash_input{
+	width:87%;
+	padding:0 6.5%;
+	border-bottom:solid 1px #f0f0f0;
+	height:94rpx;
+}
+.cash_input input{
+	width:90%;
+	height:100%;
+}
+.cash_can{
+	width:87%;
+	padding:0 6.5%;
+	height:72rpx;
+	line-height:72rpx;
+}
+.cash_can text{
+	margin-left:30rpx;
+}
+.submit_info{
+	width:100%;
+	border-radius:0;
+	margin:0 auto;
+}

@@ -1,0 +1,24 @@
+<view class="w690">
+    <view class="scan flexRowBetween">
+        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanAlbum/scanAlbum">
+            <view style="width:100%;text-align: center;">
+                <image src="/images/scan_icon1.png"></image>
+                <view class="font32 color2">新人相册</view>
+            </view>
+        </view>
+        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanGame/scanGame">
+            <view style="width:100%;text-align: center;">
+                <image src="/images/scan_icon2.png"></image>
+                <view class="font32 color2">游戏中心</view>
+            </view>
+        </view>
+    </view>
+    <view class="barrage" bindtap="intoPath" data-path="/pages/scanBarrage/scanBarrage">
+        <image src="/images/scan_icon3.png"></image>
+        <view class="font24 color2">发弹幕</view>
+    </view>
+    <view class="sign">
+        <image src="/images/scan_icon4.png"></image>
+        <view class="sign_cont color1">签到</view>
+    </view>
+</view>

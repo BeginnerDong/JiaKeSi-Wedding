@@ -1,0 +1,48 @@
+<!--index2.wxml-->
+<view class="w690">
+  <view class="get_number bg1">
+    <view class="font32 color number_tlt">我的余额</view>
+    <view class="font28 color" style="color:#fb4a6b">¥2166</view>
+
+  </view>
+</view>
+<view class="tabs font30 flexRowBetween color6">
+    <view class="tabs_item " data-id="0" bindtap="tab">
+        <text class="{{currentId == 0?'tabs_this':''}}">红包列表</text>
+    </view>
+    <view class="tabs_item " data-id="1" bindtap="tab">
+        <text class="{{currentId == 1?'tabs_this':''}}">提现记录</text>
+    </view>
+</view>
+<view wx:if="{{currentId == 0}}">
+  <view class="record_tlt flex" style="background:#f5f5f5;">
+    <view class="w33 color2 font30">新人</view>
+    <view class="w33 color2 font30">金额</view>
+    <view class="w33 color2 font30">时间</view>
+  </view>
+  <view class="record_list flex">
+    <view class="w33 color6 font24">张三</view>
+    <view class="w33 color6 font24">¥2166</view>
+    <view class="w33 color6 font24">2012-5-9</view>
+  </view>
+  <view class="record_list flex">
+    <view class="w33 color6 font24">张三</view>
+    <view class="w33 color6 font24">¥2166</view>
+    <view class="w33 color6 font24">2012-5-9</view>
+  </view>
+  <view class="record_list flex">
+    <view class="w33 color6 font24">张三</view>
+    <view class="w33 color6 font24">¥2166</view>
+    <view class="w33 color6 font24">2012-5-9</view>
+  </view>
+</view>
+<view  wx:if="{{currentId == 1}}" style="margin-top:30rpx;">
+  <view class="record flex">
+    <view class="record_item color9 font24">2012-5-9</view>
+    <view class="record_item color font24">+465</view>
+  </view>
+  <view class="record flex">
+    <view class="record_item color9 font24">2012-5-9</view>
+    <view class="record_item color font24">+465</view>
+  </view>
+</view>

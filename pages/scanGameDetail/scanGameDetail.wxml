@@ -1,0 +1,34 @@
+<view class="w690">
+	<view class="game">
+	   <view class="game_rule w710 bg1">
+	       <view class="game_tlt">
+	       		<text class="font30 color2">游戏规则</text>
+	       </view>
+	       <view class="rule_cont font28 color6">
+	       	内容内容内容让你让女人让你内容内容内容内容内容 内容内容内容内容让女人内容内容内容内容内容内容 内容内容内容内容内容内容内容让
+	       </view>
+	   </view>
+	</view>
+	<view class="game">
+	   <view class="game_rule w710 bg1" style="padding-bottom:30rpx;">
+	       <view class="game_tlt">
+	       		<text class="font30 color2">游戏奖品</text>
+	       </view>
+	       <view class="reward font28 color6 flex">
+	       	<text class="font28 color6">一等奖：</text>
+	       	<text class="font28 color3">手机一台</text>
+	       	<text class="font28 color">X3</text>
+	       </view>
+	       <view class="reward font28 color6 flex">
+	       	<text class="font28 color6">一等奖：</text>
+	       	<text class="font28 color3">手机一台</text>
+	       	<text class="font28 color">X3</text>
+	       </view>
+	       <view class="reward font28 color6 flex">
+	       	<text class="font28 color6">一等奖：</text>
+	       	<text class="font28 color3">手机一台</text>
+	       	<text class="font28 color">X3</text>
+	       </view>
+	   </view>
+	</view>
+</view>

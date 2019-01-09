@@ -1,0 +1,13 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+
+}
+.wedding{
+	margin-top:30rpx;
+}
+.wedding image{
+	width:100%;
+	height:350rpx;
+}

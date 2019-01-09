@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.user_main{
+	box-shadow: 0 0 20rpx #f2f2f2;
+	padding-top:20rpx;
+	padding-bottom:20rpx;
+	border-radius:10rpx;
+}
+.user_list{
+	width:100%;
+	height:60rpx;
+	border:solid 1px #e0e0e0;
+	border-radius:10rpx;
+	margin:32rpx 0;
+}
+.user_list .input_before{
+	width:22%;
+	text-align: center;
+}
+.user_list input{
+	width:78%;
+	border:0;
+	font-size:28rpx;
+}
+.user_list .input{
+	width:78%;
+	font-size:28rpx;
+	flex-wrap:wrap;
+}
+.submit_info{
+	width:100%;
+	position:fixed;
+	left:0;
+	bottom:0;
+	border-radius: 0;
+	margin:0;
+}
+.marriage_item{
+	width:50%;
+	height:60rpx;
+}
+.marriage_item image{
+	width:32rpx;
+	height:32rpx;
+	margin-right:16rpx;
+}
+.flex1{
+	display:flex;
+}

@@ -1,0 +1,11 @@
+<view class="invitation w690">
+	<view class="invitation_tlt1 color">
+		爱情
+	</view>
+	<view class="font28 color invitation_tlt2">你陪着我 我牵着你</view> 
+	<view class="font28 color invitation_tlt2">不用多语 静静地走下去</view>
+	<view class="invitation_img" >
+		<image src="/images/img2.jpg"></image>
+	</view>
+</view>
+<view class="save bg color1" bindtap="intoPath" data-path="/pages/invitationFirstTwo/invitationFirstTwo">保存</view>

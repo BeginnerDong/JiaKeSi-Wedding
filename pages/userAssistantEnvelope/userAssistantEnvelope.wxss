@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss";
+.get_number{
+	height:130rpx;
+	box-shadow:0 0 10rpx #f2f2f2;
+}
+.get_number>view{
+	text-align: center;
+}
+.record_tlt{
+	width:100%;
+	height:88rpx;
+}
+.w33{
+	width:33.33%;
+	text-align:center;
+	height:62rpx;
+	line-height:62rpx;
+}
+.record_list{
+	width:100%;
+	height:62rpx;
+	border-bottom:solid 1px #f0f0f0;
+}
+.record_list .w33:nth-child(2n){
+	border-left:solid 1px #f0f0f0;
+	border-right:solid 1px #f0f0f0;
+}
+.number_tlt{
+	height:80rpx;line-height:100rpx;overflow: hidden;
+}
+.tabs{
+	height:80rpx;
+	border-bottom:solid 1px #e0e0e0;
+}
+.tabs_item{
+	width:50%;
+	text-align:center;
+	height:80rpx;
+	line-height:80rpx;
+}
+.tabs_this{
+	color:#7cc4c2;
+	border-bottom:solid 1px #7cc4c2;
+}
+.tabs_item text{
+	height:78rpx;
+	line-height:78rpx;
+	display:inline-block;
+}
+.record{
+	height:64rpx;
+	border-bottom:solid 1px #f0f0f0;
+}
+.record_item{
+	width:50%;
+	text-align: center;
+}

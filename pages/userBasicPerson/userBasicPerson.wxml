@@ -1,0 +1,85 @@
+<!--index3.wxml-->
+<view class="w690" style="margin-top:20rpx;">
+    <view class="user_main w690 bg1">
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">姓名：</view>
+            <input value=""></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">电话：</view>
+            <input></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">性别：</view>
+            <view class="input flex">
+                <view class="marriage_item flex" style="width:30%;" data-id="0" bindtap="gender">
+                    <image src="{{is_gender==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>男</text>
+                </view>
+                <view class="marriage_item flex" style="width:30%;" data-id="1" bindtap="gender">
+                    <image src="{{is_gender==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>女</text>
+                </view>
+            </view>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">年龄：</view>
+            <input value=""></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">学历：</view>
+            <input></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">地址：</view>
+            <input></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before" style="width:26%;">电子邮箱：</view>
+            <input></input>
+        </view>
+        <view class="user_list flex1 bg1" style="height:auto;padding-top:20rpx;padding-bottom:20rpx;">
+            <view class="font28 color6 input_before"  style="width:26%;">婚姻状况：</view>
+            <view class="input flex">
+                <view class="marriage_item flex" data-id="0" bindtap="marriage">
+                    <image src="{{is_marriage==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>已婚</text>
+                </view>
+                <view class="marriage_item flex" data-id="1" bindtap="marriage">
+                    <image src="{{is_marriage==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>未婚</text>
+                </view>
+                <view class="marriage_item flex" data-id="2" bindtap="marriage">
+                    <image src="{{is_marriage==2?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>已订婚</text>
+                </view>
+                <view class="marriage_item flex" data-id="3" bindtap="marriage">
+                    <image src="{{is_marriage==3?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>未定婚</text>
+                </view>
+            </view>
+        </view>
+        <view class="user_list flex1 bg1" style="height:auto;padding-top:20rpx;padding-bottom:20rpx;">
+            <view class="font28 color6 input_before"  style="width:26%;">资产状况：</view>
+            <view class="input flex">
+                <view class="marriage_item flex" data-id="0" bindtap="assets">
+                    <image src="{{is_assets==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>有车</text>
+                </view>
+                <view class="marriage_item flex" data-id="1" bindtap="assets">
+                    <image src="{{is_assets==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>没车</text>
+                </view>
+                <view class="marriage_item flex" data-id="2" bindtap="assets">
+                    <image src="{{is_assets==2?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>有房</text>
+                </view>
+                <view class="marriage_item flex" data-id="3" bindtap="assets">
+                    <image src="{{is_assets==3?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+                    <text>没房</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<button class="submit_info">确定</button>

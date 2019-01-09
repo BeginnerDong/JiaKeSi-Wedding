@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.color{
+	color:#490112;
+}
+.invitation_top{
+	width:100%;
+	height:280rpx;
+	line-height:280rpx;
+	text-align:right;
+}
+.invitation_top image{
+	width:66rpx;
+	height:196rpx;
+	margin-top: 40rpx;
+}
+.invitation_center image{
+	width:100%;
+	height:440rpx;
+}
+.invitation_item{
+	width:50%;
+	height:280rpx;
+}
+.invitation_left image{
+	width:222rpx;
+	height:280rpx;
+}
+.invitation_right image{
+	width:204rpx;
+	height:180rpx;
+}
+.invitation_bottom{
+	margin-top:30rpx;
+}

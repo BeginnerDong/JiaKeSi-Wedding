@@ -1,0 +1,33 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f4f4f4;
+}
+.question{
+	width:100%;
+	padding:30rpx 0;
+}
+.flex1{
+	display:flex;
+}
+.question_left{
+	width:6%;
+	text-align:center;
+}
+.question_right{
+	width:94%;
+}
+.answer{
+	flex-wrap:wrap;
+}
+.answer_item{
+	width:46%;
+	margin:26rpx 0;
+	padding:2%;
+}
+.answer_item image{
+	width:32rpx;
+	height:28rpx;
+	margin-right:20rpx;
+}

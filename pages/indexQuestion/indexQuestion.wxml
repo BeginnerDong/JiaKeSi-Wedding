@@ -1,0 +1,36 @@
+<view class="w690 bg1" style="margin-bottom:20rpx;">
+	<view class="question">
+		<view class="question_list flex1">
+			<view class="question_left font28 color2">1、</view>
+			<view class="question_right font28 color2">题目题目题目明天明天题目题目题目密码题目题目题      目题目提木题目题目题目题目题目题目题目题目题目      题目题</view>
+		</view>
+		<view class="answer flex">
+			<view class="answer_item flex" data-id="0" bindtap="answer">
+				<image src="{{is_answer==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+			</view>
+			<view class="answer_item flex" data-id="1" bindtap="answer">
+				<image src="{{is_answer==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="w690 bg1" style="margin-bottom:20rpx;">
+	<view class="question">
+		<view class="question_list flex1">
+			<view class="question_left font28 color2">1、</view>
+			<view class="question_right font28 color2">题目题目题目明天明天题目题目题目密码题目题目题      目题目提木题目题目题目题目题目题目题目题目题目      题目题</view>
+		</view>
+		<view class="answer flex">
+			<view class="answer_item flex" data-id="0" bindtap="answer">
+				<image src="{{is_answer==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+			</view>
+			<view class="answer_item flex" data-id="1" bindtap="answer">
+				<image src="{{is_answer==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+			</view>
+		</view>
+	</view>
+</view>

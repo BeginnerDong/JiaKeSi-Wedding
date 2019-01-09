@@ -1,0 +1,34 @@
+<view class="w690">
+    <view class="album_tlt font28 color2">
+        全部照片(50)
+    </view>
+    <view class="album flex">
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+        <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+         <view class="album_item">
+            <image src="/images/invitationOne_img8_1.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,148 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx212611f012b9cf1d",
+	"projectname": "%E8%B4%BE%E5%85%8B%E6%96%AF%E5%A9%9A%E4%BB%8B%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 17,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "婚庆大厅",
+					"pathName": "pages/weddingHall/weddingHall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "问卷调查",
+					"pathName": "pages/indexQuestion/indexQuestion",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "瀑布流照片",
+					"pathName": "pages/indexAlbum/indexAlbum",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的请帖",
+					"pathName": "pages/indexInvitation/indexInvitation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的请帖1",
+					"pathName": "pages/invitationOne/invitationOne",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "请帖1第6张",
+					"pathName": "pages/invitationFirstFive/invitationFirstFive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "请帖1第7张",
+					"pathName": "pages/invitationFirstSix/invitationFirstSix",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "婚姻信息",
+					"pathName": "pages/userBasicPerson/userBasicPerson",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "送出礼物",
+					"pathName": "pages/userGift/userGift",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "婚庆助手",
+					"pathName": "pages/userAssistant/userAssistant",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "婚庆助手",
+					"pathName": "pages/userAssistant/userAssistant",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "体现",
+					"pathName": "pages/userAssistantCash/userAssistantCash",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "扫一扫",
+					"pathName": "pages/scan/scan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "游戏中心",
+					"pathName": "pages/scanGame/scanGame",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发请帖游戏",
+					"pathName": "pages/scanGameOne/scanGameOne",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发请帖游戏开始",
+					"pathName": "pages/gameOneBegin/gameOneBegin"
+				}
+			]
+		}
+	}
+}

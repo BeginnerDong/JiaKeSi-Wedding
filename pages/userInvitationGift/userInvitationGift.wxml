@@ -1,0 +1,22 @@
+<!--index2.wxml-->
+<view class="w690 index_product flexRowBetween">
+  <view class="recommend_left">
+      <view class="recommend_top">
+        <image src="/images/invitationOne_img6.jpg"></image>
+        <view class="brige font24 color1">李四&张三</view>
+      </view>
+      <view class="product_name font26 flex">
+        <view class="color3">姓名:</view>
+        <view class="color6" style="margin-left:16rpx;">刘培培</view>
+      </view>
+      <view class="product_name font26 flex">
+        <view class="color3">时间:</view>
+        <view class="color6" style="margin-left:16rpx;">2018-9-9</view>
+      </view>
+      <view class="product_name font26 flex">
+        <view class="color3">金额:</view>
+        <view class="color6" style="margin-left:16rpx;color:#eb3434">¥650</view>
+      </view>
+  </view>
+</view>
+

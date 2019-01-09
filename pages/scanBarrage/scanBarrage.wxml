@@ -1,0 +1,28 @@
+<view class="w690">
+	<view class="wishList flex bg1">
+	    <view class="wishLeft">
+	        <view class="user_img">
+	          <open-data type="userAvatarUrl"></open-data>
+	        </view>
+	    </view>
+	    <view class="wishRight">
+	        <view class="font28 color6">张三</view>
+	        <view class="font26 color2">祝你新婚快乐、早生贵子、百年好合。</view>
+	    </view>
+	</view>
+	<view class="wishList flex bg1">
+	    <view class="wishLeft">
+	        <view class="user_img">
+	          <open-data type="userAvatarUrl"></open-data>
+	        </view>
+	    </view>
+	    <view class="wishRight">
+	        <view class="font28 color6">张三</view>
+	        <view class="font26 color2">祝你新婚快乐、早生贵子、百年好合。</view>
+	    </view>
+	</view>
+</view>
+<view class="width:100%;height:200rpx;"></view>
+<view class="w690 search">
+	<input placeholder="请留下祝福" placeholder-class="placeholder"></input>
+</view>

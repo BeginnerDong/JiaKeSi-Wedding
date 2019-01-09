@@ -1,0 +1,64 @@
+
+<view class="w690">
+	<swiper
+      autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" bindchange="swiperChange">
+	    <swiper-item>
+	      	<view class="invitation" bindtap="intoPath" data-path="/pages/invitationFirst/invitationFirst">
+		   	<image src="/images/invitation.jpg"></image>
+		   	<view class="marks">编辑</view>
+		   	<view class="invitation_cont bg1">
+		   		<view class="invitation_tlt">
+		   			邀请函
+		   		</view>
+		   		<view class="invitation_img">
+		   			<image src="/images/img7@2x.png"></image>
+		   		</view>
+		   		<view class="invitation_word">
+		   			<image src="/images/invitation-word.png"></image>
+		   		</view>
+		   		<view class="bride flexCenter">
+		   			<text class="font26 color1">新郎:张三三</text>
+		   			<text class="font32 color1" style="margin:0 10rpx;">&</text>
+		   			<text class="font26 color1">新娘:李思思</text>
+		   		</view>
+		   		<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
+		   		<view class="time">时间：2018-9-9 12：00：00</view>
+		   		<view class="time">地点：月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球</view>
+		   	</view>
+		   </view>
+		   <view class="font30 color3 next_page" style="text-align: center;">1/5</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="invitation">
+			   	<image src="/images/invitation_bg2.jpg"></image>
+			   	<view class="marks">编辑</view>
+			   	<view class="invitationOne">
+			   		<view class="invitationOne_tlt">
+			   			<image src="/images/wedding_word1.png"></image>
+			   		</view>
+			   		<view class="invitation_img">
+			   			<image src="/images/img7@2x.png"></image>
+			   		</view>
+			   		
+			   		<view class="brage flexCenter">
+			   			<view class="brage_name">
+			   				张三三
+			   			</view>
+			   			<view class="brage_center flex">
+			   				<image src="/images/dian.jpg"></image>
+			   			</view>
+			   			<view class="brage_name">
+			   				李思思
+			   			</view>
+			   		</view>
+			   		<view class="address">
+				   		<view class="time">时间：2018-9-9 12：00：00</view>
+				   		<view class="time">地点：月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球</view>
+				   	</view>
+			   	</view>
+			</view>
+			<view class="font30 color3 next_page" style="text-align: center;">2/5</view>
+		</swiper-item>
+	</swiper>
+</view>

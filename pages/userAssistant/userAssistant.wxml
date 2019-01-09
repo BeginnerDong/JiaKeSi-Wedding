@@ -1,0 +1,59 @@
+<!--index3.wxml-->
+<view class="user_all font30 color3">
+    <view class="user_infor flexRowBetween w710"  bindtap="intoPath" data-path="/pages/userAssistantCash/userAssistantCash">
+        <view class="user_left flexRowBetween">
+            <text>体现</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userAlbum/userAlbum" >
+        <view class="user_left flexRowBetween">
+            <text>我的相册</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userWish/userWish" >
+        <view class="user_left flexRowBetween">
+            <text>祝福语</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userInvitation/userInvitation">
+        <view class="user_left flexRowBetween">
+            <text>我的请帖</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userAssistantEnvelope/userAssistantEnvelope">
+        <view class="user_left flexRowBetween">
+            <text>所收红包</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userInvitationGift/userInvitationGift">
+        <view class="user_left flexRowBetween">
+            <text>所收礼物</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userInvitationBride/userInvitationBride">
+        <view class="user_left flexRowBetween">
+            <text>宝妈提醒</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+</view>

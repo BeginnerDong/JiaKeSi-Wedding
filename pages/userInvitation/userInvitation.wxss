@@ -1,0 +1,202 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.invitation{
+	width:100%;
+	height:100vh;
+	position:relative;
+	overflow:hidden;
+}
+.invitation image{
+	width:100%;
+	height:100%;
+}
+.marks{
+    width:160rpx;
+    height:160rpx;
+    position: absolute;
+    right:-80rpx;
+    top:-80rpx;
+    background:#7cc4c2;
+    transform:rotate(45deg);
+    text-align: center;
+    line-height:260rpx;
+    font-size:28rpx;
+    color:#fff;
+}
+.invitation_cont{
+    position:absolute;
+    left:3%;
+    top:12%;
+    width:94%;
+    height:790rpx;
+    box-shadow: 0 0 20rpx #f6f6f6;
+}
+.invitation_tlt{
+	font-size:50rpx;
+	color:#fc4c74;
+	text-align: center;
+	height:120rpx;
+	line-height:120rpx;
+}
+.invitation_img{
+	width:204rpx;
+	height:204rpx;
+	border-radius:50%;
+	overflow:hidden;
+	margin:0 auto;
+	border:solid 4rpx #fc4c74;
+}
+.invitation_img image{
+	width:100%;
+	height:100%;
+
+}
+.invitation_word{
+	text-align:center;
+}
+.invitation_word image{
+	width:346rpx;
+	height:112rpx;
+	margin:36rpx auto;
+}
+.bride{
+	width:80%;
+	height:60rpx;
+	line-height:60rpx;
+	background:#fc4c74;
+	margin:0 auto; 
+}
+.invitation_word1{
+	height:110rpx;
+	line-height:110rpx;
+	text-align: center;color:#fc2558
+}
+.time{
+    color:#551524;
+    font-size:24rpx;
+    text-align: center;
+    margin:0 auto;
+    height:70rpx;
+    width:60%;
+}
+.recommend_scroll_x_box {
+  height:100%;
+  white-space: nowrap;
+  display: flex;
+}
+.recommend_hot_box {
+  width: 100%;
+  height:100%;
+  display: inline-block;
+  overflow:hidden;
+}
+swiper{
+	height:100%;
+}
+.swiper{
+	position:relative;
+}
+.swiper-block{
+  height: 100%;
+  width: 100%;
+}
+.swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow:unset;
+}
+/*.slide-image{
+  height:330rpx;
+  width: 520rpx;
+  border-radius: 9rpx;
+  box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2); 
+  margin: 0rpx 30rpx;
+  z-index: 1;  
+}*/
+.w690{
+	height:100vh;
+}
+.next_page{
+	margin-top:30rpx;
+}
+.invitationOne_tlt{
+	text-align: center;
+}
+.invitationOne_tlt image{
+	width:500rpx;
+	height:82rpx;
+}
+.invitationOne{
+	width:88%;
+	position:absolute;
+	left:6%;
+	top:6%;
+}
+.invitationOne .invitation_img{
+	width:440rpx;
+	height:440rpx;
+	border:solid 4rpx #f3a558;
+}
+.brage{
+	margin-top:30rpx;
+}
+.brage_center{
+	margin:0 20rpx;
+}
+.brage_center image{
+	width:70rpx;
+	height:84rpx;
+}
+.brage_name{
+	height:80rpx;
+	border-top:solid 1rpx #f3a558;
+	border-bottom:solid 1rpx #f3a558;
+	color:#f3a558;
+	font-size:36rpx;
+	line-height:80rpx;
+}
+.invitationOne .address{
+	margin-top:130rpx;
+}
+.invitationOne .address .time{
+	color:#f3a558;
+}
+.bride_item{
+	width:50%;
+}
+.bride_before{
+	width:26%;
+	text-align:center;
+}
+.choose_time picker{
+	width:100%;
+	height:100%;
+}
+.picker{
+	width:100%;
+	height:70rpx;
+	line-height:70rpx;
+	color:#551524;
+}
+.color{
+	color:#551524;
+}
+.address{
+	width:80%;
+	margin:0 auto;
+}
+.address_left{
+	margin-right:20rpx;
+}
+.submit_info{
+	width:200rpx;
+	height:70rpx;
+	line-height:70rpx;
+	margin:40rpx auto;
+}

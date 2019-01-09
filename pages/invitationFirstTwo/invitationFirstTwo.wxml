@@ -1,0 +1,18 @@
+<view class="invitation w690 flex">
+	<view class="invitation_left">
+		<image src="/images/img2.jpg"></image>
+	</view>
+	<view class="invitation_right">
+		<view class="invitation_tit color">
+			爱
+		</view>
+		<view class="font26 color invitation_cont">如果你仔细 寻找，你会 发现爱其实 无处不在。</view>
+		<view class="invitation_word">
+			<image src="/images/love.png"></image>
+		</view>
+	</view>
+</view>
+<view class="w690 invitation_bottom">
+	<image src="/images/banner.jpg"></image>
+</view>
+<view class="save bg color1" bindtap="intoPath" data-path="/pages/invitationFirstThree/invitationFirstThree">保存</view>

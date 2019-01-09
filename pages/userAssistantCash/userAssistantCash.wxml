@@ -1,0 +1,22 @@
+<!--index3.wxml-->
+<view class="w690">
+  <view class="cash" style="margin-top:30rpx;">
+      <view class="cash_bank">
+          <text class="font28 color2">到账银行卡</text>
+          <text class="font28 color2">中国银行(2356)</text>
+      </view>
+      <view class="cash_tlt color2 font28 bg1">
+          提现金额
+      </view>
+      <view class="cash_input flexRowBetween bg1">
+          <view class="input_masks color2">¥</view>
+          <input></input>
+      </view>
+      <view class="cash_can font24 color6 bg1">
+          本次可提现<text>¥445552</text>
+      </view>
+      <view class="cash_cont bg1" style="padding-top:70rpx;padding-bottom:30rpx;">
+          <button class="submit_info">体现</button>
+      </view>
+  </view>
+</view>

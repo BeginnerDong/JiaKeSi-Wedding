@@ -1,0 +1,33 @@
+<view class="search flex">
+    <view class="search_item flexCenter">
+        <text class="font30 color2">类别</text>
+        <image src="/images/up.jpg"></image>
+    </view>
+    <view class="search_item flexCenter">
+        <text class="font30 color2">时间</text>
+        <image src="/images/up.jpg"></image>
+    </view>
+</view>
+<view class="show_list" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
+ <view class="w690">
+    <view class="product flexRowBetween">
+        <view class="product_box flexRowBetween">
+            <view class="product_left">
+                <image src="/images/banner.jpg"></image>
+            </view>
+            <view class="product_right flexRowBetween">
+                <view class="product_detail">
+                    <view class="font28 color2 product_tilt flex">
+                        <image src="/images/title_icon.jpg"></image>
+                        <text class="font30 color2">张三&李四</text>
+                    </view>
+                    <view class="font22 color6 product_cont">
+                       我们的婚礼期待你参加
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+  </view>
+    <image src="/images/bottom_line.jpg" class="bottom_line"></image>
+</view>

@@ -1,0 +1,109 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f2f2f2;
+}
+.user_banner{
+	width:100%;
+	height:370rpx;
+	position:relative;
+}
+.user_box{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.user_img_small{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.user_bottom{
+	width:100%;
+	height:154rpx;
+	position:absolute;
+	left:0;
+	bottom:0;
+	text-align:center;
+	overflow:hidden;
+}
+.user_bg{
+	width:100%;
+	height:100%;
+}
+.banner_left{
+	width:31%;
+	height:100%;
+}
+.banner_right{
+	width:69%;
+	height:100%;
+}
+.wx_img{
+	width:156rpx;
+	height:156rpx;
+	border-radius:50%;
+	border:solid 6rpx #fff;
+	margin:40rpx auto 0 auto;
+	z-index:999;
+}
+.user_img{
+	width:140rpx;
+	height:140rpx;
+	border-radius:50%;
+	overflow:hidden;
+	margin:0 auto;
+}
+.credit_left{
+	width:50%;
+	height:100%;
+}
+.credit_left image{
+	width:24rpx;
+	height:30rpx;
+	margin-right:10rpx;
+}
+.credit_in{
+	width:100%;
+	height:94rpx;
+}
+.in_left{
+	width:50%;
+	height:100%;
+	text-align:center;
+}
+.in_right{
+	border-left:solid 1px #fff;
+}
+
+.item_other image{
+	width:50rpx;
+}
+.peocess_item text{display:block;}
+.user_left{
+	align-items:center;
+}
+.user_left image{
+	width:30rpx;
+	height:32rpx;
+	margin-right:12rpx;
+}
+.user_infor{
+	height:96rpx;
+	line-height:96rpx;
+	background:#fff;
+	border-bottom:solid 1px #dcdcdc;
+	align-items:center;
+	}
+.next_page image{
+	width:11rpx;
+	height:20rpx;
+}
+.user_all{
+	margin-top:12rpx;
+}

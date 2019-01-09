@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+
+}
+.wishList{
+	height:140rpx;
+	border-bottom:solid 1px #f0f0f0;
+}
+.wishLeft{
+	width:16%;
+}
+.wishRight{
+	width:74%;
+}
+.user_img{
+	width:80rpx;
+	height:80rpx;
+	border-radius:50%;
+	overflow:hidden;
+}

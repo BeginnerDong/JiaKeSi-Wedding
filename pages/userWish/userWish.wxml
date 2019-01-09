@@ -1,0 +1,11 @@
+<view class="w690 wishList flex">
+    <view class="wishLeft">
+        <view class="user_img">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="wishRight">
+        <view class="font28 color6">张三</view>
+        <view class="font26 color2">祝你新婚快乐、早生贵子、百年好合。</view>
+    </view>
+</view>

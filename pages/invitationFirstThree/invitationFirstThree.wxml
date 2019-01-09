@@ -1,0 +1,25 @@
+<view class="w690">
+	<view class="invitation_top flex">
+		<view class="invitation_left flex">
+			<image src="/images/lover4.png"></image>
+		</view>
+		<view class="invitation_right">
+			<image src="/images/invitationOne_love4.png"></image>
+		</view>
+	</view>
+	<view class="invitation_center">
+		<image src="/images/banner.jpg"></image>
+	</view>
+	<view class="invitation_bottom flexRowBetween">
+		<view class="invitation_item">
+			<image src="/images/img2.jpg"></image>
+		</view>
+		<view class="invitation_item">
+			<image src="/images/img2.jpg"></image>
+		</view>
+		<view class="invitation_item">
+			<image src="/images/img2.jpg"></image>
+		</view>
+	</view>
+</view>
+<view class="save bg color1" bindtap="intoPath" data-path="/pages/invitationFirstFour/invitationFirstFour">保存</view>

@@ -1,0 +1,10 @@
+<view class="w690 wedding">
+	<view class="font28 color2" style="text-align: center;line-height:70rpx;">标题标题</view>
+	<view class="font24 color6" style="text-align: right;margin-bottom:30rpx;">2019-9-9</view>
+    <image src="/images/banner.jpg"></image>
+    <view class="font26 color6">
+        内容内容内容内容让女人内容内容让女人内容让女人内容内， 内容内容内容内容内容内容内容让你让女人内容内容内容内 牛肉粉内容内容内
+        内容内容内容内容让女人内容内容让女人内容让女人内容内， 内容内容内容内容内容内容内容让你让女人内容内容内容内 牛肉粉内容内容内
+        内容内容内容内容让女人内容内容让女人内容让女人内容内， 内容内容内容内容内容内容内容让你让女人内容内容内容内 牛肉粉内容内容内
+    </view>
+</view>

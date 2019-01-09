@@ -1,0 +1,18 @@
+<!--index3.wxml-->
+<view class="w690" style="margin-top:50rpx;">
+    <view class="user_main w690 bg1">
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">姓名：</view>
+            <input value=""></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before">电话：</view>
+            <input></input>
+        </view>
+        <view class="user_list flex bg1">
+            <view class="font28 color6 input_before" style="width:36%;">绑定银行卡：</view>
+            <input></input>
+        </view>
+    </view>
+</view>
+<button class="submit_info">确定</button>

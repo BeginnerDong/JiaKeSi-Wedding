@@ -1,0 +1,23 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+
+}
+.album_tlt{
+	height:84rpx;
+	line-height:84rpx;
+}
+.album_item{
+	width:33.33%;
+	height:198rpx;
+	border:solid 1rpx #f0f0f0;
+	box-sizing:border-box;
+}
+.album_item image{
+	width:100%;
+	height:100%;
+}
+.album{
+	flex-wrap:wrap;
+}

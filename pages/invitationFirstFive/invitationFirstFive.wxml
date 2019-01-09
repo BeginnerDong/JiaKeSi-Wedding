@@ -1,0 +1,23 @@
+<view class="w690">
+	<view class="invitation_word">
+		<image src="/images/invitationOne_love6.png"></image>
+	</view>
+	<view class="invitation_cont flex">
+		<view class="invitation_left">
+			<view class="invitation_left_bg"></view>
+			<view class="invitation_left_cont bg1">
+				<image src="/images/invitationOne_img6.jpg"></image>
+			</view>
+		</view>
+		<view class="invitation_right">
+			<view class="invitation_right_bg"></view>
+			<view class="invitation_right_cont bg1">
+				<image src="/images/invitationOne_img6.jpg"></image>
+			</view>
+		</view>
+	</view>
+	<view class="invitation_bottom">
+		<image src="/images/invitationOne_img6_1.png"></image>
+	</view>
+</view>
+<view class="save bg color1" bindtap="intoPath" data-path="/pages/invitationFirstSix/invitationFirstSix">保存</view>

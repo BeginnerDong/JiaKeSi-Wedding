@@ -1,0 +1,25 @@
+<view class="w690 wedding">
+    <image src="/images/banner.jpg"></image>
+    <view class="wedding_cont bg1">
+        <view class="wedding_list flex">
+            <view class="font28 color6 list_text">新人</view>
+            <view class="font28 color2 list_cont">张三&李四</view>
+        </view>
+        <view class="wedding_list flex">
+            <view class="font28 color6 list_text">时间</view>
+            <view class="font28 color2 list_cont">2015-9-9</view>
+        </view>
+        <view class="wedding_list flex">
+            <view class="font28 color6 list_text">地点</view>
+            <view class="font28 color2 list_cont">西安国际大厦</view>
+        </view>
+        <view class="wedding_list flex">
+            <view class="font28 color6 list_text">风格</view>
+            <view class="font28 color2 list_cont">中式风</view>
+        </view>
+         <view class="wedding_list flex1" style="height:auto;margin-top:20rpx;">
+            <view class="font28 color6 list_text">宣言</view>
+            <view class="font28 color2 list_cont">宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言宣言</view>
+        </view>
+    </view>
+</view>

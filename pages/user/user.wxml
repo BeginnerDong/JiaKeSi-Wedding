@@ -1,0 +1,84 @@
+<!--index3.wxml-->
+<view class="user_banner flex bg">
+    <view class="user_box">
+        <view class="user_bg"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="user_img_small flex" style="text-align:center;width:100%;">
+            <view class="wx_img flex">
+                <view class="user_img">
+                  <open-data type="userAvatarUrl"></open-data>
+                </view>
+            </view>
+        </view>
+        <view class="user_bottom bg1">
+            <view class="font26 color6" style="line-height:200rpx;">小冰冰</view>
+        </view>
+    </view>
+</view>
+<view class="user_all font30 color3">
+    <view class="user_infor flexRowBetween w710"  bindtap="intoPath" data-path="/pages/userBasic/userBasic" style="margin-top:20rpx;">
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon1.png"></image>
+            <text>完善信息</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userGift/userGift"  style="margin-top:20rpx;">
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon2.png"></image>
+            <text>送出礼物</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userRedEnvelope/userRedEnvelope" >
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon3.png"></image>
+            <text>送出红包</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userConsult/userConsult" style="margin-top: 20rpx;">
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon4.png"></image>
+            <text>活动咨询</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userLoginAssistant/userLoginAssistant">
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon5.png"></image>
+            <text>婚庆助手</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
+</view>
+<view style="width:100%;height:150rpx;"></view>
+<view class="navbar">
+    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/index/index">
+        <view class="nav_img">
+          <image src="/images/navbar1.png"></image>
+        </view>
+        <view class="text">首页</view>
+    </view>
+    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/scan/scan">
+        <view class="nav_img">
+           <image src="/images/navbar2.png"></image>
+        </view>
+        <view class="text">扫一扫</view>
+    </view>
+    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/user/user">
+        <view class="nav_img">
+           <image src="/images/navbar3-a.png"></image>
+        </view>
+        <view class="text  this-text">我的</view>
+    </view>
+</view>

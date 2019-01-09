@@ -1,0 +1,10 @@
+<!--index2.wxml-->
+<view class="w690">
+  <view class="notice">
+    <view class="font28 color2" style="height:90rpx;line-height:100rpx;text-align:center;">标题标题标题标题标题标题标题</view>
+    <view class="notice_cont font28 color6">
+      <image src="/images/banner.jpg"></image>
+      内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内 内容内容内容内容内容内容内容内容
+    </view>
+  </view>
+</view>

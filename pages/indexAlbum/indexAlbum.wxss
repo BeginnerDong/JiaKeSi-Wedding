@@ -1,0 +1,67 @@
+page{
+	background:#f4f4f4;
+}
+.img_item {
+  width: 44%;
+  margin: 3%;
+  display: inline-block;
+  vertical-align: top;
+  border-radius:20rpx;
+  overflow:hidden;
+}
+.img_title{
+	height:80rpx;
+	line-height:80rpx;
+	width:100%;
+	text-align:center;
+}
+.album_item{
+	width:100%;
+	margin-bottom:30rpx;
+}
+.sort{
+	width:160rpx;
+	height:160rpx;
+	border-radius:50%;
+	overflow:hidden;
+	text-align:center;
+	line-height:160rpx;
+	font-size:36rpx;
+	color:#fff;
+	position: fixed;
+	bottom:20%;
+	right:0;
+}
+/**************悬浮菜单*******************/
+.menus .menu {
+  
+  position: fixed;
+  z-index: 100;
+  bottom: 220rpx;
+  right: 40rpx;
+  opacity: 0;
+  font-size:24rpx;
+
+}
+.menus .sort {
+  opacity: 1;
+  width:160rpx;
+	height:160rpx;
+	border-radius:50%;
+	overflow:hidden;
+	text-align:center;
+	line-height:160rpx;
+	font-size:36rpx;
+	color:#fff;
+	 position: fixed;
+  z-index: 100;
+}
+.mask{
+	width:100%;
+	min-height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index:99;
+}
