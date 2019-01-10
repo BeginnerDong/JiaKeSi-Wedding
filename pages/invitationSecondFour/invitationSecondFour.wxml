@@ -1,0 +1,30 @@
+<view class="invitation">
+   	<image src="/images/interviwe_bg2_1.jpg"></image>
+   	<view class="invitationOne">
+         <view class="w690" style="margin-top:58rpx;">
+            <view style="overflow: hidden;">
+         		<view class="invitation_left">
+                  <view class="invitation_left_img">
+                     <image src="/images/invitationSecond_img5.jpg"></image>
+                  </view>
+                  
+               </view>
+               <view class="invitation_right">
+                 <view class="invitation_left_word">
+                     <image src="/images/img12@2x.png"></image>
+                  </view>
+               </view>
+            </view>
+            <view class="invitation_bottom">
+               <view class="invitation_b_left">
+                  <view class="invitation_v_word color font26">宜言饮酒与子偕老</view>
+                  <view class="invitation_v_word color font26">琴瑟在御莫不静好</view>
+               </view>
+               <view class="invitation_b_right">
+                  <image src="/images/invitationSecond_img13.jpg"></image>
+               </view>
+            </view>
+         </view>
+   	</view>
+</view>
+<button class="save color1 bg" bindtap="intoPath" data-path="/pages/invitationSecondFive/invitationSecondFive">保存</button>

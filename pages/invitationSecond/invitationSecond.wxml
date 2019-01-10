@@ -1,0 +1,37 @@
+<view class="invitation">
+   	<image src="/images/invitation_bg2.jpg"></image>
+   	<view class="invitationOne">
+   		<view class="invitationOne_tlt">
+   			<image src="/images/wedding_word1.png"></image>
+   		</view>
+   		<view class="invitation_img">
+   			<image src="/images/img7@2x.png"></image>
+   		</view>
+   		
+   		<view class="brage flexCenter">
+   			<view class="brage_name">
+   				<input value="" placeholder="张三三" placeholder-class="placeholder"></input>
+   			</view>
+   			<view class="brage_center flex">
+   				<image src="/images/dian.jpg"></image>
+   			</view>
+   			<view class="brage_name">
+   				<input value="" placeholder="李思思" placeholder-class="placeholder"></input>
+   			</view>
+   		</view>
+
+   		<view class="time flex">
+			<view class="color">时间：</view>
+			<view class="choose_time">
+				<picker    mode="date"    value="{{date}}"    start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+				   <view class="picker">{{date}}</view>
+				</picker>
+			</view>
+		</view>
+   		<view class="address flex">
+			<view class="address_left color font28">地点:</view>
+			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+		</view>
+   	</view>
+</view>
+<button class="save color1 bg" bindtap="intoPath" data-path="/pages/invitationSecondOne/invitationSecondOne">保存</button>

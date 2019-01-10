@@ -39,7 +39,16 @@
     "pages/invitationFirstFour/invitationFirstFour",
     "pages/invitationFirstFive/invitationFirstFive",
     "pages/invitationFirstSix/invitationFirstSix",
-    "pages/invitationFirstSeven/invitationFirstSeven"
+    "pages/invitationFirstSeven/invitationFirstSeven",
+    "pages/invitationSecond/invitationSecond",
+    "pages/invitationSecondOne/invitationSecondOne",
+    "pages/invitationSecondTwo/invitationSecondTwo",
+    "pages/invitationSecondThree/invitationSecondThree",
+    "pages/invitationSecondFour/invitationSecondFour",
+    "pages/invitationSecondFive/invitationSecondFive",
+    "pages/invitationSecondSix/invitationSecondSix",
+    "pages/invitationSecondSeven/invitationSecondSeven"
+
 
   ],
   "window": {

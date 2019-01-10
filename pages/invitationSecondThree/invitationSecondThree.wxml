@@ -1,0 +1,38 @@
+<view class="invitation">
+   	<image src="/images/interviwe_bg2_1.jpg"></image>
+   	<view class="invitationOne">
+         <view class="w690">
+      		<view class="invitation_left">
+               <view class="invitation_left_img">
+                  <image src="/images/invitationSecond_img2.png"></image>
+               </view>
+               <view class="invitation_left_word">
+                  <view class="word_item">
+                     永
+                  </view>
+                  <view class="word_item" style="top:-22rpx;">
+                     结
+                  </view>
+                  <view class="word_item" style="top:-44rpx;">
+                     同
+                  </view>
+                  <view class="word_item" style="top:-66rpx;">
+                     心
+                  </view>
+               </view>
+            </view>
+            <view class="invitation_right">
+               <view class="invitation_right_img1">
+                  <image src="/images/invitationSecond_img13.jpg"></image>
+               </view>
+               <view class="invitation_right_img2">
+                  <image src="/images/invitationSecond_img5.jpg"></image>
+               </view>
+               <view class="font24 color">你出现在我身边</view> 
+               <view class="font24 color">就是我可以遇见的最大惊艳</view>
+               <view class="font24 color"> 胜过五彩缤纷和一切轰轰烈烈的世界</view>
+            </view>
+         </view>
+   	</view>
+</view>
+<button class="save color1 bg" bindtap="intoPath" data-path="/pages/invitationSecondFour/invitationSecondFour">保存</button>

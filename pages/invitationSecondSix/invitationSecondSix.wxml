@@ -1,0 +1,23 @@
+<view class="invitation">
+   	<image src="/images/interviwe_bg2_1.jpg"></image>
+   	<view class="invitationOne">
+         <view class="w690">
+            <view class="invitation_top">
+         		<image src="/images/img17@2x.png"></image>
+            </view>
+            <view class="invitation_center">
+               <image src="/images/invitationSecond_img.png"></image>
+            </view>
+            <view class="invitation_bottom flexRowBetween">
+               <view class="invitation_img1">
+                  <image src="/images/invitationSecond_img.png"></image>
+               </view>
+               <view class="invitation_img">
+                  <image src="/images/invitationSecond7.jpg"></image>
+               </view>
+               
+            </view>
+         </view>
+   	</view>
+</view>
+<button class="save color1 bg" bindtap="intoPath" data-path="/pages/invitationSecondSeven/invitationSecondSeven">保存</button>

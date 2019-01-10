@@ -1,0 +1,54 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.invitation{
+	width:100%;
+	height:100vh;
+	position:relative;
+	overflow:hidden;
+}
+.invitation image{
+	width:100%;
+	height:100%;
+}
+.invitationOne{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.invitation_top{
+	width:666rpx;
+	margin:0 auto;
+	
+}
+.invitation_top image{
+	height:420rpx;
+	width:620rpx;
+	margin:0 auto;
+	border-radius:20rpx;
+	padding:20rpx;
+	border:solid 1px #f3a558;
+}
+
+.brage{
+	margin:32rpx auto;
+}
+.brage_center{
+	margin:0 20rpx;
+}
+.brage_center image{
+	width:70rpx;
+	height:84rpx;
+}
+.brage_name{
+	height:80rpx;
+	border-top:solid 1rpx #f3a558;
+	border-bottom:solid 1rpx #f3a558;
+	color:#f3a558;
+	font-size:36rpx;
+	line-height:80rpx;
+}

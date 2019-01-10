@@ -3,8 +3,8 @@
     <image src="/images/img3@2x.jpg"></image>
     <view class="game_box">
         <view class="game_tlt font28 color2">你已经发了<text>0</text>张</view>
-        <view class="game_cont">
-           <image src="/images/img4@2x.jpg"></image>
+        <view class="game_cont" wx:for="{{items}}">
+           <image src="{{item.url}}"></image>
         </view>
     </view>
     <!-- <view class="maskOne">

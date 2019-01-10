@@ -30,7 +30,7 @@
 		   <view class="font30 color3 next_page" style="text-align: center;">1/5</view>
 		</swiper-item>
 		<swiper-item>
-			<view class="invitation">
+			<view class="invitation" bindtap="intoPath" data-path="/pages/invitationSecond/invitationSecond">
 			   	<image src="/images/invitation_bg2.jpg"></image>
 			   	<view class="marks">编辑</view>
 			   	<view class="invitationOne">
