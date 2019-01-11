@@ -4,30 +4,30 @@
 page{
 	overflow:hidden;
 }
-.invitation{
+.invitationSecondTwo{
 	width:100%;
 	height:100vh;
 	position:relative;
 	overflow:hidden;
 }
-.invitation image{
+.invitationSecondTwo image{
 	width:100%;
 	height:100%;
 }
-.invitationOne{
+.invitationSecondTwo{
 	width:100%;
 	position:absolute;
 	left:0;
 	top:0;
 }
-.invitation_left{
+.invitationSecondTwo_left{
 	width:59%;
 }
-.invitation_right{
+.invitationSecondTwo_right{
 	width:24%;
 	float:right;
 }
-.invitation_left_top image{
+.invitationSecondTwo_left_top image{
 	width:388rpx;
 	height:496rpx;
 	padding:10rpx;
@@ -36,30 +36,30 @@ page{
 .color{
 	color:#f3a558;
 }
-.invitation_left{
+.invitationSecondTwo_left{
 	float:left;
 	margin-top:76rpx;
 }
-.invitation_right{
+.invitationSecondTwo_right{
 	float:right;
 	margin-top:48rpx;
 	text-align:right;
 }
-.invitation_right_top image{
+.invitationSecondTwo_right_top image{
 	width:170rpx;
 	height:56rpx;
 }
-.invitation_right_word{
+.invitationSecondTwo_right_word{
 	width:56rpx;
 	font-size:60rpx;
 	margin-top:100rpx;
 }
-.invitation_right_img{
+.invitationSecondTwo_right_img{
 	position:relative;
 	left:-100rpx;
 	margin-top:30rpx;
 }
-.invitation_right_img image{
+.invitationSecondTwo_right_img image{
 	width:286rpx;
 	height:134rpx;
 }
@@ -70,7 +70,7 @@ page{
 	padding:10rpx;
 	border:solid 1px #f3a558;
 }
-.invitation_bottom{
+.invitationSecondTwo_bottom{
 	clear:both;
 	padding-top:50rpx;
 }

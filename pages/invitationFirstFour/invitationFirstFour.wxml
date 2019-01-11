@@ -1,15 +1,15 @@
 <view class="w690">
-	<view class="invitation_top">
+	<view class="invitationFirstFour_top">
 			<image src="/images/invitationOne_love4.png"></image>
 	</view>
-	<view class="invitation_center">
+	<view class="invitationFirstFour_center">
 		<image src="/images/banner.jpg"></image>
 	</view>
-	<view class="invitation_bottom flexRowBetween">
-		<view class="invitation_left">
+	<view class="invitationFirstFour_bottom flexRowBetween">
+		<view class="invitationFirstFour_left">
 			<image src="/images/img2.jpg"></image>
 		</view>
-		<view  class="invitation_right invitation_right" style="text-align:right;">
+		<view  class="invitationFirstFour_right" style="text-align:right;">
 			<image src="/images/lover4.png"></image>
 		</view>
 	</view>

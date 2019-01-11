@@ -1,23 +1,23 @@
 <view class="w690">
-	<view class="invitation_top flex">
-		<view class="invitation_left flex">
+	<view class="invitationFirstThree_top flex">
+		<view class="invitationFirstThree_left flex">
 			<image src="/images/lover4.png"></image>
 		</view>
-		<view class="invitation_right">
-			<image src="/images/invitationOne_love4.png"></image>
+		<view class="invitationFirstThree_right">
+			<image src="/images/invitationFirstThreeOne_love4.png"></image>
 		</view>
 	</view>
-	<view class="invitation_center">
+	<view class="invitationFirstThree_center">
 		<image src="/images/banner.jpg"></image>
 	</view>
-	<view class="invitation_bottom flexRowBetween">
-		<view class="invitation_item">
+	<view class="invitationFirstThree_bottom flexRowBetween">
+		<view class="invitationFirstThree_item">
 			<image src="/images/img2.jpg"></image>
 		</view>
-		<view class="invitation_item">
+		<view class="invitationFirstThree_item">
 			<image src="/images/img2.jpg"></image>
 		</view>
-		<view class="invitation_item">
+		<view class="invitationFirstThree_item">
 			<image src="/images/img2.jpg"></image>
 		</view>
 	</view>

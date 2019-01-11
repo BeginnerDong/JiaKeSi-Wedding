@@ -1,0 +1,187 @@
+
+<view class="invitation">
+	<image src="/images/invitation.jpg"></image>
+	<view class="invitation_cont bg1">
+		<view class="invitation_tlt">
+			邀请函
+		</view>
+		<view class="invitation_img">
+			<image src="/images/img7@2x.png"></image>
+		</view>
+		<view class="invitation_word">
+			<image src="/images/invitation-word.png"></image>
+		</view>
+		<view class="bride flexCenter">
+			<view class="flexCenter bride_item">
+				<view class="font28 color1 bride_before">新郎:</view>
+				<view class="input font26 color1">张三三</view>
+			</view>
+			<view class="flexCenter bride_item">
+				<view class="font28 color1 bride_before">新娘:</view>
+				<view class="input font26 color1">李思思</view>
+			</view>
+		</view>
+		<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
+		<view class="time flex">
+			<view class="color">时间：</view>
+			<view class="choose_time">
+				2018-9-9 12:30
+			</view>
+		</view>
+		<view class="address flex">
+			<view class="address_left color font28">地点:</view>
+			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+		</view>
+	</view>
+</view>
+<view class="invitationFirstOne w690">
+	<view class="invitationFirstOne_tlt1 color">
+		爱情
+	</view>
+	<view class="font28 color invitationFirstOne_tlt2">你陪着我 我牵着你</view> 
+	<view class="font28 color invitationFirstOne_tlt2">不用多语 静静地走下去</view>
+	<view class="invitationFirstOne_img" >
+		<image src="/images/img2.jpg"></image>
+	</view>
+</view>
+<view style="height:100%;overflow: hidden;">
+	<view class="w690">
+		<view class="invitationFirstTwo flex">
+			<view class="invitationFirstTwo_left">
+				<image src="/images/img2.jpg"></image>
+			</view>
+			<view class="invitationFirstTwo_right">
+				<view class="invitationFirstTwo_tit color">
+					爱
+				</view>
+				<view class="font26 color invitationFirstTwo_cont">如果你仔细 寻找，你会 发现爱其实 无处不在。</view>
+				<view class="invitationFirstTwo_word">
+					<image src="/images/love.png"></image>
+				</view>
+			</view>
+		</view>
+		<view class="invitationFirstTwo_bottom">
+			<image src="/images/banner.jpg"></image>
+		</view>
+	</view>
+</view>
+<!-- 1-3 -->
+<view style="height:100%;overflow:hidden;">
+	<view class="w690">
+		<view class="invitationFirstThree_top flex">
+			<view class="invitationFirstThree_left flex">
+				<image src="/images/lover4.png"></image>
+			</view>
+			<view class="invitationFirstThree_right">
+				<image src="/images/invitationFirstThreeOne_love4.png"></image>
+			</view>
+		</view>
+		<view class="invitationFirstThree_center">
+			<image src="/images/banner.jpg"></image>
+		</view>
+		<view class="invitationFirstThree_bottom flexRowBetween">
+			<view class="invitationFirstThree_item">
+				<image src="/images/img2.jpg"></image>
+			</view>
+			<view class="invitationFirstThree_item">
+				<image src="/images/img2.jpg"></image>
+			</view>
+			<view class="invitationFirstThree_item">
+				<image src="/images/img2.jpg"></image>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 1-4 -->
+<view style="height:100%;overflow:hidden;">
+	<view class="w690">
+		<view class="invitationFirstFour_top">
+				<image src="/images/invitationOne_love4.png"></image>
+		</view>
+		<view class="invitationFirstFour_center">
+			<image src="/images/banner.jpg"></image>
+		</view>
+		<view class="invitationFirstFour_bottom flexRowBetween">
+			<view class="invitationFirstFour_left">
+				<image src="/images/img2.jpg"></image>
+			</view>
+			<view  class="invitationFirstFour_right" style="text-align:right;">
+				<image src="/images/lover4.png"></image>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 1-5 -->
+<view style="height:100%;overflow:hidden;">
+	<view class="w690">
+		<view class="invitationFirstFive_word">
+			<image src="/images/invitationOne_love6.png"></image>
+		</view>
+		<view class="invitationFirstFive_cont flex">
+			<view class="invitationFirstFive_left">
+				<view class="invitationFirstFive_left_bg"></view>
+				<view class="invitationFirstFive_left_cont bg1">
+					<image src="/images/invitationOne_img6.jpg"></image>
+				</view>
+			</view>
+			<view class="invitationFirstFive_right">
+				<view class="invitationFirstFive_right_bg"></view>
+				<view class="invitationFirstFive_right_cont bg1">
+					<image src="/images/invitationOne_img6.jpg"></image>
+				</view>
+			</view>
+		</view>
+		<view class="invitationFirstFive_bottom">
+			<image src="/images/invitationOne_img6_1.png"></image>
+		</view>
+	</view>
+</view>
+<!-- 1-6 -->
+<view style="height:100%;overflow:hidden;">
+	<view class="w690" style="position: relative;">
+		<view class="invitationFirstSix_bg"></view>
+		<view class="invitationFirstSix_top flex">
+			<view class="invitationFirstSix_Tleft">
+				<image src="/images/invitationOne_img7.png"></image>
+			</view>
+			<view class="invitationFirstSix_Tright">
+				<image src="/images/invitationOne_img6.jpg"></image>
+			</view>
+		</view>
+		<view class="invitationFirstSix_top  invitationFirstSix_bottom flex">
+			<view class="invitationFirstSix_Bright">
+				<image src="/images/invitationOne_img6.jpg"></image>
+			</view>
+			<view class="invitationFirstSix_Bleft ">
+				<image src="/images/invitationOne_img7_1.png"></image>
+			</view>
+		</view>
+		<view class="invitation_bottom"></view>
+	</view>
+</view>
+<view style="height:100%;overflow:hidden;">
+	<view class="w690">
+		<view class="invitationFirstSeven_top">
+			<image src="/images/invitationOne_img8.jpg"></image>
+		</view>
+		<view class="invitationFirstSeven_center flex">
+			<view class="invitationFirstSeven_left">
+				<view class="color font24" style="line-height:36rpx">未来仿佛一下就在眼前</view>
+				<view class="color font24" style="line-height:36rpx"> 本来还觉得很遥远</view>
+				<view class="color font24" style="line-height:36rpx">直到你出现在我面前</view>
+				<view class="color font24" style="line-height:36rpx"> 嘴角上扬还在心跳</view>
+			</view>
+			<view class="invitationFirstSeven_right">
+				<image src="/images/invitationOne_img8_1.png"></image>
+			</view>
+		</view>
+		<view class="invitationFirstSeven_bottom flexRowBetween">
+			<view class="invitationFirstSeven_Bleft">
+				<image src="/images/invitationOne1.jpg"></image>
+			</view>
+			<view class="invitationFirstSeven_Bright">
+				<image src="/images/invitationOne2.jpg"></image>
+			</view>
+		</view>
+	</view>
+</view>

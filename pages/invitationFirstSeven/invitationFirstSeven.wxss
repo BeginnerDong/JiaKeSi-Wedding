@@ -8,43 +8,43 @@ page{
 .color{
 	color:#490112;
 }
-.invitation_top{
+.invitationFirstSeven_top{
 	width:100%;
 	height:400rpx;
 	overflow:hidden;
 	margin:40rpx auto;
 }
-.invitation_top image{
+.invitationFirstSeven_top image{
 	width:100%;
 	height:100%;
 }
-.invitation_right image{
+.invitationFirstSeven_right image{
 	width:146rpx;
 	height:126rpx;
 }
-.invitation_left{
+.invitationFirstSeven_left{
 	width:60%;
 }
-.invitation_right{
+.invitationFirstSeven_right{
 	width:40%;
 	text-align:center;
 	position: relative;
 	top:-100rpx;
 }
-.invitation_Bleft{
+.invitationFirstSeven_Bleft{
 	width:350rpx;
 	height:500rpx;
 }
-.invitation_Bleft image{
+.invitationFirstSeven_Bleft image{
 	width:100%;
 	height:450rpx;
 	margin-top:50rpx;
 }
-.invitation_Bright{
+.invitationFirstSeven_Bright{
 	width:300rpx;
 	height:500rpx;
 }
-.invitation_Bright image{
+.invitationFirstSeven_Bright image{
 	width:300rpx;
 	height:100%;
 }

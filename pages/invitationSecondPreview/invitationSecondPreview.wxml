@@ -1,0 +1,80 @@
+<view class="invitation">
+   	<image src="/images/invitation_bg2.jpg"></image>
+   	<view class="invitationOne">
+   		<view class="invitationOne_tlt">
+   			<image src="/images/wedding_word1.png"></image>
+   		</view>
+   		<view class="invitation_img">
+   			<image src="/images/img7@2x.png"></image>
+   		</view>
+   		
+   		<view class="brage flexCenter">
+   			<view class="brage_name">
+   				<input value="" placeholder="张三三" placeholder-class="placeholder"></input>
+   			</view>
+   			<view class="brage_center flex">
+   				<image src="/images/dian.jpg"></image>
+   			</view>
+   			<view class="brage_name">
+   				<input value="" placeholder="李思思" placeholder-class="placeholder"></input>
+   			</view>
+   		</view>
+
+   		<view class="time flex">
+			<view class="color">时间：</view>
+			<view class="choose_time">
+				<picker    mode="date"    value="{{date}}"    start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+				   <view class="picker">{{date}}</view>
+				</picker>
+			</view>
+		</view>
+   		<view class="address flex">
+			<view class="address_left color font28">地点:</view>
+			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+		</view>
+   	</view>
+</view>
+<view class="invitationSecondOne">
+      <image src="/images/interviwe_bg2_1.jpg"></image>
+      <view class="invitationSecondOne">
+         <view class="w690">
+            <view class="invitationSecondOne_top flex">
+               <view class="invitationSecondOne_left">
+                  <image src="/images/invitationSecond_img2.png"></image>
+               </view>
+               <view class="invitationSecondOne_right">
+                  
+               </view>
+            </view>
+            <view class="invitationSecondOne_center">
+               <view class="invitationSecondOne_img">
+                  <image src="/images/invitationSecond_img13.jpg"></image>
+               </view>
+               <view class="invitationSecondOne_center_bottom">
+                  <view class="invitationSecondOne_center_line"></view>
+                  <view class="invitationSecondOne_center_right">
+                     <view class="circle1"></view>
+                     <view class="circle2"></view>
+                  </view>
+               </view>
+            </view>
+            <view class="invitationSecondOne_bottom">
+               <view class="invitationSecondOne_b_left">
+                  <image src="/images/invitationSecond_img5.jpg"></image>
+               </view>
+               <view class="invitationSecondOne_b_right">
+                  <view class="invitationSecondOne_word">
+                     <view class="font24 color1">未来仿佛一下</view>
+                     <view class="font24 color1"> 就在眼前</view>
+                     <view class="font24 color1"> 本来觉得很遥远</view>
+                     <view class="font24 color1"> 知道你出现在我面前</view>
+                     <view class="font24 color1"> 嘴角上扬心还在跳</view>
+                  </view>
+                  <view class="invitationSecondOne_b_img">
+                     <image src="/images/img6@2x.png"></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+      </view>
+</view>

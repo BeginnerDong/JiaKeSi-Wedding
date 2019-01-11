@@ -1,12 +1,12 @@
-<view class="invitation">
+<view class="invitationSecondTwo">
    	<image src="/images/interviwe_bg2_1.jpg"></image>
-   	<view class="invitationOne">
+   	<view class="invitationSecondTwo">
          <view class="w690">
-      		<view class="invitation_left">
-               <view class="invitation_left_top">
+      		<view class="invitationSecondTwo_left">
+               <view class="invitationSecondTwo_left_top">
                   <image src="/images/invitationSecond_img5.jpg"></image>
                </view>
-               <view class="invitation_left_bottom">
+               <view class="invitationSecondTwo_left_bottom">
                   <view class="font28 color" style="margin-top:20rpx;">一开始淡淡的喜欢</view> 
                   <view class="font28 color">原来爱会慢慢增加重量</view>
                   <view class="font28 color" style="margin-top:20rpx;">未来仿佛一下就在眼前</view> 
@@ -15,18 +15,18 @@
                   <view class="font28 color">嘴角上扬心还在跳</view>
                </view>
             </view>
-            <view class="invitation_right">
-               <view class="invitation_right_top">
+            <view class="invitationSecondTwo_right">
+               <view class="invitationSecondTwo_right_top">
                   <image src="/images/invitationSecond_img2.png"></image>
                </view>
-               <view class="invitation_right_word color">
+               <view class="invitationSecondTwo_right_word color">
                   与你相遇好幸运
                </view>
-               <view class="invitation_right_img">
+               <view class="invitationSecondTwo_right_img">
                   <image src="/images/img6@2x.png"></image>
                </view>
             </view>
-            <view class="invitation_bottom flexRowBetween">
+            <view class="invitationSecondTwo_bottom flexRowBetween">
                <view class="img_item">
                   <image src="/images/invitationSecond_img.png"></image>
                </view>

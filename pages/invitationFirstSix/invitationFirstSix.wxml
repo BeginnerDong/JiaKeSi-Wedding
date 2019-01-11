@@ -1,18 +1,18 @@
 <view class="w690">
-	<view class="invitation_bg"></view>
-	<view class="invitation_top flex">
-		<view class="invitation_Tleft">
+	<view class="invitationFirstSix_bg"></view>
+	<view class="invitationFirstSix_top flex">
+		<view class="invitationFirstSix_Tleft">
 			<image src="/images/invitationOne_img7.png"></image>
 		</view>
-		<view class="invitation_Tright">
+		<view class="invitationFirstSix_Tright">
 			<image src="/images/invitationOne_img6.jpg"></image>
 		</view>
 	</view>
-	<view class="invitation_top  invitation_bottom flex">
-		<view class="invitation_Bright">
+	<view class="invitationFirstSix_top  invitationFirstSix_bottom flex">
+		<view class="invitationFirstSix_Bright">
 			<image src="/images/invitationOne_img6.jpg"></image>
 		</view>
-		<view class="invitation_Bleft ">
+		<view class="invitationFirstSix_Bleft ">
 			<image src="/images/invitationOne_img7_1.png"></image>
 		</view>
 	</view>

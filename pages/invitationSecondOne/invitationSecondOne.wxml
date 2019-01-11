@@ -1,40 +1,40 @@
-<view class="invitation">
+<view class="invitationSecondOne">
    	<image src="/images/interviwe_bg2_1.jpg"></image>
-   	<view class="invitationOne">
+   	<view class="invitationSecondOne">
          <view class="w690">
-      		<view class="invitation_top flex">
-               <view class="invitation_left">
+      		<view class="invitationSecondOne_top flex">
+               <view class="invitationSecondOne_left">
                   <image src="/images/invitationSecond_img2.png"></image>
                </view>
-               <view class="invitation_right">
+               <view class="invitationSecondOne_right">
                   
                </view>
             </view>
-            <view class="invitation_center">
-               <view class="invitation_img">
+            <view class="invitationSecondOne_center">
+               <view class="invitationSecondOne_img">
                   <image src="/images/invitationSecond_img13.jpg"></image>
                </view>
-               <view class="invitation_center_bottom">
-                  <view class="invitation_center_line"></view>
-                  <view class="invitation_center_right">
+               <view class="invitationSecondOne_center_bottom">
+                  <view class="invitationSecondOne_center_line"></view>
+                  <view class="invitationSecondOne_center_right">
                      <view class="circle1"></view>
                      <view class="circle2"></view>
                   </view>
                </view>
             </view>
-            <view class="invitation_bottom">
-               <view class="invitation_b_left">
+            <view class="invitationSecondOne_bottom">
+               <view class="invitationSecondOne_b_left">
                   <image src="/images/invitationSecond_img5.jpg"></image>
                </view>
-               <view class="invitation_b_right">
-                  <view class="invitation_word">
+               <view class="invitationSecondOne_b_right">
+                  <view class="invitationSecondOne_word">
                      <view class="font24 color1">未来仿佛一下</view>
                      <view class="font24 color1"> 就在眼前</view>
                      <view class="font24 color1"> 本来觉得很遥远</view>
                      <view class="font24 color1"> 知道你出现在我面前</view>
                      <view class="font24 color1"> 嘴角上扬心还在跳</view>
                   </view>
-                  <view class="invitation_b_img">
+                  <view class="invitationSecondOne_b_img">
                      <image src="/images/img6@2x.png"></image>
                   </view>
                </view>

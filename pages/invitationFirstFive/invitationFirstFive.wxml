@@ -1,22 +1,22 @@
 <view class="w690">
-	<view class="invitation_word">
+	<view class="invitationFirstFive_word">
 		<image src="/images/invitationOne_love6.png"></image>
 	</view>
-	<view class="invitation_cont flex">
-		<view class="invitation_left">
-			<view class="invitation_left_bg"></view>
-			<view class="invitation_left_cont bg1">
+	<view class="invitationFirstFive_cont flex">
+		<view class="invitationFirstFive_left">
+			<view class="invitationFirstFive_left_bg"></view>
+			<view class="invitationFirstFive_left_cont bg1">
 				<image src="/images/invitationOne_img6.jpg"></image>
 			</view>
 		</view>
-		<view class="invitation_right">
-			<view class="invitation_right_bg"></view>
-			<view class="invitation_right_cont bg1">
+		<view class="invitationFirstFive_right">
+			<view class="invitationFirstFive_right_bg"></view>
+			<view class="invitationFirstFive_right_cont bg1">
 				<image src="/images/invitationOne_img6.jpg"></image>
 			</view>
 		</view>
 	</view>
-	<view class="invitation_bottom">
+	<view class="invitationFirstFive_bottom">
 		<image src="/images/invitationOne_img6_1.png"></image>
 	</view>
 </view>

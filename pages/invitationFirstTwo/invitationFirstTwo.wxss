@@ -1,4 +1,3 @@
-/**index.wxss**/
 
 @import "../../wxParse/wxParse.wxss"; 
 page{
@@ -7,46 +6,46 @@ page{
 .color{
 	color:#490112;
 }
-.invitation{
+.invitationFirstTwo{
 	height:500rpx;
 	margin-top:50rpx;
 }
-.invitation_left{
+.invitationFirstTwo_left{
 	width:57%;
 	height:100%;
 }
-.invitation_right{
+.invitationFirstTwo_right{
 	width:43%;
 	height:100%;
 }
-.invitation_left image{
+.invitationFirstTwo_left image{
 	width:100%;
 	height:100%;
 }
-.invitation_tit{
+.invitationFirstTwo_tit{
 	height:150rpx;
 	line-height:150rpx;
 	text-align: center;
 }
-.invitation_cont{
+.invitationFirstTwo_cont{
 	width:43%;
 	margin:0 auto;
 }
-.invitation_word{
+.invitationFirstTwo_word{
 	text-align: center;
 	height:170rpx;
 	line-height:170rpx;
 	overflow: hidden;
 }
-.invitation_word image{
+.invitationFirstTwo_word image{
 	width:126rpx;
 	height:54rpx;
 }
-.invitation_bottom{
+.invitationFirstTwo_bottom{
 	margin-top:80rpx;
 }
 
-.invitation_bottom image{
+.invitationFirstTwo_bottom image{
 	width:100%;
 	height:400rpx;
 }

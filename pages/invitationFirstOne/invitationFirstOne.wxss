@@ -7,20 +7,20 @@ page{
 .color{
 	color:#490112;
 }
-.invitation_tlt1{
+.invitationFirstOne_tlt1{
 	text-align:right;
 	height:100rpx;
 	line-height:100rpx;
 	font-size:34rpx;
 }
-.invitation_tlt2{
+.invitationFirstOne_tlt2{
 	text-align:right;
 	line-height:60rpx;
 }
-.invitation_img{
+.invitationFirstOne_img{
 	margin-top:20rpx;
 }
-.invitation_img image{
+.invitationFirstOne_img image{
 	width:100%;
 	height:900rpx;
 }
