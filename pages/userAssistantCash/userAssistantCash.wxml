@@ -16,7 +16,7 @@
           本次可提现<text>¥445552</text>
       </view>
       <view class="cash_cont bg1" style="padding-top:70rpx;padding-bottom:30rpx;">
-          <button class="submit_info">体现</button>
+          <button class="submit_info">提现</button>
       </view>
   </view>
 </view>

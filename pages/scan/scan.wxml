@@ -13,7 +13,7 @@
             </view>
         </view>
     </view>
-    <view class="barrage" bindtap="intoPath" data-path="/pages/scanBarrage/scanBarrage">
+    <view class="barrage" bindtap="intoPath" data-path="/pages/scanBarrageIndex/scanBarrageIndex">
         <image src="/images/scan_icon3.png"></image>
         <view class="font24 color2">发弹幕</view>
     </view>

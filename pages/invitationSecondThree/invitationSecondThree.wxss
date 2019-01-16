@@ -20,24 +20,24 @@ page{
 	left:0;
 	top:0;
 }
-.invitation_left{
+.invitationThree_left{
 	width:33%;
 	float:left;
 }
-.invitation_right{
+.invitationThree_right{
 	width:67%;
 	float:right;
 }
-.invitation_left_img{
+.invitationThree_left_img{
 	width:242rpx;
 	line-height:242rpx;
 }
-.invitation_left_img image{
+.invitationThree_left_img image{
 	width:170rpx;
 	height:56rpx;
 }
 
-.invitation_left_word image{
+.invitationThree_left_word image{
 	width:48rpx;
 	height:116rpx;
 }
@@ -55,16 +55,16 @@ page{
 .color{
 	color:#f3a558;
 }
-.invitation_right_img1 image{
+.invitationThree_right_img1 image{
 	width:464rpx;
 	height:300rpx;
 	margin:50rpx 0 20rpx 0;
 }
-.invitation_right_img2 image{
+.invitationThree_right_img2 image{
 	width:464rpx;
 	height:600rpx;
 	margin-bottom:46rpx;
 }
-.invitation_right .color{
+.invitationThree_right .color{
 	line-height:36rpx;
 }

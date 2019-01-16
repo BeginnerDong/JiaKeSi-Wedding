@@ -3,24 +3,24 @@
    	<view class="invitationOne">
          <view class="w690" style="margin-top:58rpx;">
             <view style="overflow: hidden;">
-         		<view class="invitation_left">
-                  <view class="invitation_left_img">
+         		<view class="invitationSecondFour_left">
+                  <view class="invitationSecondFour_left_img">
                      <image src="/images/invitationSecond_img5.jpg"></image>
                   </view>
                   
                </view>
-               <view class="invitation_right">
-                 <view class="invitation_left_word">
+               <view class="invitationSecondFour_right">
+                 <view class="invitationSecondFour_left_word">
                      <image src="/images/img12@2x.png"></image>
                   </view>
                </view>
             </view>
-            <view class="invitation_bottom">
-               <view class="invitation_b_left">
-                  <view class="invitation_v_word color font26">宜言饮酒与子偕老</view>
-                  <view class="invitation_v_word color font26">琴瑟在御莫不静好</view>
+            <view class="invitationSecondFour_bottom">
+               <view class="invitationSecondFour_b_left">
+                  <view class="invitationSecondFour_v_word color font26">宜言饮酒与子偕老</view>
+                  <view class="invitationSecondFour_v_word color font26">琴瑟在御莫不静好</view>
                </view>
-               <view class="invitation_b_right">
+               <view class="invitationSecondFour_b_right">
                   <image src="/images/invitationSecond_img13.jpg"></image>
                </view>
             </view>

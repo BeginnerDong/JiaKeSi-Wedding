@@ -20,12 +20,11 @@ page{
 	left:0;
 	top:0;
 }
-.invitation_top{
+.invitationSeven_top{
 	width:666rpx;
-	margin:0 auto;
-	
+	margin:0 auto;	
 }
-.invitation_top image{
+.invitationSeven_top image{
 	height:420rpx;
 	width:620rpx;
 	margin:0 auto;

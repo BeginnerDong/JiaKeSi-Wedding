@@ -20,13 +20,13 @@ page{
 	left:0;
 	top:0;
 }
-.invitation_top{
+.invitationFive_top{
 	height:130rpx;
 	width:100%;
 	margin-top:30rpx;
 	border-bottom:solid 1px #f3a558;
 }
-.invitation_word{
+.invitationFive_word{
 	width:90rpx;
 	height:90rpx;
 	border-radius:50%;
@@ -34,7 +34,7 @@ page{
 	background:#f3a558;
 	margin:0 20rpx;
 }
-.invitation_word_in{
+.invitationFive_word_in{
 	width:80rpx;
 	height:80rpx;
 	border-radius:50%;
@@ -45,12 +45,12 @@ page{
 	line-height:80rpx;
 	color:#fff;
 }
-.invitation_center image{
+.invitationFive_center image{
 	width:100%;
 	height:440rpx;
 	margin-top:30rpx;
 }
-.invitation_bottom{
+.invitationFive_bottom{
 	width:560rpx;
 	height:560rpx;
 	padding:20rpx;
@@ -60,11 +60,11 @@ page{
 	position:relative;
 	top:-62rpx;
 }
-.invitation_img{
+.invitationFive_img{
 	width:270rpx;
 	height:270rpx;
 }
-.invitation_img image{
+.invitationFive_img image{
 	width:100%;
 	height:100%;
 }

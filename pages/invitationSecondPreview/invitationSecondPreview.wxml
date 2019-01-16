@@ -1,80 +1,417 @@
-<view class="invitation">
-   	<image src="/images/invitation_bg2.jpg"></image>
-   	<view class="invitationOne">
-   		<view class="invitationOne_tlt">
-   			<image src="/images/wedding_word1.png"></image>
-   		</view>
-   		<view class="invitation_img">
-   			<image src="/images/img7@2x.png"></image>
-   		</view>
-   		
-   		<view class="brage flexCenter">
-   			<view class="brage_name">
-   				<input value="" placeholder="张三三" placeholder-class="placeholder"></input>
-   			</view>
-   			<view class="brage_center flex">
-   				<image src="/images/dian.jpg"></image>
-   			</view>
-   			<view class="brage_name">
-   				<input value="" placeholder="李思思" placeholder-class="placeholder"></input>
-   			</view>
-   		</view>
+<scroll-view scroll-y="true" class="scroll-header"  bindscroll="scroll" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-with-animation="true" style="height:{{clientHeight}}px" scroll-into-view="{{web_scrollNumber}}">
+   <view class="invitation" id="two0">
+      	<image src="/images/invitation_bg2.jpg"></image>
+      	<view class="invitationOne">
+      		<view class="invitationOne_tlt">
+      			<image src="/images/wedding_word1.png"></image>
+      		</view>
+      		<view class="invitation_img">
+      			<image src="/images/img7@2x.png"></image>
+      		</view>
+      		
+      		<view class="brage flexCenter">
+      			<view class="brage_name">
+      				<input value="" placeholder="张三三" placeholder-class="placeholder"></input>
+      			</view>
+      			<view class="brage_center flex">
+      				<image src="/images/dian.jpg"></image>
+      			</view>
+      			<view class="brage_name">
+      				<input value="" placeholder="李思思" placeholder-class="placeholder"></input>
+      			</view>
+      		</view>
 
-   		<view class="time flex">
-			<view class="color">时间：</view>
-			<view class="choose_time">
-				<picker    mode="date"    value="{{date}}"    start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-				   <view class="picker">{{date}}</view>
-				</picker>
-			</view>
-		</view>
-   		<view class="address flex">
-			<view class="address_left color font28">地点:</view>
-			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
-		</view>
-   	</view>
-</view>
-<view class="invitationSecondOne">
+      		<view class="time flex">
+   			<view class="color">时间：</view>
+   			<view class="choose_time">
+   				<picker    mode="date"    value="{{date}}"    start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+   				   <view class="picker">{{date}}</view>
+   				</picker>
+   			</view>
+   		</view>
+      		<view class="address flex">
+   			<view class="address_left color font28">地点:</view>
+   			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+   		</view>
+      	</view>
+   </view>
+   <view class="invitationSecond" id="two1">
       <image src="/images/interviwe_bg2_1.jpg"></image>
-      <view class="invitationSecondOne">
-         <view class="w690">
-            <view class="invitationSecondOne_top flex">
-               <view class="invitationSecondOne_left">
-                  <image src="/images/invitationSecond_img2.png"></image>
-               </view>
-               <view class="invitationSecondOne_right">
-                  
-               </view>
-            </view>
-            <view class="invitationSecondOne_center">
-               <view class="invitationSecondOne_img">
-                  <image src="/images/invitationSecond_img13.jpg"></image>
-               </view>
-               <view class="invitationSecondOne_center_bottom">
-                  <view class="invitationSecondOne_center_line"></view>
-                  <view class="invitationSecondOne_center_right">
-                     <view class="circle1"></view>
-                     <view class="circle2"></view>
+      <view class="w690" style="position: absolute;left:0;top:0;">
+         <view class="invitationSecondOne">
+            <view class="w690" >
+               <view class="invitationSecondOne_top flex">
+                  <view class="invitationSecondOne_left {{web_scrollTop==clientHeight?'fadeRight':''}}">
+                     <image src="/images/invitationSecond_img2.png"></image>
+                  </view>
+                  <view class="invitationSecondOne_right">
                   </view>
                </view>
-            </view>
-            <view class="invitationSecondOne_bottom">
-               <view class="invitationSecondOne_b_left">
-                  <image src="/images/invitationSecond_img5.jpg"></image>
-               </view>
-               <view class="invitationSecondOne_b_right">
-                  <view class="invitationSecondOne_word">
-                     <view class="font24 color1">未来仿佛一下</view>
-                     <view class="font24 color1"> 就在眼前</view>
-                     <view class="font24 color1"> 本来觉得很遥远</view>
-                     <view class="font24 color1"> 知道你出现在我面前</view>
-                     <view class="font24 color1"> 嘴角上扬心还在跳</view>
+               <view class="invitationSecondOne_center">
+                  <view class="invitationSecondOne_img {{web_scrollTop==clientHeight?'fadeRight':''}}">
+                     <image src="/images/invitationSecond_img13.jpg"></image>
                   </view>
-                  <view class="invitationSecondOne_b_img">
-                     <image src="/images/img6@2x.png"></image>
+                  <view class="invitationSecondOne_center_bottom">
+                     <view class="invitationSecondOne_center_line"></view>
+                     <view class="invitationSecondOne_center_right">
+                        <view class="circle1 scaleImg"></view>
+                        <view class="circle2 scaleImg"></view>
+                     </view>
+                  </view>
+               </view>
+               <view class="invitationSecondOne_bottom">
+                  <view class="invitationSecondOne_b_left {{web_scrollTop==clientHeight?'fadeRight':''}}">
+                     <image src="/images/invitationSecond_img5.jpg"></image>
+                  </view>
+                  <view class="invitationSecondOne_b_right">
+                     <view class="invitationSecondOne_word">
+                        <view class="font24 color1 {{web_scrollTop>500?'fadeLeft dalay-1s':''}}">未来仿佛一下</view>
+                        <view class="font24 color1 {{web_scrollTop>500?'fadeLeft':''}}"> 就在眼前</view>
+                        <view class="font24 color1 {{web_scrollTop>600?'fadeLeft dalay-2s':''}}"> 本来觉得很遥远</view>
+                        <view class="font24 color1 {{web_scrollTop>500?'fadeLeft':''}}"> 知道你出现在我面前</view>
+                        <view class="font24 color1 {{web_scrollTop>500?'fadeLeft dalay-3s':''}}"> 嘴角上扬心还在跳</view>
+                     </view>
+                     <view class="invitationSecondOne_b_img">
+                        <image src="/images/img6@2x.png"></image>
+                     </view>
                   </view>
                </view>
             </view>
          </view>
       </view>
+   </view>
+   <view class="invitationSecond" id="two2">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationSecondTwo">
+            <view class="w690">
+               <view class="invitationSecondTwo_left">
+                  <view class="invitationSecondTwo_left_top {{web_scrollTop>1000?'fadeUp ':''}}">
+                     <image src="/images/invitationSecond_img5.jpg"></image>
+                  </view>
+                  <view class="invitationSecondTwo_left_bottom">
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft ':''}}" style="margin-top:20rpx;">一开始淡淡的喜欢</view> 
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft dalay-1s':''}}">原来爱会慢慢增加重量</view>
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft dalay-2s':''}}" style="margin-top:20rpx;">未来仿佛一下就在眼前</view> 
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft dalay-3s':''}}">本来还觉得很遥远</view>
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft dalay-5s':''}}">直到你出现在我面前</view>
+                     <view class="font28 color {{web_scrollTop>1200?'fadeLeft dalay-5s':''}}">嘴角上扬心还在跳</view>
+                  </view>
+               </view>
+               <view class="invitationSecondTwo_right">
+                  <view class="invitationSecondTwo_right_top">
+                     <image src="/images/invitationSecond_img2.png"></image>
+                  </view>
+                  <view class="invitationSecondTwo_right_word color {{web_scrollTop>1200?'fadeUp':''}}">
+                    
+                        与你相遇好幸运
+            
+                  </view>
+                  <view class="invitationSecondTwo_right_img">
+                     <image src="/images/img6@2x.png"></image>
+                  </view>
+               </view>
+               <view class="invitationSecondTwo_bottom flexRowBetween">
+                  <view class="img_item {{web_scrollTop>1400?'scaleImg dalay-1s':''}}">
+                     <image src="/images/invitationSecond_img.png"></image>
+                  </view>
+                   <view class="img_item {{web_scrollTop>1400?'scaleImg dalay-3s':''}}">
+                     <image src="/images/invitationSecond_img.png"></image>
+                  </view>
+                   <view class="img_item {{web_scrollTop>1400?'scaleImg dalay-5s':''}}">
+                     <image src="/images/invitationSecond_img.png"></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+   </view>
+   <view class="invitationSecond" id="two3">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationSecondTwo">
+            <view class="w690">
+               <view class="invitationThree_left">
+                  <view class="invitationThree_left_img">
+                     <image src="/images/invitationSecond_img2.png"></image>
+                  </view>
+                  <view class="invitationThree_left_word">
+                     <view class="word_item {{web_scrollTop>1600?'fadeDown dalay-1s':''}}">
+                        永
+                     </view>
+                     <view class="word_item" class="word_item {{web_scrollTop>1600?'fadeDown dalay-2s':''}}" style="top:-22rpx;">
+                        结
+                     </view>
+                     <view class="word_item" class="word_item {{web_scrollTop>1600?'fadeDown dalay-3s':''}}" style="top:-44rpx;">
+                        同
+                     </view>
+                     <view class="word_item" class="word_item {{web_scrollTop>1600?'fadeDown dalay-4s':''}}" style="top:-66rpx;">
+                        心
+                     </view>
+                  </view>
+               </view>
+               <view class="invitationThree_right">
+                  <view class="invitationThree_right_img1 {{web_scrollTop>1600?'fadeDown':''}}">
+                     <image src="/images/invitationSecond_img13.jpg"></image>
+                  </view>
+                  <view class="invitationThree_right_img2 {{web_scrollTop>1600?'fadeDown dalay-3s':''}}">
+                     <image src="/images/invitationSecond_img5.jpg"></image>
+                  </view>
+                  <view class="font24 color liner_word">你出现在我身边</view> 
+                  <view class="font24 color liner_word">就是我可以遇见的最大惊艳</view>
+                  <view class="font24 color liner_word"> 胜过五彩缤纷和一切轰轰烈烈的世界</view>
+               </view>
+            </view>
+         </view>
+   </view>
+   <view class="invitationSecond" id="two4">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationSecondTwo">
+            <view class="w690" style="margin-top:58rpx;">
+               <view style="overflow: hidden;">
+                  <view class="invitationSecondFour_left">
+                     <view class="invitationSecondFour_left_img {{web_scrollTop>2100?'fadeRight':''}}">
+                        <image src="/images/invitationSecond_img5.jpg"></image>
+                     </view>
+                     
+                  </view>
+                  <view class="invitationSecondFour_right">
+                    <view class="invitationSecondFour_left_word {{web_scrollTop>2100?'fadeLeft':''}}">
+                        <image src="/images/img12@2x.png"></image>
+                     </view>
+                  </view>
+               </view>
+               <view class="invitationSecondFour_bottom {{web_scrollTop>2300?'fadeLeft':''}}">
+                  <view class="invitationSecondFour_b_left">
+                     <view class="invitationSecondFour_v_word color font26">宜言饮酒与子偕老</view>
+                     <view class="invitationSecondFour_v_word color font26">琴瑟在御莫不静好</view>
+                  </view>
+                  <view class="invitationSecondFour_b_right">
+                     <image src="/images/invitationSecond_img13.jpg"></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+   </view>
+   <view class="invitationSecond" id="two5">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationSecondTwo">
+            <view class="w690">
+               <view class="invitationFive_top flexCenter">
+                  <view class="invitationFive_word bg flex {{web_scrollTop>2700?'fadeLeft':''}}">
+                     <view class="invitationFive_word_in">珠</view>
+                  </view>
+                  <view class="invitationFive_word bg flex {{web_scrollTop>2700?'fadeLeft dalay-1s':''}}">
+                     <view class="invitationFive_word_in">联</view>
+                  </view>
+                  <view class="invitationFive_word bg flex {{web_scrollTop>2700?'fadeLeft dalay-2s':''}}">
+                     <view class="invitationFive_word_in">玉</view>
+                  </view>
+                  <view class="invitationFive_word bg flex {{web_scrollTop>2700?'fadeLeft dalay-3s':''}}">
+                     <view class="invitationFive_word_in">映</view>
+                  </view>
+               </view>
+               <view class="invitationFive_center {{web_scrollTop>3200?'fadeRight':''}}">
+                  <image src="/images/invitationOne_img8.jpg"></image>
+               </view>
+               <view class="invitation_bottom flexRowBetween">
+                  <view class="invitationFive_img {{web_scrollTop>3200?'fadeRight':''}}">
+                     <image src="/images/invitationOne_img6.jpg"></image>
+                  </view>
+                  <view class="invitationFive_img {{web_scrollTop>3200?'fadeRight dalay-1s':''}}">
+                     <image src="/images/invitationOne_img6.jpg"></image>
+                  </view>
+                  <view class="invitationFive_img {{web_scrollTop>3200?'fadeRight dalay-3s':''}}">
+                     <image src="/images/invitationOne_img6.jpg"></image>
+                  </view>
+                  <view class="invitationFive_img {{web_scrollTop>3200?'fadeRight dalay-5s':''}}">
+                     <image src="/images/invitationOne_img6.jpg"></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+   </view>
+   <view class="invitationSecond" id="two6">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationSecondTwo">
+            <view class="w690">
+               <view class="invitationSix_top {{web_scrollTop>3800?'fadeRight3':''}}">
+                  <image src="/images/img17@2x.png"></image>
+               </view>
+               <view class="invitationSix_center {{web_scrollTop>3800?'rotateImg':''}}">
+                  <image src="/images/invitationSecond_img.png"></image>
+               </view>
+               <view class="invitationSix_bottom flexRowBetween">
+                  <view class="invitationSix_img1 {{web_scrollTop>3800?'rotateImgOne':''}}">
+                     <image src="/images/invitationSecond_img.png"></image>
+                  </view>
+                  <view class="invitation_img {{web_scrollTop>3800?'rotateImgOne':''}}">
+                     <image src="/images/invitationSecond_img.png"></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+   </view>
+   <view class="invitation" id="two7" start="margin-top:54rpx;">
+         <image src="/images/interviwe_bg2_1.jpg"></image>
+         <view class="invitationOne">
+            <view class="" style="margin-top:50rpx;">
+               <view class="invitationSeven_top">
+                  <image src="/images/invitationSecond_img13.jpg" class="{{web_scrollTop>4600?'fadeRight':''}}"></image>
+               </view>
+              
+               <view class="brage flexCenter">
+                  <view class="brage_name {{web_scrollTop>4600?'fadeRight':''}}">
+                    愿得一人心 
+                  </view>
+                  <view class="brage_center flex">
+                     <image src="/images/dian.jpg"></image>
+                  </view>
+                  <view class="brage_name {{web_scrollTop>4600?'fadeLeft':''}}">
+                    白首不相离
+                  </view>
+               </view>
+               <view class="invitationSeven_top">
+                  <image src="/images/invitationSecond_img13.jpg" class="{{web_scrollTop>4600?'fadeLeft':''}}"></image>
+               </view>
+            </view>
+         </view>
+   </view>
+</scroll-view>
+<view class="barrage w690">
+   <view class="barrage_top" style="transform:translateY(-100%);">
+      <view class="barrage_top_box">
+         <view class="barrage_user moveUp">
+            <view class="user_in flex">
+               <view class="user_left">
+                  <view class="user_img">
+                     <open-data type="userAvatarUrl"></open-data>
+                  </view>
+               </view>
+               <view class="user_right">
+                  <view class="font24 color1">李思思1送了百合花</view>
+                  <view class="font24 color1">百年好和</view>
+               </view>
+            </view>
+         </view>
+         <view class="whish  moveUp">
+            <view class="whish_in font24 color1">
+               黄皮书:新婚快乐
+            </view>
+         </view>
+         <view class="whish  moveUp">
+            <view class="whish_in font24 color1">
+               黄皮书:新婚快乐
+            </view>
+         </view>
+      </view>
+      <view class="barrage_top_box">
+         <view class="barrage_user moveUp">
+            <view class="user_in flex">
+               <view class="user_left">
+                  <view class="user_img">
+                     <open-data type="userAvatarUrl"></open-data>
+                  </view>
+               </view>
+               <view class="user_right">
+                  <view class="font24 color1">李思思1送了百合花</view>
+                  <view class="font24 color1">百年好和</view>
+               </view>
+            </view>
+         </view>
+         <view class="whish  moveUp">
+            <view class="whish_in font24 color1">
+               黄皮书:新婚快乐
+            </view>
+         </view>
+         <view class="whish  moveUp">
+            <view class="whish_in font24 color1">
+               黄皮书:新婚快乐
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class="search flex">
+      <view class="search_left">
+         <input placeholder="请留下你的祝福" placeholder-class="placeholder" ></input>
+      </view>
+      <view class="search_right flex">
+         <view class="search_img" bindtap="gift">
+            <image src="/images/img8@2x.png"></image>
+         </view>
+         <view class="search_img">
+            <image src="/images/img9@2x.png" bindtap="send_money"></image>
+         </view>
+      </view>
+   </view>
+</view>
+<view class="gift w690 bg1" wx:if="{{choose_gift}}">
+   <view style="position:relative;height:486rpx;">
+      <view class="gift_cont flex">
+         <view class="gift_item flex {{currentId ==0?'border_box':''}}" data-id="0" bindtap="choose">
+            <view style="width:100%">
+               <image src="/images/gitf_icon.jpg"></image>
+               <view class="font24 color2">
+                  一座城堡
+               </view>
+               <view class="gift_number font24">
+                  ¥13.14
+               </view>
+            </view>
+            <view class="is_choose" wx:if="{{currentId ==0}}">
+               <image src="/images/gift.png"></image>
+            </view>
+         </view>
+         <view class="gift_item flex {{currentId ==1?'border_box':''}}"  data-id="1" bindtap="choose">
+            <view style="width:100%">
+               <image src="/images/gitf_icon.jpg"></image>
+               <view class="font24 color2">
+                  一座城堡
+               </view>
+               <view class="gift_number font24">
+                  ¥13.14
+               </view>
+            </view>
+            <view class="is_choose"  wx:if="{{currentId ==1}}">
+               <image src="/images/gift.png"></image>
+            </view>
+         </view>
+      </view>
+      <view class="send_gift flex">
+         <view class="send_gift_left font22 color6">
+            小主放心送，礼物金额将全部转至新人的账户
+         </view>
+         <view class="send_gift_right" bindtap="send_gift">
+            <button class="submit_into">送出礼物</button>
+         </view>
+      </view>
+   </view>
+</view>
+<view class="gift_input bg1" wx:if="{{is_send}}">
+   <view class="gift_tlt font30">
+      送出礼物
+      <view class="close" bindtap="close">
+         <image src="/images/close_icon.png"></image>
+      </view>
+   </view>
+   <view class="font24 color6" style="text-align: center;">
+      赠送的礼物：一座城堡<text>（¥13.14）</text>
+   </view>
+   <input placeholder="情输入你的姓名"></input>
+   <button class="submit_into" style="width:400rpx;height:60rpx;line-height:60rpx;margin:0 auto;border-radius:40rpx;">确定</button>
+</view>
+<view class="mask" wx:if="{{send_money}}">
+   <view class="send_money">
+      <view class="send_bg">
+         <image src="/images/redEnvelop.png"></image>
+      </view>
+      <view class="send_money_bg">
+         <input placeholder="请输入你的姓名"></input>
+         <input placeholder="请输入礼金金额"></input>
+            <view class="notice font24 color1">
+            礼金金额全部转至新人的婚礼账户
+         </view>
+         <button class="submit_into" style="background:#fbda30;width:400rpx;height:80rpx;line-height:80rpx;color:#3b1c05;border-radius:40rpx;">塞进红包</button>
+      </view>
+      <view class="close_bottom" bindtap="close">
+         <image src="/images/close_icon.png"></image >
+      </view>
+   </view>
 </view>

@@ -161,7 +161,10 @@ swiper{
 	line-height:80rpx;
 }
 .invitationOne .address{
-	margin-top:130rpx;
+	poaition:absolute;
+	left:0;
+	bottom:0;
+	text-align:center;
 }
 .invitationOne .address .time{
 	color:#f3a558;

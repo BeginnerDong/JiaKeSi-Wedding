@@ -2,7 +2,7 @@
    	<image src="/images/interviwe_bg2_1.jpg"></image>
    	<view class="invitationOne">
          <view class="w690" style="margin-top:50rpx;">
-            <view class="invitation_top">
+            <view class="invitationSeven_top">
          		<image src="/images/invitationSecond_img13.jpg"></image>
             </view>
            
@@ -17,7 +17,7 @@
                  白首不相离
                </view>
             </view>
-            <view class="invitation_top">
+            <view class="invitationSeven_top">
                <image src="/images/invitationSecond_img13.jpg"></image>
             </view>
          </view>

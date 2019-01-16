@@ -1,0 +1,4 @@
+ <view class="startPage">
+    <view class="font30 color1 jump" bindtap="intoPath" data-path="/pages/index/index">跳过</view>
+ <video id="myVideo" src=""   enable-danmu danmu-btn controls></video>
+</view>

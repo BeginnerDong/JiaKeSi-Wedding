@@ -1,11 +1,19 @@
 <view class="search flex">
     <view class="search_item flexCenter">
-        <text class="font30 color2">类别</text>
-        <image src="/images/up.jpg"></image>
+        <picker bindchange="bindChooseDate" value="{{current}}" range="{{array}}">
+            <view class="flex picker_in">
+                <view class="picker font30 color2">{{array[current]}}</view>
+                <image src="/images/up.jpg"></image>
+            </view>
+        </picker>
     </view>
     <view class="search_item flexCenter">
-        <text class="font30 color2">时间</text>
-        <image src="/images/up.jpg"></image>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"bindchange="bindDateChange">
+        <view class="flex picker_in">
+          <view class="picker font30 color2">{{date}}</view>
+          <view class="down flex"><image src="/images/up.jpg"></image></view>
+        </view>
+      </picker>
     </view>
 </view>
 <view class="show_list" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">

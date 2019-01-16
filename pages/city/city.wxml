@@ -1,0 +1,12 @@
+<view class="w690">
+    <view class="city flexRowBetween bg1">
+        <view class="city_item font28 color3">北京</view>
+        <view class="city_item font28 color">上海</view>
+        <view class="city_item font28 color3">广州</view>
+        <view class="city_item font28 color">陕西</view>
+        <view class="city_item font28 color3">北京</view>
+        <view class="city_item font28 color">上海</view>
+        <view class="city_item font28 color3">广州</view>
+        <view class="city_item font28 color">陕西</view>
+    </view>
+</view>

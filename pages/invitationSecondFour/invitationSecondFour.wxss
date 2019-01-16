@@ -20,26 +20,26 @@ page{
 	left:0;
 	top:0;
 }
-.invitation_left{
+.invitationSecondFour_left{
 	width:73%;
 	float:left;
 }
-.invitation_right{
+.invitationSecondFour_right{
 	width:27%;
 	float:right;
 }
-.invitation_left_img{
+.invitationSecondFour_left_img{
 	width:500rpx;
 	height:700rpx;
 }
-.invitation_left_img image{
+.invitationSecondFour_left_img image{
 	width:100%;
 	height:100%;
 }
-.invitation_left_word{
+.invitationSecondFour_left_word{
 	text-align:center;
 }
-.invitation_left_word image{
+.invitationSecondFour_left_word image{
 	width:88rpx;
 	height:416rpx;
 	margin-top:128rpx;
@@ -58,39 +58,39 @@ page{
 .color{
 	color:#f3a558;
 }
-.invitation_right_img1 image{
+.invitationSecondFour_right_img1 image{
 	width:464rpx;
 	height:300rpx;
 	margin:50rpx 0 20rpx 0;
 }
-.invitation_right_img2 image{
+.invitationSecondFour_right_img2 image{
 	width:464rpx;
 	height:600rpx;
 	margin-bottom:46rpx;
 }
-.invitation_right .color{
+.invitationSecondFour_right .color{
 	line-height:36rpx;
 }
-.invitation_b_left{
+.invitationSecondFour_b_left{
 	width:26%;
 	float:left;
 }
-.invitation_b_right{
+.invitationSecondFour_b_right{
 	width:74%;
 	float:right;
 }
-.invitation_bottom{
+.invitationSecondFour_bottom{
 	clear:both;
 	margin-top:48rpx;
 }
-.invitation_v_word{
+.invitationSecondFour_v_word{
 	width:42rpx;
 	line-height:36rpx;
 	color:#f3a558;
 	float:left;
 	margin:0 20rpx;
 }
-.invitation_b_right image{
+.invitationSecondFour_b_right image{
 	width:500rpx;
 	height:304rpx;
 }

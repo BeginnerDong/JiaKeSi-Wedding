@@ -171,4 +171,5 @@ page{
 	position: fixed;
 	right:0;
 	bottom:20%;
+	font-size:28rpx;
 }

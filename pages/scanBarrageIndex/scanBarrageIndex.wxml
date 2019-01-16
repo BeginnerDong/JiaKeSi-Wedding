@@ -1,0 +1,9 @@
+<view class="login">
+    <image src="/images/img7.jpg"></image>
+    <view class="w690 flex login_cont">
+        <view class="login_box">
+            <view class="merrage font28 color2" bindtap="intoPath" data-path="/pages/scanBarrage/scanBarrage">已婚</view>
+            <view class="merrage  font28 color2"  bindtap="intoPath" data-path="/pages/scanBarrage/scanBarrage" style="margin-top:120rpx;">未婚</view>
+        </view>
+    </view>
+</view>

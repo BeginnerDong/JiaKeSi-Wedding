@@ -2,34 +2,34 @@
    	<image src="/images/interviwe_bg2_1.jpg"></image>
    	<view class="invitationOne">
          <view class="w690">
-            <view class="invitation_top flexCenter">
-         		<view class="invitation_word bg flex">
-                  <view class="invitation_word_in">珠</view>
+            <view class="invitationFive_top flexCenter">
+         		<view class="invitationFive_word bg flex">
+                  <view class="invitationFive_word_in">珠</view>
                </view>
-               <view class="invitation_word bg flex">
-                  <view class="invitation_word_in">联</view>
+               <view class="invitationFive_word bg flex">
+                  <view class="invitationFive_word_in">联</view>
                </view>
-               <view class="invitation_word bg flex">
-                  <view class="invitation_word_in">玉</view>
+               <view class="invitationFive_word bg flex">
+                  <view class="invitationFive_word_in">玉</view>
                </view>
-               <view class="invitation_word bg flex">
-                  <view class="invitation_word_in">映</view>
+               <view class="invitationFive_word bg flex">
+                  <view class="invitationFive_word_in">映</view>
                </view>
             </view>
-            <view class="invitation_center">
+            <view class="invitationFive_center">
                <image src="/images/invitationOne_img8.jpg"></image>
             </view>
             <view class="invitation_bottom flexRowBetween">
-               <view class="invitation_img">
+               <view class="invitationFive_img">
                   <image src="/images/invitationOne_img6.jpg"></image>
                </view>
-               <view class="invitation_img">
+               <view class="invitationFive_img">
                   <image src="/images/invitationOne_img6.jpg"></image>
                </view>
-               <view class="invitation_img">
+               <view class="invitationFive_img">
                   <image src="/images/invitationOne_img6.jpg"></image>
                </view>
-               <view class="invitation_img">
+               <view class="invitationFive_img">
                   <image src="/images/invitationOne_img6.jpg"></image>
                </view>
             </view>

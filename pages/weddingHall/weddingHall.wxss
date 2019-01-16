@@ -62,3 +62,6 @@ page{
 .show_list{
 	height:230rpx;
 }
+.picker_in{
+	width:100%;
+}

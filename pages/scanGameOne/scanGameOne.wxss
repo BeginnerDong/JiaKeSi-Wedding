@@ -2,6 +2,7 @@
 
 @import "../../wxParse/wxParse.wxss"; 
 page{
+	overflow:hidden;
 }
 .game{
 	width:100%;

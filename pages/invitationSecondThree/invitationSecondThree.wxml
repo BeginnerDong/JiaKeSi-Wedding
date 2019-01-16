@@ -2,11 +2,11 @@
    	<image src="/images/interviwe_bg2_1.jpg"></image>
    	<view class="invitationOne">
          <view class="w690">
-      		<view class="invitation_left">
-               <view class="invitation_left_img">
+      		<view class="invitationThree_left">
+               <view class="invitationThree_left_img">
                   <image src="/images/invitationSecond_img2.png"></image>
                </view>
-               <view class="invitation_left_word">
+               <view class="invitationThree_left_word">
                   <view class="word_item">
                      永
                   </view>
@@ -21,11 +21,11 @@
                   </view>
                </view>
             </view>
-            <view class="invitation_right">
-               <view class="invitation_right_img1">
+            <view class="invitationThree_right">
+               <view class="invitationThree_right_img1">
                   <image src="/images/invitationSecond_img13.jpg"></image>
                </view>
-               <view class="invitation_right_img2">
+               <view class="invitationThree_right_img2">
                   <image src="/images/invitationSecond_img5.jpg"></image>
                </view>
                <view class="font24 color">你出现在我身边</view> 

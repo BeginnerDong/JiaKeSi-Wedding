@@ -2,20 +2,19 @@
    	<image src="/images/interviwe_bg2_1.jpg"></image>
    	<view class="invitationOne">
          <view class="w690">
-            <view class="invitation_top">
+            <view class="invitationSix_top">
          		<image src="/images/img17@2x.png"></image>
             </view>
-            <view class="invitation_center">
+            <view class="invitationSix_center">
                <image src="/images/invitationSecond_img.png"></image>
             </view>
-            <view class="invitation_bottom flexRowBetween">
-               <view class="invitation_img1">
+            <view class="invitationSix_bottom flexRowBetween">
+               <view class="invitationSix_img1">
                   <image src="/images/invitationSecond_img.png"></image>
                </view>
                <view class="invitation_img">
                   <image src="/images/invitationSecond7.jpg"></image>
                </view>
-               
             </view>
          </view>
    	</view>

@@ -1,0 +1,16 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	background:#f4f4f4;
+}
+.city_item{
+	width:24%;
+	hegith:60rpx;
+	border:solid 1px #e0e0e0;
+	text-align:center;
+	line-height:60rpx;
+}
+.city{
+	flex-wrap:wrap;
+}

@@ -32,9 +32,9 @@
       </view>
   </view>
   <view class="menu flexRowBetween font30 color">
-    <view class="menu_item" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall">
+    <view class="menu_item" bindtap="intoPath" data-path="/pages/weddingCenter/weddingCenter">
       <view class="menu_img"><image src="/images/menu_icon1.jpg"></image></view>
-      <view class="font24 color2">婚庆大厅</view>
+      <view class="font24 color2">宴会中心</view>
     </view>
     <view class="menu_item" bindtap="intoPath" data-path="/pages/indexInvitation/indexInvitation">
       <view class="menu_img"><image src="/images/menu_icon2.jpg"></image></view>
@@ -50,16 +50,16 @@
     </view>
   </view>
 </view>
-<view class="title flex">
+<view class="title flex" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
   <view class="title_cont">
     <view class="title_img">
-      <image src="/images/title.jpg"></image>
+      <image src="/images/title.png"></image>
     </view>
     <view class="font28 color2 title_word">三生一刻/A good moment</view>
   </view>
 </view>
-<view class="moment w690">
-  <view class=" moment_cont bg1">
+<view class="moment w690"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
+  <view class=" moment_cont bg1" >
     <image src="/images/banner.jpg"></image>
     <view class="font28 color2">张三&李四</view>
   </view>
@@ -69,19 +69,19 @@
 </view>
 <view class="scroll_img">
   <scroll-view class="recommend_scroll_x_box" scroll-x="true">
-    <view class="recommend_hot_box bg1">
+    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
       <image src="/images/banner.jpg" class="recommend_hot_image"></image>
       <view class="font28 color2 recommend_tilte">张三&李四</view>
     </view>
-    <view class="recommend_hot_box bg1">
+    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
       <image src="/images/banner.jpg" class="recommend_hot_image"></image>
       <view class="font28 color2 recommend_tilte">张三&李四</view>
     </view>
-    <view class="recommend_hot_box bg1">
+    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
       <image src="/images/banner.jpg" class="recommend_hot_image"></image>
       <view class="font28 color2 recommend_tilte">张三&李四</view>
     </view>
-    <view class="recommend_hot_box bg1">
+    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
       <image src="/images/banner.jpg" class="recommend_hot_image"></image>
       <view class="font28 color2 recommend_tilte">张三&李四</view>
     </view>
@@ -91,7 +91,7 @@
   <view class="title flex">
     <view class="title_cont">
       <view class="title_img">
-        <image src="/images/title.jpg"></image>
+        <image src="/images/title.png"></image>
       </view>
       <view class="font28 color2 title_word">婚•礼堂/auditorium</view>
     </view>
@@ -118,15 +118,15 @@
     </view>
   </view>
 </view>
-<view class="mommentTwo flex">
+<view class="mommentTwo flex" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
   <view class="momentTwo_item">
-    <image src="/images/banner.jpg"></image>
+    <image src="/images/img2.jpg"></image>
   </view>
   <view class="momentTwo_item">
-    <image src="/images/banner.jpg"></image>
+    <image src="/images/img2.jpg"></image>
   </view>
   <view class="momentTwo_item">
-    <image src="/images/banner.jpg"></image>
+    <image src="/images/img2.jpg"></image>
   </view>
   <view class="mask">
     <view class="color1">最美瞬间/instant</view>
@@ -137,7 +137,7 @@
 
     <block wx:for="{{background}}" wx:index="{{index}}">
         <swiper-item class="swiper-item" style="width:80%;">
-          <view class="swiper-box {{swiperBig == index ? 'active' : ''}}">
+          <view class="swiper-box {{swiperBig == index ? 'active' : ''}}"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
             <image mode="aspectFill" src="{{item}}" class="slide-image"/>
             <view class="swiper_tlt flexCenter">
               <image src="/images/title_icon.jpg"></image>
@@ -157,7 +157,7 @@
         </view>
         <view class="text this-text">首页</view>
     </view>
-    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/scan/scan">
+    <view class="navbar_item"   bindtap="intoPath" data-path="/pages/scanLogin/scanLogin">
         <view class="nav_img">
            <image src="/images/navbar2.png"></image>
         </view>
