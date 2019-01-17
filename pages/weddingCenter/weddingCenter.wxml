@@ -1,4 +1,4 @@
-<view class="search flex" bindtap="intoPath" data-path="/pages/city/city">
+<view class="search flex" bindtap="menu_show">
     <view class="search_item flexCenter">
         <text class="font30 color2">切换城市</text>
         <image src="/images/up.jpg"></image>
@@ -59,4 +59,14 @@
     </view>
   </view>
     <image src="/images/bottom_line.jpg" class="bottom_line"></image>
+</view>
+<view class="w690" id="city" style="{{is_show?'top:0':''}}">
+    <view class="city flexRowBetween bg1">
+        <view class="city_item font28 {{web_select ==0?'color':'color3'}}" data-id="0" bindtap="select_city">北京</view>
+        <view class="city_item font28 {{web_select ==1?'color':'color3'}}"  data-id="1" bindtap="select_city">上海</view>
+        <view class="city_item font28 {{web_select ==2?'color':'color3'}}"  data-id="2" bindtap="select_city">广州</view>
+    </view>
+    <view class="city_hide" bindtap="menu_hide">
+        <image src="/images/up.jpg"></image>
+    </view>
 </view>

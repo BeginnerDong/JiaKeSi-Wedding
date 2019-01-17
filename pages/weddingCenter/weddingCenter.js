@@ -6,7 +6,7 @@ const token = new Token();
 
 Page({
   data: {
- 
+    is_show:false,
   },
   onLoad(options){
 
@@ -16,18 +16,25 @@ Page({
     const self = this;
     api.pathTo(api.getDataSet(e,'path'),'nav');
   },
-
-  intoPathRedi(e){
+  menu_show(e){
     const self = this;
-    wx.navigateBack({
-      delta:1
+    self.setData({
+      is_show:true,
     })
   },
-  intoPathRedirect(e){
+  menu_hide(e){
     const self = this;
-    api.pathTo(api.getDataSet(e,'path'),'redi');
-  }, 
- 
+    self.setData({
+      is_show:false,
+    })
+  },
+  select_city(e){
+    const self = this;
+    self.data.is_select = e.currentTarget.dataset.id;
+    self.setData({
+      web_select:self.data.is_select 
+    })
+  },
 })
 
   
