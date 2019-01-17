@@ -3,24 +3,22 @@
   <view class="w690 position flex">
     <view class="position_left flex">
       <image src="/images/position_icon.jpg"></image>
-      <view class="font24 color6">西安市雁塔区</view>
+      <view class="font24 color6">{{web_submitData.city}}{{web_submitData.district}}</view>
     </view>
-    <view class="position_right font24 color">
-      西安市
-    </view>
+
   </view>
   <view class="swiper swiperOne">
     <swiper
       autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
       interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" bindchange="swiperChange">
-      <block wx:for="{{background}}" wx:index="{{index}}" wx:key="id" >
+      <block wx:for="{{web_sliderData}}" wx:index="{{index}}" wx:key="id" >
         <swiper-item>
-          <image src="{{item}}"></image>
+          <image src="{{item.mainImg[0].url}}"></image>
         </swiper-item>
       </block>
     </swiper>
     <view class="dots"> 
-      <block wx:for="{{background}}" wx:key="unique"> 
+      <block wx:for="{{web_sliderData}}" wx:key="unique"> 
         <view class="dot{{index == swiperIndex ? ' active' : ''}}"></view> 
       </block> 
     </view>
