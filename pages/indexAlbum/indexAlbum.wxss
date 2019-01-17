@@ -19,6 +19,8 @@ page{
 	width:100%;
 	margin-bottom:30rpx;
 }
+
+/**************悬浮菜单*******************/
 .sort{
 	width:160rpx;
 	height:160rpx;
@@ -33,7 +35,6 @@ page{
 	right:0;
 	
 }
-/**************悬浮菜单*******************/
 .menus .menu {
   position: fixed;
   z-index: 100;
@@ -59,7 +60,7 @@ page{
 .mask{
 	width:100%;
 	min-height: 100%;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.3);
 	position: absolute;
 	left: 0;
 	top:0;

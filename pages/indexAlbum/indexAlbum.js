@@ -92,7 +92,7 @@ Page({
             { pic: "/images/banner.jpg", height: 0 },
             { pic: "/images/flower.png", height: 0 },
             { pic: "/images/img2.jpg", height: 0 },
-            { pic: "/images/flower.jpg", height: 0 },
+            { pic: "/images/flower.png", height: 0 },
             { pic: "/images/img2.jpg", height: 0 },
             { pic: "/images/banner.jpg", height: 0 },
             { pic: "/images/img2.jpg", height: 0 },

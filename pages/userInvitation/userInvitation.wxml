@@ -1,35 +1,62 @@
-<view class="invitation">
-	<image src="/images/invitation.jpg"></image>
-	<view class="invitation_cont bg1">
-		<view class="invitation_tlt">
-			邀请函
-		</view>
-		<view class="invitation_img">
-			<image src="/images/img7@2x.png"></image>
-		</view>
-		<view class="invitation_word">
-			<image src="/images/invitation-word.png"></image>
-		</view>
-		<view class="bride flexCenter">
-			<view class="flexCenter bride_item">
-				<view class="font28 color1 bride_before">新郎:</view>
-				<view class="font28 color1">张三三</view>
+<view class="w690">
+	<view class="invitation">
+		<image src="/images/invitation.jpg"></image>
+		<view class="invitation_cont bg1">
+			<view class="invitation_tlt">
+				邀请函
 			</view>
-			<view class="flexCenter bride_item">
-				<view class="font28 color1 bride_before">新娘:</view>
-				<view class="font28 color1">李思思</view>
+			<view class="invitation_img">
+				<image src="/images/img7@2x.png"></image>
+			</view>
+			<view class="invitation_word">
+				<image src="/images/invitation-word.png"></image>
+			</view>
+			<view class="bride flexCenter">
+				<view class="flexCenter bride_item">
+					<view class="font28 color1 bride_before">新郎:</view>
+					<view class="font28 color1">张三三</view>
+				</view>
+				<view class="flexCenter bride_item">
+					<view class="font28 color1 bride_before">新娘:</view>
+					<view class="font28 color1">李思思</view>
+				</view>
+			</view>
+			<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
+			<view class="time flexCenter">
+				<view class="color">时间：</view>
+				<view class="choose_time color">
+					2019-9-9
+				</view>
+			</view>
+			<view class="address flex">
+				<view class="address_left color font28">地点:</view>
+				<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
 			</view>
 		</view>
-		<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
-		<view class="time flexCenter">
-			<view class="color">时间：</view>
-			<view class="choose_time color">
-				2019-9-9
-			</view>
+	</view>
+</view>
+<view class="menus">
+    <view  animation="{{animationOne}}" bindtap="delete" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
+        <image src="/images/icon5.png"></image>
+    </view>
+    <view  animation="{{animationTwo}}" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
+        <image src="/images/icon3.png"></image>
+    </view>
+    <view  animation="{{animationFive}}" class="menu color"  style='top:{{pos.top}}px;left:{{pos.left}}px;'>
+        <image src="/images/icon2.png"></image>
+    </view>
+    <view  class="sort main bg flex" bindtap="menuMain"  style='top:{{pos.top}}px;right:{{pos.right}}px;'><image src="/images/icon1.png"></image></view>
+  </view>
+<view class="mask" style="{{hasPopped?'display: block':'display:none'}}" bindtap="mask"></view>
+<view class="delete" wx:if="{{web_is_delete}}">
+	<view class="delete_cont">
+		<view class="close" bindtap="delete">
+			<image src="/images/close_icon.png"></image>
 		</view>
-		<view class="address flex">
-			<view class="address_left color font28">地点:</view>
-			<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
+		<view class="detele_notice font28">是否删除？</view>
+		<view class="flexCenter">
+			<view class="detele_btn" bindtap="confirm">是</view>
+			<view class="detele_btn"  bindtap="cancle">否</view>
 		</view>
 	</view>
 </view>
