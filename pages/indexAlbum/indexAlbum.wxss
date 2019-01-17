@@ -31,10 +31,10 @@ page{
 	position: fixed;
 	bottom:20%;
 	right:0;
+	
 }
 /**************悬浮菜单*******************/
 .menus .menu {
-  
   position: fixed;
   z-index: 100;
   bottom: 220rpx;
@@ -53,8 +53,8 @@ page{
 	line-height:160rpx;
 	font-size:36rpx;
 	color:#fff;
-	 position: fixed;
-  z-index: 100;
+	position: fixed;
+  	z-index: 100;
 }
 .mask{
 	width:100%;

@@ -17,7 +17,7 @@
     </view>
   </view>
 </scroll-view>
-<view class="sort bg">全部</view>
+<!-- <view class="sort bg">全部</view> -->
 <view class='menus' wx:if='{{!bcgImgAreaShow}}'>
     <view  animation="{{animationOne}}" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
         复古婚礼
@@ -34,6 +34,6 @@
     <view  animation="{{animationFive}}" class="menu color"  style='top:{{pos.top}}px;left:{{pos.left}}px;'>
         海外婚礼
     </view>
-    <view   class="sort main" bindtap="menuMain"  style='top:{{pos.top}}px;right:{{pos.right}}px;'></view>
+    <view   class="sort main bg" bindtap="menuMain"  style='top:{{pos.top}}px;right:{{pos.right}}px;'>全部</view>
   </view>
 <view class="mask" style="{{hasPopped?'display: block':'display:none'}}" bindtap="mask"></view>
