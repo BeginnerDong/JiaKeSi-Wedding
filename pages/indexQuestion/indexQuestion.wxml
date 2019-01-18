@@ -1,19 +1,29 @@
-<view class="w690 bg1" style="margin-bottom:20rpx;">
-	<view class="question">
-		<view class="question_list flex1">
-			<view class="question_left font28 color2">1、</view>
-			<view class="question_right font28 color2">题目题目题目明天明天题目题目题目密码题目题目题      目题目提木题目题目题目题目题目题目题目题目题目      题目题</view>
-		</view>
-		<view class="answer flex">
-			<view class="answer_item flex" data-id="0" bindtap="answer">
-				<image src="{{is_answer==0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
-				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="w690 bg1" style="margin-bottom:20rpx;">
+		<view class="question">
+			<view class="question_list flex1">
+				<view class="question_left font28 color2">{{item.listorder}}、</view>
+				<view class="question_right font28 color2">{{item.title}}</view>
 			</view>
-			<view class="answer_item flex" data-id="1" bindtap="answer">
-				<image src="{{is_answer==1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
-				<view class="font24 color6">答案答案答案答案答案答案答案</view>
+			<view class="answer flex">
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage1" bindtap="answer">
+					<image src="{{item.hasOption=='passage1'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+					<view class="font24 color6">{{item.passage1}}</view>
+				</view>
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage2" bindtap="answer">
+					<image src="{{item.hasOption=='passage2'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+					<view class="font24 color6">{{item.passage2}}</view>
+				</view>
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage3" bindtap="answer">
+					<image src="{{item.hasOption=='passage3'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+					<view class="font24 color6">{{item.passage3}}</view>
+				</view>
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage4" bindtap="answer">
+					<image src="{{item.hasOption=='passage4'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+					<view class="font24 color6">{{item.passage4}}</view>
+				</view>
 			</view>
 		</view>
 	</view>
-</view>
-<button class="submit_info" style="margin-top:50rpx;">提交</button>
+</block>
+<button class="submit_info" style="margin-top:50rpx;" bindtap="messageAdd">提交</button>

@@ -56,4 +56,6 @@
             <image src="/images/next_page.jpg"></image>
         </view>
     </view>
+
+    <button class="submit_info" bindtap="removeStorageSync">退出登陆</button>
 </view>

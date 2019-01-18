@@ -1,12 +1,14 @@
 <!--index2.wxml-->
-<view class="w690">
-  <view class="notice" bindtap="intoPath" data-path="/pages/userInvitationNotice/userInvitationNotice">
-    <view class="bride_notice">
-      <image src="/images/banner.jpg"></image>
-    </view>
-    <view class="font28 color2" style="height:60rpx;line-height:60rpx;">标题标题标题标题标题标题标题</view>
-    <view class="notice_cont font28 color6 avoidOverflow2">
-      内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内 内容内容内容内容内容内容内容内容
-    </view>
-  </view>
-</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="w690">
+	  <view class="notice" bindtap="intoPath" data-path="/pages/userInvitationNotice/userInvitationNotice?id={{item.id}}">
+	    <view class="bride_notice">
+	      <image src="{{item.mainImg[0].url}}"></image>
+	    </view>
+	    <view class="font28 color2" style="height:60rpx;line-height:60rpx;">{{item.title}}</view>
+	    <view class="notice_cont font28 color6 avoidOverflow2">
+	      {{item.description}}
+	    </view>
+	  </view>
+	</view>
+</block>

@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 32,
+			"current": 33,
 			"list": [
 				{
 					"id": -1,
@@ -231,7 +231,13 @@
 				{
 					"id": -1,
 					"name": "个人中心我的请帖",
-					"pathName": "pages/userInvitation/userInvitation"
+					"pathName": "pages/userInvitation/userInvitation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "问卷调查",
+					"pathName": "pages/indexQuestion/indexQuestion"
 				}
 			]
 		}

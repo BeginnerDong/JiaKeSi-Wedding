@@ -32,7 +32,18 @@ class Token {
     }
 
 
-   
+    getThreeToken(callback,postData) { 
+
+        if((postData&&postData.refreshToken)||!wx.getStorageSync('threeToken')){
+            wx.removeStorageSync('threeToken');
+            wx.removeStorageSync('threeInfo');
+            wx.reLaunch({
+              url: '/pages/userLoginAssistant/userLoginAssistant'
+            });
+        }else{
+            return wx.getStorageSync('threeToken');
+        }
+    }
 
 
     getUserInfo(params,callback){
@@ -146,7 +157,7 @@ class Token {
                 success:function(res){
                     console.log(res)
                     if(res.data&&res.data.token){
-                        wx.setStorageSync('employeeToken', res.data.token);
+                        wx.setStorageSync('threeToken', res.data.token);
                         var login = wx.getStorageSync('login');   
                         wx.setStorageSync('login',login);
                         if(params&&callback){  
@@ -169,7 +180,7 @@ class Token {
                         },500);
 
                        
-                        wx.removeStorageSync('token');
+                        wx.removeStorageSync('threeToken');
                         wx.removeStorageSync('login');
 
                     }

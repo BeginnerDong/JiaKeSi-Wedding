@@ -1,70 +1,45 @@
 <view class="search flex" bindtap="menu_show">
     <view class="search_item flexCenter">
+        <text class="font30 color2">当前城市：{{web_title}}</text>
         <text class="font30 color2">切换城市</text>
         <image src="/images/up.jpg"></image>
     </view>
 </view>
-<view class="show_list" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall">
- <view class="w690">
-    <view class="product flexRowBetween">
-        <view class="product_box flexRowBetween">
-            <view class="product_left">
-                <image src="/images/banner.jpg"></image>
-            </view>
-            <view class="product_right flexRowBetween">
-                <view class="product_detail">
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/title_icon.jpg"></image>
-                        <text class="font30 color2">张三&李四</text>
-                    </view>
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/position_icon.jpg"></image>
-                        <text class="font26 color2">41582914555</text>
-                    </view>
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/phone.png"></image>
-                        <view class="font24 color2 avoidOverflow">西安市雁塔区</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+    <view class="show_list" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall?id={{item.id}}">
+     <view class="w690">
+        <view class="product flexRowBetween">
+            <view class="product_box flexRowBetween">
+                <view class="product_left">
+                    <image src="/images/banner.jpg"></image>
+                </view>
+                <view class="product_right flexRowBetween">
+                    <view class="product_detail">
+                        <view class="font28 color2 product_tilt flex">
+                            <image src="/images/title_icon.jpg"></image>
+                            <text class="font30 color2">{{item.title}}</text>
+                        </view>
+                        <view class="font28 color2 product_tilt flex">
+                            <image src="/images/position_icon.jpg"></image>
+                            <text class="font26 color2">{{item.contactPhone}}</text>
+                        </view>
+                        <view class="font28 color2 product_tilt flex">
+                            <image src="/images/phone.png"></image>
+                            <view class="font24 color2 avoidOverflow">{{item.keywords}}</view>
+                        </view>
                     </view>
                 </view>
             </view>
         </view>
+      </view>
+        <image src="/images/bottom_line.jpg" class="bottom_line"></image>
     </view>
-  </view>
-    <image src="/images/bottom_line.jpg" class="bottom_line"></image>
-</view>
-<view class="show_list" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall">
- <view class="w690">
-    <view class="product flexRowBetween">
-        <view class="product_box flexRowBetween">
-            <view class="product_left">
-                <image src="/images/banner.jpg"></image>
-            </view>
-            <view class="product_right flexRowBetween">
-                <view class="product_detail">
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/title_icon.jpg"></image>
-                        <text class="font30 color2">张三&李四</text>
-                    </view>
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/position_icon.jpg"></image>
-                        <text class="font26 color2">41582914555</text>
-                    </view>
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/phone.png"></image>
-                        <view class="font24 color2 avoidOverflow">西安市雁塔区</view>
-                    </view>
-                </view>
-            </view>
-        </view>
-    </view>
-  </view>
-    <image src="/images/bottom_line.jpg" class="bottom_line"></image>
-</view>
+</block>
 <view class="w690" id="city" style="{{is_show?'top:0':''}}">
     <view class="city flexRowBetween bg1">
-        <view class="city_item font28 {{web_select ==0?'color':'color3'}}" data-id="0" bindtap="select_city">北京</view>
-        <view class="city_item font28 {{web_select ==1?'color':'color3'}}"  data-id="1" bindtap="select_city">上海</view>
-        <view class="city_item font28 {{web_select ==2?'color':'color3'}}"  data-id="2" bindtap="select_city">广州</view>
+        <block wx:for="{{web_cityData}}" wx:key="id">
+            <view class="city_item font28 {{web_title ==item.title?'color':'color3'}}" data-title="{{item.title}}" bindtap="select_city">{{item.title}}</view>
+        </block>
     </view>
     <view class="city_hide" bindtap="menu_hide">
         <image src="/images/up.jpg"></image>

@@ -567,7 +567,7 @@ class Base{
 
 
 
-/*    checkComplete(obj){
+    checkComplete(obj){
         var pass = true;
         for(var key in obj){
           if(!obj[key]||obj[key]=='0'){
@@ -577,8 +577,8 @@ class Base{
         };
         return pass;
         console.log(pass);
-    };*/
-
+    };
+/*
     checkComplete(obj){
         var pass = true;
         for(var key in obj){
@@ -591,7 +591,7 @@ class Base{
           };
         };
         return pass;
-    };
+    };*/
 
     getcurrentPage(){
         var pages = getCurrentPages();
@@ -800,10 +800,10 @@ class Base{
     logOff(){
         const self = this;
         wx.removeStorageSync('login');
-        wx.removeStorageSync('employeeToken');
-        wx.removeStorageSync('employeeInfo');
+        wx.removeStorageSync('threeToken');
+        wx.removeStorageSync('threeInfo');
         if(!wx.getStorageSync('login')){
-            self.pathTo('/pages/entrance/user/user','rela')
+            self.pathTo('/pages/user/user','rela')
         }else{
             self.showToast('系统故障','fail')
         }

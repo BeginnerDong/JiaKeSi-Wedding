@@ -1,10 +1,13 @@
 <!--index2.wxml-->
 <view class="w690">
   <view class="notice">
-    <view class="font28 color2" style="height:90rpx;line-height:100rpx;text-align:center;">标题标题标题标题标题标题标题</view>
+    <view class="font28 color2" style="height:90rpx;line-height:100rpx;text-align:center;">{{web_mainData.title}}</view>
     <view class="notice_cont font28 color6">
-      <image src="/images/banner.jpg"></image>
-      内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内 内容内容内容内容内容内容内容内容
+      <image src="{{web_mainData.bannerImg[0].url}}"></image>
+      <view class="content ql-editor ">
+            <import src="../../wxParse/wxParse.wxml"/>
+            <template is="wxParse" data="{{wxParseData:web_mainData.content}}"/>
+        </view>
     </view>
   </view>
 </view>

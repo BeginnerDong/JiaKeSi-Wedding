@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "婚宴大厅"
+  "navigationBarTitleText": "婚宴大厅",
+  "enablePullDownRefresh":true
 }

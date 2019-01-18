@@ -21,24 +21,72 @@ Page({
         animationTwo: {},
         animationThree: {},
         pos: {},
+        mainData:[],
+        isFirstLoadAllStandard:['getMainData']
     },
+
     /****************瀑布流*******************/
     onLoad: function () {
-        wx.getSystemInfo({
-            success: (res) => {
-                let ww = res.windowWidth;
-                let wh = res.windowHeight;
-                let imgWidth = ww * 0.48;
-                let scrollH = wh;
+      const self = this;
+      api.commonInit(self);
+      self.getMainData();
+      wx.getSystemInfo({
+        success: (res) => {
+          let ww = res.windowWidth;
+          let wh = res.windowHeight;
+          let imgWidth = ww * 0.48;
+          let scrollH = wh;
 
-                this.setData({
-                    scrollH: scrollH,
-                    imgWidth: imgWidth
-                });
+          this.setData({
+              scrollH: scrollH,
+              imgWidth: imgWidth
+          });
 
-                this.loadImages();
-            }
-        })
+          this.loadImages();
+        }
+      })
+    },
+
+
+    getMainData(isNew){
+      const  self =this;
+      if(isNew){
+        api.clearPageIndex(self)
+      };
+      const postData={};
+      postData.searchItem = {
+        thirdapp_id:getApp().globalData.thirdapp_id
+      };
+      postData.getBefore = {
+        partner:{
+          tableName:'Label',
+          searchItem:{
+            title:['=',['婚礼图片']],
+          },
+          middleKey:'menu_id',
+          key:'id',
+          condition:'in',
+        },
+      }
+      const callback =(res)=>{
+        if(res.info.data.length>0){
+          self.data.mainData.push.apply(self.data.mainData,res.info.data)
+        };
+        console.log(self.data.mainData)
+        api.checkLoadAll(self.data.isFirstLoadAllStandard,'getMainData',self);
+        self.setData({
+          web_mainData:self.data.mainData,
+        });
+      };
+      api.articleGet(postData,callback);
+    },
+
+    onReachBottom() {
+      const self = this;
+      if(!self.data.isLoadAll&&self.data.buttonCanClick){
+        self.data.paginate.currentPage++;
+        self.getMainData();
+      };
     },
 
     onImageLoad: function (e) {
@@ -112,6 +160,7 @@ Page({
             images: images
         });
     },
+
 /****************菜单****************/
   popp() {
     let animationMain = wx.createAnimation({
@@ -208,8 +257,10 @@ Page({
       })
     }
   },
+
   intoPath(e){
     const self = this;
     api.pathTo(api.getDataSet(e,'path'),'nav');
   },
+  
 })

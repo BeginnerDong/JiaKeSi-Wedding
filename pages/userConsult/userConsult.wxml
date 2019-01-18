@@ -2,18 +2,18 @@
 <view class="w690" style="margin-top:50rpx;">
     <view class="user_main w690 bg1">
         <view class="user_list flex bg1">
-            <input value="" placeholder="请输入你的姓名"></input>
+            <input value="" placeholder="请输入你的姓名" data-key="title" bindinput="changeBind" value="{{web_submitData.title}}"></input>
         </view>
         <view class="user_list flex bg1">
-            <input value="" placeholder="请输入手机号" style="width:60%;"></input>
-            <button class="get_info bg" style="width:160rpx;">获取验证码</button>
+            <input value="" placeholder="请输入手机号" style="width:60%;" data-key="phone" bindinput="changeBind" value="{{web_submitData.phone}}"></input>
+            <button class="get_info bg" style="width:160rpx;" >获取验证码</button>
         </view>
         <view class="user_list flex bg1">
             <input value="" placeholder="请输入验证码"></input>
         </view>
         <view class="user_list flex bg1" style="height:auto;">
-            <textarea placeholder="请输入你的备注"></textarea>
+            <textarea placeholder="请输入你的备注" data-key="content" bindinput="changeBind" value="{{web_submitData.content}}"></textarea>
         </view>
     </view>
 </view>
-<button class="submit_info">确定</button>
+<button class="submit_info" bindtap="{{web_buttonCanClick?'submit':''}}">确定</button>

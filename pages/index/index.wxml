@@ -24,13 +24,13 @@
     </view>
   </view>
   <view class="search flex">
-      <input placeholder="请搜索关键词" class="font24 color9"></input>
-      <view class="search_btn" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall">
+      <input placeholder="请搜索关键词" class="font24 color9" bindinput="inputChange"  data-key="item"></input>
+      <view class="search_btn" bindtap="intoPath" data-path="/pages/weddingHall/weddingHall?item={{web_sForm.item}}">
           <image src="/images/search.jpg"></image>
       </view>
   </view>
   <view class="menu flexRowBetween font30 color">
-    <view class="menu_item" bindtap="intoPath" data-path="/pages/weddingCenter/weddingCenter">
+    <view class="menu_item" bindtap="{{web_buttonCanClick?'intoPath':''}}" data-path="/pages/weddingCenter/weddingCenter?city={{web_submitData.city}}">
       <view class="menu_img"><image src="/images/menu_icon1.jpg"></image></view>
       <view class="font24 color2">宴会中心</view>
     </view>
@@ -56,35 +56,26 @@
     <view class="font28 color2 title_word">三生一刻/A good moment</view>
   </view>
 </view>
-<view class="moment w690"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
+<view class="moment w690"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail?id={{web_articleData[0].id}}">
   <view class=" moment_cont bg1" >
-    <image src="/images/banner.jpg"></image>
-    <view class="font28 color2">张三&李四</view>
+    <image src="{{web_articleData[0].mainImg[0].url}}"></image>
+    <view class="font28 color2">{{web_articleData[0].title}}</view>
   </view>
   <view class="moment_bottom">
     <image src="/images/flower.png"></image>
   </view>
 </view>
-<view class="scroll_img">
-  <scroll-view class="recommend_scroll_x_box" scroll-x="true">
-    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-      <image src="/images/banner.jpg" class="recommend_hot_image"></image>
-      <view class="font28 color2 recommend_tilte">张三&李四</view>
-    </view>
-    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-      <image src="/images/banner.jpg" class="recommend_hot_image"></image>
-      <view class="font28 color2 recommend_tilte">张三&李四</view>
-    </view>
-    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-      <image src="/images/banner.jpg" class="recommend_hot_image"></image>
-      <view class="font28 color2 recommend_tilte">张三&李四</view>
-    </view>
-    <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-      <image src="/images/banner.jpg" class="recommend_hot_image"></image>
-      <view class="font28 color2 recommend_tilte">张三&李四</view>
-    </view>
-  </scroll-view>
-</view>
+
+<block wx:for="{{web_articleData}}"  wx:key="id">
+  <view class="scroll_img" wx:if="{{index!=0}}">
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_hot_box bg1"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail?id={{item.id}}">
+        <image src="{{item.mainImg[0].url}}" class="recommend_hot_image"></image>
+        <view class="font28 color2 recommend_tilte">{{item.title}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</block>
 <view class="momentOne bg1">
   <view class="title flex">
     <view class="title_cont">
@@ -94,7 +85,8 @@
       <view class="font28 color2 title_word">婚•礼堂/auditorium</view>
     </view>
   </view>
-  <view class="w690 show_list" bindtap="intoPath" data-path="/pages/indexDetail/indexDetail">
+  <block wx:for="{{web_articleTwoData}}"  wx:key="id">
+  <view class="w690 show_list" bindtap="intoPath" data-path="/pages/indexDetail/indexDetail?id={{item.id}}">
     <view class="product flexRowBetween">
         <view class="product_box flexRowBetween">
             <view class="product_left">
@@ -102,44 +94,38 @@
             </view>
             <view class="product_right flexRowBetween">
                 <view class="product_detail">
-                    <view class="font30 color3 product_tilt">空间+导示</view>
+                    <view class="font30 color3 product_tilt">{{item.title}}</view>
                     <view class="font26 color6 product_cont avoidOverflow3">
-                        内容内容内容内容内容 内容内容内容内容内容 内容内容内容内容
-                        内容内容内容内容内容 内容内容内容内容内容 内容内容内容内容内容内容内容内容内容内容 内容内容内容内容内容 内容内容内容内容
+                        {{item.description}}
                     </view>
                     <view class="product_tilt font22 color9">
-                      2019-9-9
+                      {{item.create_time}}
                     </view>
                 </view>
             </view>
         </view>
     </view>
   </view>
+  </block>
 </view>
-<view class="mommentTwo flex" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-  <view class="momentTwo_item">
-    <image src="/images/img2.jpg"></image>
-  </view>
-  <view class="momentTwo_item">
-    <image src="/images/img2.jpg"></image>
-  </view>
-  <view class="momentTwo_item">
-    <image src="/images/img2.jpg"></image>
-  </view>
+<view class="mommentTwo flex" >
+  <block wx:for="{{web_articleFourData}}" wx:key="id">
+    <view class="momentTwo_item" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail?id={{item.id}}">
+      <image src="{{item.mainImg[0].url}}"></image>
+    </view>
+  </block>
   <view class="mask">
     <view class="color1">最美瞬间/instant</view>
   </view>
 </view>
-<swiper  class="swiper-block"  previous-margin="90rpx" next-margin="90rpx" current="0"  autoplay="{{autoplay}}"
-        interval="{{interval}}" duration="{{duration}}" bindchange="swiperChangeBig" circular="{{circular}}">
-
-    <block wx:for="{{background}}" wx:index="{{index}}">
+<swiper  class="swiper-block"  previous-margin="90rpx" next-margin="90rpx" current="0"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChangeBig" circular="{{circular}}">
+    <block wx:for="{{web_articleThreeData}}" wx:index="{{index}}">
         <swiper-item class="swiper-item" style="width:80%;">
-          <view class="swiper-box {{swiperBig == index ? 'active' : ''}}"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
-            <image mode="aspectFill" src="{{item}}" class="slide-image"/>
+          <view class="swiper-box {{swiperBig == index ? 'active' : ''}}"  bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail?id={{item.id}}">
+            <image mode="aspectFill" src="{{item.mainImg[0].url}}" class="slide-image"/>
             <view class="swiper_tlt flexCenter">
               <image src="/images/title_icon.jpg"></image>
-              <view class="font28 color2">张三&李四</view>
+              <view class="font28 color2">{{item.title}}</view>
               <image src="/images/title_icon.jpg"></image>
             </view>
           </view>

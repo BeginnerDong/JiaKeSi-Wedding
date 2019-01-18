@@ -1,41 +1,39 @@
 <view class="search flex">
     <view class="search_item flexCenter">
-        <picker bindchange="bindChooseDate" value="{{current}}" range="{{array}}">
+        <picker bindchange="styleChange" value="{{index}}" range="{{web_styleData}}" range-key="title">
             <view class="flex picker_in">
-                <view class="picker font30 color2">{{array[current]}}</view>
+                <view class="picker font30 color2">{{web_styleData[web_index].title?web_styleData[web_index].title:'城市筛选'}}</view>
                 <image src="/images/up.jpg"></image>
             </view>
         </picker>
     </view>
-    <view class="search_item flexCenter">
-        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"bindchange="bindDateChange">
-        <view class="flex picker_in">
-          <view class="picker font30 color2">{{date}}</view>
-          <view class="down flex"><image src="/images/up.jpg"></image></view>
-        </view>
-      </picker>
+    <view  class="product_item flex {{web_order.passage1?'changeColor':''}}" data-key="passage1" bindtap="{{web_buttonCanClick?'changeOrder':''}}">
+        <text>时间</text>
+        <view class="order_des scale2" style="{{img}};{{web_order.passage1?(web_order.passage1 == 'asc'?'background-position: -596px -46px':'background-position: -566px -46px'):'background-position: -482px -46px'}}"></view>
     </view>
 </view>
-<view class="show_list" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail">
- <view class="w690">
-    <view class="product flexRowBetween">
-        <view class="product_box flexRowBetween">
-            <view class="product_left">
-                <image src="/images/banner.jpg"></image>
-            </view>
-            <view class="product_right flexRowBetween">
-                <view class="product_detail">
-                    <view class="font28 color2 product_tilt flex">
-                        <image src="/images/title_icon.jpg"></image>
-                        <text class="font30 color2">张三&李四</text>
-                    </view>
-                    <view class="font22 color6 product_cont">
-                       我们的婚礼期待你参加
+<block wx:for="{{web_mainData}}" wx:key="id">
+    <view class="show_list" bindtap="intoPath" data-path="/pages/weddingDetail/weddingDetail?id={{item.id}}">
+     <view class="w690">
+        <view class="product flexRowBetween">
+            <view class="product_box flexRowBetween">
+                <view class="product_left">
+                    <image src="{{item.mainImg[0].url}}"></image>
+                </view>
+                <view class="product_right flexRowBetween">
+                    <view class="product_detail">
+                        <view class="font28 color2 product_tilt flex">
+                            <image src="/images/title_icon.jpg"></image>
+                            <text class="font30 color2">{{item.title}}</text>
+                        </view>
+                        <view class="font22 color6 product_cont">
+                           {{item.small_title}}
+                        </view>
                     </view>
                 </view>
             </view>
         </view>
+      </view>
+        <image src="/images/bottom_line.jpg" class="bottom_line"></image>
     </view>
-  </view>
-    <image src="/images/bottom_line.jpg" class="bottom_line"></image>
-</view>
+</block>

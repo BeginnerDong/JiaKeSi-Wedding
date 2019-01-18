@@ -11,6 +11,10 @@ Page({
   onLoad(options){
 
   },
+
+  removeStorageSync(){
+    api.logOff();
+  },
  
   intoPath(e){
     const self = this;
