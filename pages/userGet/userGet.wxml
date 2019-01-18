@@ -1,0 +1,40 @@
+<view class="w690">
+	<view class="invitation w690 bg1 flex" bindtap="intoPath" data-path="/pages/userGetInvitation/userGetInvitation">
+		<view class="invitation_infor">
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">新人</view>
+				<view class="invitation_right color2 font28">张三&李四</view>
+			</view>
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">时间</view>
+				<view class="invitation_right color2 font28">2015-9-9</view>
+			</view>
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">地点</view>
+				<view class="invitation_right color2 font28 avoidOverflow">西安国际大厦</view>
+			</view>
+		</view>
+		<view class="next_page">
+			<image src="/images/next_page.jpg"></image>
+		</view>
+	</view>
+	<view class="invitation w690 bg1 flex"  bindtap="intoPath" data-path="/pages/userGetInvitation/userGetInvitation">
+		<view class="invitation_infor">
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">新人</view>
+				<view class="invitation_right color2 font28">张三&李四</view>
+			</view>
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">时间</view>
+				<view class="invitation_right color2 font28">2015-9-9</view>
+			</view>
+			<view class="invitation_list flex">
+				<view class="invitation_left color2 font28">地点</view>
+				<view class="invitation_right color2 font28 avoidOverflow">西安国际大厦</view>
+			</view>
+		</view>
+		<view class="next_page">
+			<image src="/images/next_page.jpg"></image>
+		</view>
+	</view>
+</view>

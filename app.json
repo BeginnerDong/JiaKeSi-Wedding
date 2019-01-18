@@ -3,6 +3,8 @@
     "pages/indexStartPage/indexStartPage",
     "pages/index/index",
     "pages/user/user",
+    "pages/userGet/userGet",
+    "pages/userGetInvitation/userGetInvitation",
     "pages/userBasic/userBasic",
     "pages/userBasicPerson/userBasicPerson",
     "pages/userBasicMarriage/userBasicMarriage",
@@ -27,6 +29,7 @@
     "pages/scanGame/scanGame",
     "pages/scanGameOne/scanGameOne",
     "pages/gameOneBegin/gameOneBegin",
+    "pages/backBride/backBride",
     "pages/scanGameDetail/scanGameDetail",
     "pages/weddingCenter/weddingCenter",
     "pages/weddingHall/weddingHall",
@@ -55,7 +58,6 @@
     "pages/invitationSecondFive/invitationSecondFive",
     "pages/invitationSecondSix/invitationSecondSix",
     "pages/invitationSecondSeven/invitationSecondSeven"
-
 
   ],
   "window": {

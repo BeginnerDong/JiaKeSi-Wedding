@@ -1,0 +1,68 @@
+/**index.wxss**/
+
+@import "../../wxParse/wxParse.wxss"; 
+page{
+	overflow:hidden;
+}
+.game{
+	width:100%;
+	height:100vh;
+}
+.game_top{
+	width:100%;
+	height:17.5%;
+}
+.game_top image{
+	width:100%;
+	height:100%;
+}
+.game_center{
+	height:65%;
+	width:100%;
+}
+.game_center image{
+	width:100%;
+	height:100%;
+}
+.game_cont{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+.game image{
+	width:100%;
+	height:100%;
+}
+.mask{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.4)
+}
+.dialog{
+	width:100%;
+	height:100%;
+	position:relative;
+	left:0;
+	top:0;
+}
+.dialog_cont{
+	width:600rpx;
+	height:200rpx;
+	background:#ca0034;
+	margin:0 auto;
+}
+.dialog_cont image{
+	width:50rpx;
+	height:50rpx;
+}
+.close{
+	width:94%;
+	height:86rpx;
+	line-height:86rpx;
+	padding:0 3%;
+	text-align:right;
+}

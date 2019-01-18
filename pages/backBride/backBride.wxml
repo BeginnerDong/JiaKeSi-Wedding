@@ -1,0 +1,13 @@
+<view class="game">
+    <view class="game_cont">
+        <view class="game_top">
+            <image src="/images/back_bride1.jpg"></image>
+        </view>
+        <view class="game_center">
+            <image src="/images/back_bride3.jpg"></image>
+        </view>
+        <view class="game_top">
+            <image src="/images/back_bride2.jpg"></image>
+        </view>
+    </view>
+</view>

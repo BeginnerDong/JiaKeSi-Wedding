@@ -26,7 +26,7 @@
     	<view class="submit_info">开始游戏</view>
     </view>
 </view>
-<view class="w690 wishList flex">
+<view class="w690 wishList flex" bindtap="intoPath" data-path="/pages/backBride/backBride">
     <view class="wishLeft">
         <view class="user_img">
           <image src="/images/img5@2x.jpg"></image>
