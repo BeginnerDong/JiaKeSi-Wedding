@@ -2,12 +2,11 @@ page{
 	background:#f4f4f4;
 }
 .img_item {
-  width: 44%;
-  margin: 3%;
-  display: inline-block;
-  vertical-align: top;
-  border-radius:20rpx;
-  overflow:hidden;
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  counter-increment: item-counter;
+
 }
 .img_title{
 	height:80rpx;

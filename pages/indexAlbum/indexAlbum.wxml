@@ -2,7 +2,7 @@
   <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
 </view>
 <scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
-  <view style="padding:0 1%;width:98%;">
+  <view class="w690" style="column-count:2;column-gap:1%;">
     <block wx:for="{{web_mainData}}" wx:key="id">
       <view class="img_item" bindtap="intoPath" data-path="/pages/imgDetail/imgDetail?id={{item.id}}">
         <view wx:key="id" class="album_item bg1">

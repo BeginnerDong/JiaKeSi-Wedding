@@ -60,6 +60,15 @@
             <image src="/images/next_page.jpg"></image>
         </view>
     </view>
+    <view class="user_infor flexRowBetween w710" bindtap="intoPath" data-path="/pages/userGet/userGet"  style="margin-top: 20rpx;">
+        <view class="user_left flexRowBetween">
+            <image src="/images/user-icon5.png"></image>
+            <text>收到请帖</text>
+        </view>
+        <view class="next_page">
+            <image src="/images/next_page.jpg"></image>
+        </view>
+    </view>
 </view>
 <view style="width:100%;height:150rpx;"></view>
 <view class="navbar">
