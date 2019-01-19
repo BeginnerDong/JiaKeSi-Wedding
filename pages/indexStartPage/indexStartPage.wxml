@@ -1,4 +1,4 @@
  <view class="startPage">
-    <view class="font30 color1 jump" bindtap="intoPath" data-path="/pages/index/index">跳过</view>
+    <view class="font30 color1 jump" bindtap="intoPathRedi" data-path="/pages/index/index">跳过</view>
  <video id="myVideo" src="{{web_mainData.mainImg[0].url}}"   enable-danmu danmu-btn controls></video>
 </view>

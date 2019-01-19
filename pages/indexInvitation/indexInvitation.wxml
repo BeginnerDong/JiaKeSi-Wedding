@@ -6,30 +6,29 @@
 	    <swiper-item>
 	      	<view class="invitation">
 		   	<image src="/images/invitation.jpg"></image>
-		   	<view class="marks" bindtap="intoPath" data-path="/pages/invitationFirst/invitationFirst">编辑</view>
+		   	<view class="marks" bindtap="upDateOrAdd" data-index='0'>编辑</view>
 		   	<view class="invitation_cont bg1" bindtap="intoPath" data-path="/pages/invitationFirstPreview/invitationFirstPreview">
 		   		<view class="invitation_tlt">
 		   			邀请函
 		   		</view>
 		   		<view class="invitation_img">
-		   			<image src="/images/img7@2x.png"></image>
+		   			<image src="{{web_mainData[0].mainImg['0-1'].url}}"></image>
 		   		</view>
 		   		<view class="invitation_word">
 		   			<image src="/images/invitation-word.png"></image>
 		   		</view>
 		   		<view class="bride flexCenter">
-		   			<text class="font26 color1">新郎:张三三</text>
-		   			<text class="font32 color1" style="margin:0 10rpx;">&</text>
-		   			<text class="font26 color1">新娘:李思思</text>
+		   			<text class="font26 color1">{{web_mainData[0].title}}</text>
+		   			
 		   		</view>
-		   		<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
-		   		<view class="time">时间：2018-9-9 12：00：00</view>
-		   		<view class="time">地点：月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球</view>
+		   		<view class="font28 invitation_word1">{{web_mainData[0].small_title}}</view>
+		   		<view class="time">时间：{{web_mainData[0].passage1}}</view>
+		   		<view class="time">地点：{{web_mainData[0].address}}</view>
 		   	</view>
 		   </view>
-		   <view class="font30 color3 next_page" style="text-align: center;">1/5</view>
+		   <view class="font30 color3 next_page" style="text-align: center;">1/{{web_mainData.length}}</view>
 		</swiper-item>
-		<swiper-item>
+		<swiper-item wx:if="{{web_mainData[1]}}">
 			<view class="invitation">
 			   	<image src="/images/invitation_bg2.jpg"></image>
 			   	<view class="marks" bindtap="intoPath" data-path="/pages/invitationSecond/invitationSecond">编辑</view>
@@ -38,12 +37,12 @@
 			   			<image src="/images/wedding_word1.png"></image>
 			   		</view>
 			   		<view class="invitation_img">
-			   			<image src="/images/img7@2x.png"></image>
+			   			<image src="{{web_mainData[1].mainImg['0-1'].url}}"></image>
 			   		</view>
 			   		
 			   		<view class="brage flexCenter">
 			   			<view class="brage_name">
-			   				张三三
+			   				{{web_mainData[1].title}}
 			   			</view>
 			   			<view class="brage_center flex">
 			   				<image src="/images/dian.jpg"></image>
@@ -53,12 +52,12 @@
 			   			</view>
 			   		</view>
 			   		<view class="address">
-				   		<view class="time">时间：2018-9-9 12：00：00</view>
-				   		<view class="time">地点：月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球月球</view>
+				   		<view class="time">时间：{{web_mainData[1].passage1}}</view>
+				   		<view class="time">地点：{{web_mainData[1].address}}</view>
 				   	</view>
 			   	</view>
 			</view>
-			<view class="font30 color3 next_page" style="text-align: center;">2/5</view>
+			<view class="font30 color3 next_page" style="text-align: center;">2/{{web_mainData.length}}</view>
 		</swiper-item>
 	</swiper>
 </view>

@@ -1,5 +1,5 @@
 
-<view class="invitation">
+<!--<view class="invitation">
 	<image src="/images/invitation.jpg"></image>
 	<view class="invitation_cont bg1">
 		<view class="invitation_tlt">
@@ -36,4 +36,5 @@
 		</view>
 		<button class="submit_info" bindtap="intoPath" data-path="/pages/invitationFirstOne/invitationFirstOne">保存</button>
 	</view>
-</view>
+</view>-->
+

@@ -126,7 +126,7 @@ article表（模板请帖信息）type:4
 | address | varchar(255) | 请帖地点 |
 | passage1 | text | 请帖时间 |
 | mainImg | varchar(9999) | 请帖图片 |
-| content | text | 请帖文字 |
+| passage_array | text | 请帖文字 |
 
 
 
@@ -140,7 +140,7 @@ article表（用户请帖信息）type:6
 | passage1 | text | 请帖时间 |
 | mainImg | varchar(9999) | 请帖图片 |
 | content | text | 请帖文字 |
-| spu_item | varchar(255) | 关联模板id |
+| passage2 | varchar(255) | 关联模板id |
 
 
 

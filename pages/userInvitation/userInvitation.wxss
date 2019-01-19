@@ -1,15 +1,17 @@
 /**index.wxss**/
 
+/**index.wxss**/
+
 @import "../../wxParse/wxParse.wxss"; 
 page{
 	overflow:hidden;
 }
 .invitation{
-	width:100%;
-	height:94%;
+	margin:30rpx auto 0 auto;
+	width:89%;
+	height:86vh;
 	position:relative;
 	overflow:hidden;
-	padding:5% 0;
 }
 .invitation image{
 	width:100%;
@@ -30,9 +32,9 @@ page{
 }
 .invitation_cont{
     position:absolute;
-    left:3%;
+    left:10%;
     top:12%;
-    width:94%;
+    width:80%;
     height:790rpx;
     box-shadow: 0 0 20rpx #f6f6f6;
 }
@@ -65,9 +67,9 @@ page{
 	margin:36rpx auto;
 }
 .bride{
-	width:80%;
-	height:60rpx;
-	line-height:60rpx;
+	width:400rpx;
+	height:50rpx;
+	line-height:50rpx;
 	background:#fc4c74;
 	margin:0 auto; 
 }
@@ -80,9 +82,7 @@ page{
     color:#551524;
     font-size:24rpx;
     text-align: center;
-    margin:0 auto;
-    height:70rpx;
-    width:60%;
+    margin-bottom: 10rpx;
 }
 .recommend_scroll_x_box {
   height:100%;
@@ -163,43 +163,13 @@ swiper{
 	line-height:80rpx;
 }
 .invitationOne .address{
-	margin-top:130rpx;
+	poaition:absolute;
+	left:0;
+	bottom:0;
+	text-align:center;
 }
 .invitationOne .address .time{
 	color:#f3a558;
-}
-.bride_item{
-	width:50%;
-}
-.bride_before{
-	width:26%;
-	text-align:center;
-}
-.choose_time picker{
-	width:100%;
-	height:100%;
-}
-.picker{
-	width:100%;
-	height:70rpx;
-	line-height:70rpx;
-	color:#551524;
-}
-.color{
-	color:#551524;
-}
-.address{
-	width:80%;
-	margin:0 auto;
-}
-.address_left{
-	margin-right:20rpx;
-}
-.submit_info{
-	width:200rpx;
-	height:70rpx;
-	line-height:70rpx;
-	margin:40rpx auto;
 }
 /**************悬浮菜单*******************/
 .menus .menu {

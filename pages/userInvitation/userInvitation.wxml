@@ -1,62 +1,91 @@
 <view class="w690">
-	<view class="invitation">
-		<image src="/images/invitation.jpg"></image>
-		<view class="invitation_cont bg1">
-			<view class="invitation_tlt">
-				邀请函
-			</view>
-			<view class="invitation_img">
-				<image src="/images/img7@2x.png"></image>
-			</view>
-			<view class="invitation_word">
-				<image src="/images/invitation-word.png"></image>
-			</view>
-			<view class="bride flexCenter">
-				<view class="flexCenter bride_item">
-					<view class="font28 color1 bride_before">新郎:</view>
-					<view class="font28 color1">张三三</view>
+	<swiper
+      autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" bindchange="swiperChange">
+      	<block wx:for="{{web_mainData}}" wx:key="id">
+		    <swiper-item wx:if="{{item.passage2&&item.passage2==18}}">
+		      	<view class="invitation">
+			   	<image src="/images/invitation.jpg"></image>
+			   	
+			   	<view class="invitation_cont bg1" >
+			   		<view class="invitation_tlt">
+			   			邀请函
+			   		</view>
+			   		<view class="invitation_img">
+			   			<image src="{{web_mainData[0].mainImg['0-1'].url}}"></image>
+			   		</view>
+			   		<view class="invitation_word">
+			   			<image src="/images/invitation-word.png"></image>
+			   		</view>
+			   		<view class="bride flexCenter">
+			   			<text class="font26 color1">{{web_mainData[0].title}}</text>
+			   			
+			   		</view>
+			   		<view class="font28 invitation_word1">{{web_mainData[0].small_title}}</view>
+			   		<view class="time">时间：{{web_mainData[0].passage1}}</view>
+			   		<view class="time">地点：{{web_mainData[0].address}}</view>
+			   	</view>
+			   </view>
+			   <view class="font30 color3 next_page" style="text-align: center;">1/{{web_mainData.length}}</view>
+			</swiper-item>
+			<swiper-item wx:if="{{item.length>0&&item.passage2&&item.passage2==20}}">
+				<view class="invitation">
+				   	<image src="/images/invitation_bg2.jpg"></image>
+				   	
+				   	<view class="invitationOne" bindtap="intoPath" data-path="/pages/invitationSecondPreview/invitationSecondPreview">
+				   		<view class="invitationOne_tlt">
+				   			<image src="/images/wedding_word1.png"></image>
+				   		</view>
+				   		<view class="invitation_img">
+				   			<image src="{{web_mainData[1].mainImg['0-1'].url}}"></image>
+				   		</view>
+				   		
+				   		<view class="brage flexCenter">
+				   			<view class="brage_name">
+				   				{{web_mainData[1].title}}
+				   			</view>
+				   			<view class="brage_center flex">
+				   				<image src="/images/dian.jpg"></image>
+				   			</view>
+				   			<view class="brage_name">
+				   				李思思
+				   			</view>
+				   		</view>
+				   		<view class="address">
+					   		<view class="time">时间：{{web_mainData[1].passage1}}</view>
+					   		<view class="time">地点：{{web_mainData[1].address}}</view>
+					   	</view>
+				   	</view>
 				</view>
-				<view class="flexCenter bride_item">
-					<view class="font28 color1 bride_before">新娘:</view>
-					<view class="font28 color1">李思思</view>
-				</view>
-			</view>
-			<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
-			<view class="time flexCenter">
-				<view class="color">时间：</view>
-				<view class="choose_time color">
-					2019-9-9
-				</view>
-			</view>
-			<view class="address flex">
-				<view class="address_left color font28">地点:</view>
-				<view class="font28 color avoidOverflow">地址地址地址地址地址地址地址地址</view>
-			</view>
-		</view>
-	</view>
+				<view class="font30 color3 next_page" style="text-align: center;">2/{{web_mainData.length}}</view>
+			</swiper-item>
+		</block>
+	</swiper>
 </view>
 <view class="menus">
-    <view  animation="{{animationOne}}" bindtap="delete" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
-        <image src="/images/icon5.png"></image>
-    </view>
+	<view  animation="{{animationOne}}" bindtap="delete" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
+	     <image src="/images/icon5.png"></image>
+	</view>
     <view  animation="{{animationTwo}}" class="menu color" style='top:{{pos.top}}px;left:{{pos.left}}px;'>
         <image src="/images/icon3.png"></image>
     </view>
     <view  animation="{{animationFive}}" class="menu color"  style='top:{{pos.top}}px;left:{{pos.left}}px;'>
         <image src="/images/icon2.png"></image>
     </view>
-    <view  class="sort main bg flex" bindtap="menuMain"  style='top:{{pos.top}}px;right:{{pos.right}}px;'><image src="/images/icon1.png"></image></view>
-  </view>
-<view class="mask" style="{{hasPopped?'display: block':'display:none'}}" bindtap="mask"></view>
-<view class="delete" wx:if="{{web_is_delete}}">
-	<view class="delete_cont">
-		<view class="close" bindtap="delete">
-			<image src="/images/close_icon.png"></image>
-		</view>
-		<view class="detele_notice font28">是否删除？</view>
-		<view class="flexCenter">
-			<view class="detele_btn" bindtap="confirm">是</view>
-			<view class="detele_btn"  bindtap="cancle">否</view>
+    <view  class="sort main bg flex" bindtap="menuMain"  style='top:{{pos.top}}px;right:{{pos.right}}px;'>
+    	<image src="/images/icon1.png"></image></view>
+  	</view>
+	<view class="mask" style="{{hasPopped?'display: block':'display:none'}}" bindtap="mask"></view>
+	<view class="delete" wx:if="{{web_is_delete}}">
+		<view class="delete_cont">
+			<view class="close" bindtap="delete">
+				<image src="/images/close_icon.png"></image>
+			</view>
+			<view class="detele_notice font28">是否删除？</view>
+			<view class="flexCenter">
+				<view class="detele_btn" bindtap="deleteArticle">是</view>
+				<view class="detele_btn"  bindtap="cancle">否</view>
+			</view>
 		</view>
 	</view>
-</view>
+

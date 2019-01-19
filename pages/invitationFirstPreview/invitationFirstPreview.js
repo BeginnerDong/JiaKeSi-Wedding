@@ -19,6 +19,7 @@ Page({
     currentId:0,
     send_money:false,
   },
+  
   onLoad(options){
     const self = this;
     wx.getSystemInfo({
@@ -30,6 +31,7 @@ Page({
       }
     });
   },
+
   scroll(e){
     const self = this;
     self.data.scrollTop = e.detail.scrollTop
@@ -53,6 +55,7 @@ Page({
 
      console.log(66,self.data.scrollNumber);
   },
+
   touchstart: function (e) {
     const self = this;
     self.data.startY = e.changedTouches[0].clientY;
@@ -61,6 +64,7 @@ Page({
      startY: e.changedTouches[0].clientY,
     })
   },
+
   touchmove: function (e) {
     const self = this;
    var startX = self.data.startX;//开始X坐标

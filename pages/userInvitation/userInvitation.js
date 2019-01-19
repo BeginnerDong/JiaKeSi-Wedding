@@ -6,6 +6,16 @@ const token = new Token();
 
 Page({
   data: {
+  	indicatorDots: true,
+	vertical: false,
+	autoplay: false,
+	circular: true,
+	interval: 2000,
+	duration: 500,
+	previousMargin: 0,
+	nextMargin: 0,
+	swiperIndex:0,
+	mainData:[],  
     hasPopped: false,
     animationMain: {},
     animationOne: {},
@@ -13,9 +23,58 @@ Page({
     animationThree: {},
     pos: {},
     is_delete:false,
+    mainData:[],
+    isFirstLoadAllStandard:['getMainData']
+
   },
   onLoad(options){
+  	const self = this;
+  	api.commonInit(self);
+  	self.getMainData();
+  	self.data.index = self.data.swiperIndex;
+  	console.log('self.data.index',self.data.index )
+  },
 
+
+  getMainData(){
+    const  self =this;
+    const postData={};
+    postData.searchItem = {
+      thirdapp_id:getApp().globalData.thirdapp_id,
+      type:6,
+      user_no:wx.getStorageSync('info').user_no
+    };
+    const callback =(res)=>{
+      if(res.info.data.length>0){
+        self.data.mainData.push.apply(self.data.mainData,res.info.data)
+      };
+      console.log(self.data.mainData)
+      api.checkLoadAll(self.data.isFirstLoadAllStandard,'getMainData',self);
+      self.setData({
+        web_mainData:self.data.mainData,
+      });
+    };
+    api.articleGet(postData,callback);
+  },
+
+  deleteArticle(){
+    const  self =this;
+    const postData={};
+    postData.tokenFuncName = 'getProjectToken';
+    postData.searchItem = {
+      id:self.data.mainData[self.data.index].id
+    };
+    postData.data = {
+    	status:-1
+    };
+    const callback =(res)=>{
+      if(res.solely_code==100000){
+        api.showToast('删除成功','none')
+      };
+      self.data.mainData = [];
+      self.getMainData()
+    };
+    api.articleUpdate(postData,callback);
   },
   /****************菜单****************/
   popp() {
@@ -89,6 +148,13 @@ Page({
       })
     }
   },
+
+  swiperChange(e) {
+    const self = this;
+    self.data.index = e.detail.current
+    console.log('self.data.index',self.data.index )
+  },
+
   delete(){
     const self = this;
     self.is_delete = !self.is_delete;
@@ -96,6 +162,7 @@ Page({
       web_is_delete:self.is_delete
     })
   },
+
   confirm(){
     const self = this;
     self.is_delete = false;
@@ -103,6 +170,7 @@ Page({
       web_is_delete:self.is_delete
     })
   },
+
   cancle(){
     const self = this;
     self.is_delete = false;
@@ -110,10 +178,12 @@ Page({
       web_is_delete:self.is_delete
     })
   },
+
   intoPath(e){
     const self = this;
     api.pathTo(api.getDataSet(e,'path'),'nav');
   },
+
 })
 
   

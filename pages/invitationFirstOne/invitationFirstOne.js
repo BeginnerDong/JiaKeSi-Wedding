@@ -11,7 +11,13 @@ Page({
     
   },
   onLoad(options){
-
+    const self = this;
+    self.data.url = 'http://39.98.170.233/invitation/invitationFirstOne.html?id='
+   +options.id;
+    console.log(self.data.url)
+    self.setData({
+      web_url:self.data.url
+    })
   },
  
   intoPath(e){
