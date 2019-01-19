@@ -53,12 +53,34 @@ page{
 	overflow:hidden;
 	margin:0 auto;
 	border:solid 4rpx #fc4c74;
+	position:relative;
 }
 .invitation_img image{
 	width:100%;
 	height:100%;
-
 }
+.add{
+	width:100%;
+	height:100%;
+	position: absolute;
+	border-radius:50%;
+	left:0;
+	top:0;
+	background: rgba(0,0,0,0.4);
+	font-size:60rpx;
+	text-align: center;
+}
+.addone{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background: rgba(0,0,0,0.4);
+	font-size:60rpx;
+	text-align: center;
+}
+
 .invitation_word{
 	text-align:center;
 }
@@ -158,13 +180,15 @@ page{
 .bride_item .input{
 	width:54%;
 	font-size:28rpx;
-	color:#fff;
+	z-index:1;
 }
 .placeholder{
 	color:#fff;
 }
+.placeholder_a{
+	color:#999;
+}
 .choose_time{
-	width:80%;
 	height:100%;
 	line-height:70rpx;
 }
@@ -191,6 +215,9 @@ page{
 }
 .invitationFirstOne_img{
 	margin-top:20rpx;
+	width:100%;
+	height:900rpx;
+	position: relative;
 }
 .invitationFirstOne_img image{
 	width:100%;
@@ -204,11 +231,13 @@ page{
 .invitationFirstTwo_left{
 	width:57%;
 	height:100%;
-	opacity:0
+	opacity:0;
+	position: relative;
 }
 .invitationFirstTwo_right{
 	width:43%;
 	height:100%;
+
 }
 .invitationFirstTwo_left image{
 	width:100%;
@@ -235,6 +264,9 @@ page{
 }
 .invitationFirstTwo_bottom{
 	margin-top:80rpx;
+	width:100%;
+	height:400rpx;
+	position: relative;
 }
 
 .invitationFirstTwo_bottom image{
@@ -272,6 +304,11 @@ page{
 	height:196rpx;
 	margin-top: 40rpx;
 }
+.invitationFirstThree_center{
+	width:100%;
+	height:440rpx;
+	position: relative;
+}
 .invitationFirstThree_center image{
 	width:100%;
 	height:440rpx;
@@ -279,6 +316,7 @@ page{
 .invitationFirstThree_item{
 	width:222rpx;
 	height:280rpx;
+	position: relative;
 }
 .invitationFirstThree_item image{
 	width:100%;
@@ -298,6 +336,11 @@ page{
 	height:196rpx;
 	margin-top: 40rpx;
 }
+.invitationFirstFour_center {
+	width:100%;
+	height:440rpx;
+	position: relative;
+}
 .invitationFirstFour_center image{
 	width:100%;
 	height:440rpx;
@@ -305,6 +348,12 @@ page{
 .invitationFirstFour_item{
 	width:50%;
 	height:280rpx;
+	position: relative;
+}
+.invitationFirstFour_left{
+	width:222rpx;
+	height:280rpx;
+	position:relative;
 }
 .invitationFirstFour_left image{
 	width:222rpx;
@@ -327,6 +376,7 @@ page{
 	line-height:168rpx;
 	text-align:center;
 }
+
 .invitationFirstFive_left{
 	width:352rpx;
 	height:566rpx;
@@ -348,10 +398,21 @@ page{
 	left:0;
 	top:36rpx;
 }
+.firstFive{
+	width:100%;
+	height:300rpx;
+	position: relative;
+	margin-top:80rpx;
+}
+.firstFive1{
+	width:100%;
+	height:300rpx;
+	position: relative;
+	margin-top:140rpx;
+}
 .invitationFirstFive_left_cont image{
 	width:100%;
 	height:300rpx;
-	margin-top:140rpx;
 	transform:rotate(2deg);
 	-webkit-transform:rotate(2deg);
 }
@@ -372,10 +433,8 @@ page{
 .invitationFirstFive_right_cont image{
 	width:100%;
 	height:300rpx;
-	margin-top:140rpx;
 	transform:rotate(2deg);
 	-webkit-transform:rotate(2deg);
-	z-index:99;
 	position: absolute;
 	top:0;
 	right:0;
@@ -447,6 +506,14 @@ page{
 	height:460rpx;
 	border:solid 20rpx #fff;
 }
+.firstSix,.firstSix1{
+	width:430rpx;
+	height:460rpx;
+	position: relative;
+}
+.firstSix1{
+	width:440rpx;
+}
 .invitationFirstSix_Bleft image{
 	width:290rpx;
 	height:178rpx;
@@ -485,6 +552,7 @@ page{
 	height:400rpx;
 	overflow:hidden;
 	margin:40rpx auto;
+	position: relative;
 }
 .invitationFirstSeven_top image{
 	width:100%;
@@ -506,6 +574,7 @@ page{
 .invitationFirstSeven_Bleft{
 	width:350rpx;
 	height:500rpx;
+	position: relative;
 }
 .invitationFirstSeven_Bleft image{
 	width:100%;
@@ -515,6 +584,7 @@ page{
 .invitationFirstSeven_Bright{
 	width:300rpx;
 	height:500rpx;
+	position: relative;
 }
 .invitationFirstSeven_Bright image{
 	width:300rpx;
@@ -544,7 +614,7 @@ page{
 }
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,40rpx,0);
+        transform: translate3d(0,60rpx,0);
         opacity: 0;
     }
 
@@ -556,7 +626,7 @@ page{
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,40rpx,0);
+        transform: translate3d(0,100rpx,0);
         opacity: 0;
     }
 
@@ -567,7 +637,7 @@ page{
 }
 @keyframes fadeInDown {
     from {
-        transform: translate3d(0,-40rpx,0);
+        transform: translate3d(0,-100rpx,0);
         opacity: 0;
     }
 
@@ -579,7 +649,7 @@ page{
 
 @-webkit-keyframes fadeInDown {
     from {
-        transform: translate3d(0,-40rpx,0);
+        transform: translate3d(0,-100rpx,0);
         opacity: 0
     }
 
@@ -966,4 +1036,82 @@ page{
 }
 .user_right{
 	width:74%;
+}
+.edit{
+	position:fixed;
+	right:0;
+	top:20%;
+	width:120rpx;
+	height:120rpx;
+	border-radius:50%;
+	z-index:9999;
+	text-align:center;
+	line-height:120rpx;
+	color:#fff;
+}
+.address{
+	width:80%;
+	margin:0 auto;
+}
+.address_left{
+	width:10%;
+}
+.address_right{
+	width:90%;
+}
+.address input{
+	width:100%;
+	text-align:left;
+}
+.barrage_box{
+	margin-top:30rpx;
+}
+.barrage_vont{
+	height:240rpx;
+	overflow:hidden;
+}
+.time_before{
+	width:30%;
+}
+.close_gift{
+	width:50rpx;
+	height:50rpx;
+	position:absolute;
+	right:0;
+	top:-30rpx;
+}
+.close_gift image{
+	width:100%;
+	height:100%;
+}
+.move_up{
+	width:100%;
+	height:60rpx;
+	position:absolute;
+	text-align:center;
+	bottom:6%;
+	animation: moveUp 1s both infinite;
+	-webkit-animation: moveUp 1s both infinite;
+}
+.move_up image{
+	width:100rpx;
+	height:60rpx;
+	margin:0 auto;
+}
+@keyframes moveUp{
+	0%{
+		transform: translateY(-20rpx);
+		opacity:1;
+	}
+	50%{
+		transform: translateY(0rpx);
+		opacity:0.5;
+	}
+	100%{
+		transform: translateY(-20rpx);
+		opacity: 1;
+	}
+}
+.viewOpacity{
+	opacity:0
 }

@@ -6,18 +6,26 @@ const token = new Token();
 
 Page({
   data: {
-    startX: 0,
-    startY: 0,
-    isTouchMove:false,
+    date: '2016-09-01',
+    time: '12:01',
     clientHeight: 0,
     web_scrollTop:0,
     scrollTop:0,
-    scrollNumber:'two1',
     choose_gift:false,
     is_send:false,
     close:false,
     currentId:0,
     send_money:false,
+    is_edit:false,
+    marquee:0,   //每次移动X坐标
+    windowHeight:130,     //小程序宽度
+    maxScroll:0,     //文本移动至最左侧宽度及文本宽度
+    scrollindex: 0,  //当前页面的索引值
+    totalnum: 8,  //总共页面数
+    starty: 0,  //开始的位置x
+    endy: 0, //结束的位置y
+    critical:0, //触发翻页的临界值
+    margintop: 0,  //滑动下拉距离
   },
   
   onLoad(options){
@@ -30,61 +38,87 @@ Page({
         });
       }
     });
+    self.setData({
+      marquee: self.data.windowHeight
+    });
+    self.data.maxScroll = self.data.windowHeight * 2+60;
+    self.scrolltxt();
   },
-
+  scrollTouchstart: function (e) {
+    const py = e.touches[0].pageY;
+    this.setData({
+      starty: py
+    })
+  },
+  scrollTouchend: function (e) {
+    const  self = this;
+    const py = e.changedTouches[0].pageY;
+    self.setData({
+      endy: py,
+    })
+    console.log(e.changedTouches[0].pageY, self.data.starty);
+    if (py - self.data.starty > self.data.critical && self.data.scrollindex > 0) {
+      self.setData({
+        scrollindex: self.data.scrollindex - 1
+      })
+    } else if (py - self.data.starty < -(self.data.critical) && self.data.scrollindex < self.data.totalnum - 1) {
+     
+      self.setData({
+        scrollindex: self.data.scrollindex + 1
+      })
+    }
+    self.setData({
+      starty: 0,
+      endy: 0,
+      margintop: 0
+    })
+  },
+  scrolltxt:function(){
+    const self = this;
+    var interval = setInterval(function () {
+      var next = self.data.marquee-1; //每次移动距离
+      if( next<0 && Math.abs(next)>self.data.maxScroll ){
+        next = self.data.windowHeight;
+        clearInterval(interval);
+        self.scrolltxt();
+      }
+      self.setData({
+        marquee: next
+      });
+    }, 30);
+  },
   scroll(e){
     const self = this;
     self.data.scrollTop = e.detail.scrollTop
     var i=parseInt(self.data.scrollTop/self.data.clientHeight);
-    console.log(999,self.data.scrollTop)
     if(i<=self.data.scrollTop/self.data.clientHeight){
       self.data.scrollNumber = "two"+(i+1);
     }else{
       self.data.scrollNumber = "two"+(i);
     }
-    // var i=Math.ceil(self.data.scrollTop/self.data.clientHeight);
-    // if(self.data.scrollTop>self.data.clientHeight*i){
-    //   self.data.scrollNumber = "two"+i;
-    // }else{
-    //    self.data.scrollNumber = "two"+(i-1);
-    // }
     self.setData({
       web_scrollTop:e.detail.scrollTop,
       web_scrollNumber:self.data.scrollNumber
     });
 
-     console.log(66,self.data.scrollNumber);
   },
-
-  touchstart: function (e) {
+  edit(e){
     const self = this;
-    self.data.startY = e.changedTouches[0].clientY;
-    this.setData({
-     startX: e.changedTouches[0].clientX,
-     startY: e.changedTouches[0].clientY,
-    })
-  },
-
-  touchmove: function (e) {
-    const self = this;
-   var startX = self.data.startX;//开始X坐标
-   var startY = self.data.startY;//开始Y坐标
-   
-   var touchMoveX = e.changedTouches[0].clientX;//滑动变化坐标
-   var touchMoveY = e.changedTouches[0].clientY;//滑动变化坐标
-   self.data.isTouchMove = true;
-   if (startY > touchMoveY) {
-    self.data.isTouchMove = true;
-    console.log(self.data.isTouchMove)
+    self.data.is_edit = !self.data.is_edit;
     self.setData({
-      web_isTouchMove:self.data.isTouchMove
+      web_edit:self.data.is_edit
     })
-  }
-},
+  },
   gift(e){
     const self = this;
     self.setData({
       choose_gift:true
+    })
+  },
+  close_gift(e){
+    const self = this;
+    self.setData({
+      choose_gift:false
     })
   },
   send_gift(){
@@ -110,6 +144,17 @@ Page({
   choose(e){
    this.setData({
       currentId:e.currentTarget.dataset.id
+    })
+  },
+  bindDateChange(e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  changeOpenTime(e) {
+    const self = this;
+    self.setData({
+      time:e.detail.value
     })
   },
   intoPath(e){

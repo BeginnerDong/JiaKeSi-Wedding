@@ -6,7 +6,7 @@ const token = new Token();
 
 Page({
   data: {
-     date: '2016-09-01',
+    date: '2016-09-01',
     time: '12:01',
     scrollNumber:'two1',
     web_scrollTop:0,
@@ -18,6 +18,16 @@ Page({
     close:false,
     currentId:0,
     send_money:false,
+    is_edit:false,
+    marquee:0,   //每次移动X坐标
+    windowHeight:130,     //小程序宽度
+    maxScroll:0,     //文本移动至最左侧宽度及文本宽度
+    scrollindex: 0,  //当前页面的索引值
+    totalnum: 8,  //总共页面数
+    starty: 0,  //开始的位置x
+    endy: 0, //结束的位置y
+    critical: 0, //触发翻页的临界值
+    margintop: 0,  //滑动下拉距离
   },
   onLoad(options){
     const self = this;
@@ -29,12 +39,49 @@ Page({
         });
       }
     });
+    self.setData({
+      marquee: self.data.windowHeight
+    });
+    self.data.maxScroll = self.data.windowHeight * 2+60;
+    self.scrolltxt();
+  },
+  scrollTouchstart: function (e) {
+    let py = e.touches[0].pageY;
+    this.setData({
+      starty: py
+    })
+  },
+  scrollTouchend: function (e) {
+    const  self = this;
+    const py = e.changedTouches[0].pageY;
+    self.setData({
+      endy: py,
+    })
+    console.log(e.changedTouches[0].pageY, self.data.starty);
+    if (py - self.data.starty > self.data.critical && self.data.scrollindex > 0) {
+      self.setData({
+        scrollindex: self.data.scrollindex - 1
+      })
+    } else if (py - self.data.starty < -(self.data.critical) && self.data.scrollindex < self.data.totalnum - 1) {
+      if(self.data.scrollindex==7){
+        self.setData({
+        scrollindex: -1
+      })
+      }
+      self.setData({
+        scrollindex: self.data.scrollindex + 1
+      })
+    }
+    self.setData({
+      starty: 0,
+      endy: 0,
+      margintop: 0
+    })
   },
   scroll(e){
     const self = this;
     self.data.scrollTop = e.detail.scrollTop
     var i=parseInt(self.data.scrollTop/self.data.clientHeight);
-    console.log(999,self.data.scrollTop)
     if(i<self.data.scrollTop/self.data.clientHeight){
       self.data.scrollNumber = "two"+(i+1);
     }else{
@@ -45,16 +92,21 @@ Page({
       web_scrollNumber:self.data.scrollNumber
     });
   },
-  touchstart(e){
-      const self = this;
-      self.data.startY=e.changedTouches[0].clientY;
-      console.log("Y1",self.data.startY);
+  scrolltxt:function(){
+    const self = this;
+    var interval = setInterval(function () {
+      var next = self.data.marquee-1; //每次移动距离
+      if( next<0 && Math.abs(next)>self.data.maxScroll ){
+        next = self.data.windowHeight;
+        clearInterval(interval);
+        self.scrolltxt();
+      }
+      self.setData({
+        marquee: next
+      });
+    }, 30);
   },
-  touchend(e){
-        const self = this;
-      self.data.endY=e.changedTouches[0].clientY;
-      console.log("Y",self.data.endY);
-  },
+ 
   intoPath(e){
     const self = this;
     api.pathTo(api.getDataSet(e,'path'),'nav');
@@ -71,15 +123,27 @@ Page({
     api.pathTo(api.getDataSet(e,'path'),'redi');
   }, 
   bindDateChange(e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       date: e.detail.value
+    })
+  },
+  edit(e){
+    const self = this;
+    self.data.is_edit = !self.data.is_edit;
+    self.setData({
+      web_edit:self.data.is_edit
     })
   },
   gift(e){
     const self = this;
     self.setData({
       choose_gift:true
+    })
+  },
+  close_gift(e){
+    const self = this;
+    self.setData({
+      choose_gift:false
     })
   },
   send_gift(){
