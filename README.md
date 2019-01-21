@@ -222,6 +222,8 @@ feast-user表（投屏活动参与用户）
 | phone | varchar(255) | 电话 |
 | gender | varchar(50) | 性别 |
 | married | varchar(50) | 是否结婚 |
+| isSign | varchar(50) | 是否签到 |
+
 
 
 
@@ -244,7 +246,18 @@ game表（活动游戏）type：1
 | description | varchar(255) | 游戏描述 |
 | remark | varchar(500) | 游戏备注 |
 
+/*新增加*/
+game表（游戏奖项）type：2
 
+| 字段 | 类型 | 说明 |
+| ------    |  :------:  | ------  | 
+| title | varchar(255) | 奖项标题 |
+| content | text | 获奖内容 |
+| mainImg | varchar(999) | 主图 |
+| description | varchar(255) | 描述 |
+| remark | varchar(500) | 备注 |
+| parentid | int(11) | 父级id |
+| count | int(11) | 中奖人数 |
 
 game-file表（活动配合图片）type：1
 
@@ -266,8 +279,9 @@ game-log表（活动游戏日志）type：1
 
 | 字段 | 类型 | 说明 |
 | ------    |  :------:  | ------  | 
-| relation_id | int(11) | 活动id |
+| relation_id | int(11) | 游戏no|
 | count | int(11) | 计数 |
 | user_no | varchar(255) | 参与用户的user_no |
-| final | int(11) | 结果（0：未中奖，1为1等奖，其余类推） |
----
+| final | int(11) | 结果（奖品id） |
+
+

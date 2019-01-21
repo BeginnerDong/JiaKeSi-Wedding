@@ -1,42 +1,16 @@
-<view class="w690 wishList flex">
-    <view class="wishLeft">
-        <view class="user_img">
-          <image src="/images/img5@2x.jpg"></image>
-        </view>
-    </view>
-    <view class="wishRight">
-        <view class="font28 color2" style="margin-bottom:20rpx;">扔捧花</view>
-        <view class="font24 color6 avoidOverflow">祝你新婚快乐、早生贵子、百年好合。</view>
-    </view>
-    <view class="wishEnd">
-    	<view class="submit_info" bindtap="intoPath" data-path="/pages/scanGameDetail/scanGameDetail">查看详情</view>
-    </view>
-</view>
-<view class="w690 wishList flex" bindtap="intoPath" data-path="/pages/scanGameOne/scanGameOne">
-    <view class="wishLeft">
-        <view class="user_img">
-          <image src="/images/img5@2x.jpg"></image>
-        </view>
-    </view>
-    <view class="wishRight">
-        <view class="font28 color2" style="margin-bottom:20rpx;">发请帖</view>
-        <view class="font24 color6 avoidOverflow">祝你新婚快乐、早生贵子、百年好合。</view>
-    </view>
-    <view class="wishEnd">
-    	<view class="submit_info">开始游戏</view>
-    </view>
-</view>
-<view class="w690 wishList flex" bindtap="intoPath" data-path="/pages/backBride/backBride">
-    <view class="wishLeft">
-        <view class="user_img">
-          <image src="/images/img5@2x.jpg"></image>
-        </view>
-    </view>
-    <view class="wishRight">
-        <view class="font28 color2" style="margin-bottom:20rpx;">背新娘</view>
-        <view class="font24 color6 avoidOverflow">祝你新婚快乐、早生贵子、百年好合。</view>
-    </view>
-    <view class="wishEnd">
-    	<view class="submit_info">开始游戏</view>
-    </view>
-</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="w690 wishList flex">
+	    <view class="wishLeft">
+	        <view class="user_img">
+	          <image src="{{item.mainImg[0].url}}"></image>
+	        </view>
+	    </view>
+	    <view class="wishRight">
+	        <view class="font28 color2" style="margin-bottom:20rpx;">{{item.title}}</view>
+	        <view class="font24 color6 avoidOverflow">{{item.description}}</view>
+	    </view>
+	    <view class="wishEnd">
+	    	<view class="submit_info" bindtap="intoPath" data-path="/pages/scanGameDetail/scanGameDetail?id={{item.id}}">查看详情</view>
+	    </view>
+	</view>
+</block>

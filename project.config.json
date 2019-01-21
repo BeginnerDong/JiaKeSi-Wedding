@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 33,
+			"current": 34,
 			"list": [
 				{
 					"id": -1,
@@ -237,7 +237,14 @@
 				{
 					"id": -1,
 					"name": "问卷调查",
-					"pathName": "pages/indexQuestion/indexQuestion"
+					"pathName": "pages/indexQuestion/indexQuestion",
+					"query": ""
+				},
+				{
+					"id": 34,
+					"name": "签到",
+					"pathName": "pages/scan/scan",
+					"query": "feast_no=F00001"
 				}
 			]
 		}

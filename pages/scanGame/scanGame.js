@@ -6,11 +6,49 @@ const token = new Token();
 
 Page({
   data: {
- 
+  	mainData:[],
+ 	isFirstLoadAllStandard:['getMainData']
   },
-  onLoad(options){
 
+
+  onLoad(options) {
+    const self = this;
+    api.commonInit(self);  
+    self.getMainData()
+    
+    
   },
+
+  getMainData(){
+    const self = this;
+    const postData = {};
+    postData.tokenFuncName = 'getProjectToken';
+    postData.searchItem = {
+    	user_type:2
+    };
+    const callback = (res)=>{
+      if(res.info.data.length>0){
+      	 self.data.mainData.push.apply(self.data.mainData,res.info.data)
+      }else{
+      	self.data.isLoadAll= true;
+      	api.showToast('没有更多了','none')
+      }
+      self.setData({
+      	web_mainData:self.data.mainData
+      });
+      api.checkLoadAll(self.data.isFirstLoadAllStandard,'getMainData',self);   
+    };
+    api.gameGet(postData,callback);
+  },
+
+   onReachBottom() {
+    const self = this;
+    if(!self.data.isLoadAll&&self.data.buttonCanClick){
+      self.data.paginate.currentPage++;
+      self.getMainData();
+    };
+  },
+
  
   intoPath(e){
     const self = this;

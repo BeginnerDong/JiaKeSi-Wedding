@@ -17,8 +17,8 @@
         <image src="/images/scan_icon3.png"></image>
         <view class="font24 color2">发弹幕</view>
     </view>
-    <view class="sign">
+    <view class="sign" bindtap="{{web_buttonCanClick?'feastUserSign':''}}">
         <image src="/images/scan_icon4.png"></image>
-        <view class="sign_cont color1">签到</view>
+        <view class="sign_cont color1">{{web_feastData.feastUser[0].isSign==2?'已签到':'签到'}}</view>
     </view>
 </view>

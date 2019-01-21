@@ -24,6 +24,7 @@ Page({
       web_move_count:self.data.move_count
     })
   },
+  
   touchstart: function (e) {
     const self = this;
     self.data.totalData.forEach(function (v, i) {
@@ -32,6 +33,7 @@ Page({
     })
     self.data.startY = e.changedTouches[0].clientY
   },
+
   touchend: function (e) {
     const self = this;
     var index = e.currentTarget.dataset.index;

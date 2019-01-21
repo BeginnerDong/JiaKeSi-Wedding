@@ -54,7 +54,99 @@ class Api extends Base{
         this.request(allParams);
     }
 
+    feastGet(param,callback){
+        var allParams ={
+            url:'Common/Feast/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
 
+
+    gamechatGet(param,callback){
+        var allParams ={
+            url:'Common/GameChat/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
+    gameGet(param,callback){
+        var allParams ={
+            url:'Common/Game/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
+    gamechatAdd(param,callback){
+        var allParams ={
+            url:'Common/GameChat/add',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
+    feastuserAdd(param,callback){
+        var allParams ={
+            url:'Common/FeastUser/add',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
+    feastUserGet(param,callback){
+        var allParams ={
+            url:'Common/FeastUser/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
+
+
+    feastuserUpdate(param,callback){
+        var allParams ={
+            url:'Common/FeastUser/update',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
 
     WxFormIdAdd(form_id,end_time){
         var allParams ={
