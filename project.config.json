@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 34,
+			"current": 35,
 			"list": [
 				{
 					"id": -1,
@@ -245,6 +245,12 @@
 					"name": "签到",
 					"pathName": "pages/scan/scan",
 					"query": "feast_no=F00001"
+				},
+				{
+					"id": 35,
+					"name": "请帖",
+					"pathName": "pages/invitationFirstPreview/invitationFirstPreview",
+					"query": "id=19"
 				}
 			]
 		}

@@ -52,6 +52,32 @@ class Api extends Base{
             }
         };
         this.request(allParams);
+    }    
+
+    blessAdd(param,callback){
+        var allParams ={
+            url:'Common/Bless/add',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }    
+
+    blessGet(param,callback){
+        var allParams ={
+            url:'Common/Bless/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
     }
 
     feastGet(param,callback){

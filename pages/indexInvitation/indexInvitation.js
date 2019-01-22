@@ -57,7 +57,7 @@ Page({
       if(res.info.data.length>0){
       	if(index==0){
       		wx.navigateTo({
-		  	   url:"/pages/invitationFirstOne/invitationFirstOne?id="+res.info.data[0].id
+		  	   url:"/pages/invitationFirstPreview/invitationFirstPreview?id="+res.info.data[0].id
 		  	 })	
       	}  
       }else{
@@ -78,7 +78,7 @@ Page({
       	const c_callback = (res) =>{
       		if(res.solely_code==100000){
       			wx.navigateTo({
-			  	   url:"/pages/invitationFirstOne/invitationFirstOne?id="+res.info.id
+			  	   url:"/pages/invitationFirstPreview/invitationFirstPreview?id="+res.info.id
 			  	})	
       		}
       	};

@@ -76,6 +76,50 @@ Page({
     };
     api.articleUpdate(postData,callback);
   },
+
+  onShareAppMessage(res){
+    const self = this;
+    if(self.data.buttonClicked){
+      api.showToast('数据有误请稍等','none');
+      setTimeout(function(){
+        wx.showLoading();
+      },800)   
+      return;
+    };
+     console.log(res)
+      if(res.from == 'button'){
+        self.data.shareBtn = true;
+      }else{   
+        self.data.shareBtn = false;
+      }
+      return {
+        title: '贾科斯婚庆',
+        path: 'pages/invitationFirstPreview/invitationFirstPreview?user_no='+wx.getStorageSync('threeInfo').user_no+'&&id='+self.data.mainData[self.data.index].id,
+        success: function (res){
+          console.log(res);
+          console.log(parentNo)
+          if(res.errMsg == 'shareAppMessage:ok'){
+            console.log('分享成功')
+            if (self.data.shareBtn){
+              if(res.hasOwnProperty('shareTickets')){
+              console.log(res.shareTickets[0]);
+                self.data.isshare = 1;
+              }else{
+                self.data.isshare = 0;
+              }
+            }
+          }else{
+            wx.showToast({
+              title: '分享失败',
+            })
+            self.data.isshare = 0;
+          }
+        },
+        fail: function(res) {
+          console.log(res)
+        }
+      }
+  },
   /****************菜单****************/
   popp() {
     let animationMain = wx.createAnimation({

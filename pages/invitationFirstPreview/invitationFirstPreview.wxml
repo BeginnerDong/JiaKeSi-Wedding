@@ -8,8 +8,8 @@
 				邀请函
 			</view>
 			<view class="invitation_img">
-				<image src="/images/img7@2x.png"></image>
-				<view class="add" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+				<image src="{{web_submitData.mainImg['0-1'].url?web_submitData.mainImg['0-1'].url:'/images/img7@2x.png'}}"></image>
+				<view class="add" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="0-1">+</view>
 			</view>
 			<view class="invitation_word">
 				<image src="/images/invitation-word.png"></image>
@@ -17,14 +17,16 @@
 			<view class="bride flexCenter">
 				<view class="flexCenter bride_item">
 					<view class="font28 color1 bride_before">新郎:</view>
-					<input class="input font26 {{web_edit?'placeholder_a':'placeholder'}}" disabled="{{web_edit?'':'disabled'}}" value="" placeholder="罗密欧" placeholder-class="{{web_edit?'placeholder_a':'placeholder'}}"></input>
+					<input class="input font26 {{web_edit?'placeholder_a':'placeholder'}}" disabled="{{web_edit?'':'disabled'}}" value="" placeholder="罗密欧" placeholder-class="{{web_edit?'placeholder_a':'placeholder'}}" data-key="title" bindblur="changeBind" value="{{web_submitData.title}}"></input>
 				</view>
 				<view class="flexCenter bride_item">
 					<view class="font28 color1 bride_before">新娘:</view>
 					<input class="input font26 {{web_edit?'placeholder_a':'placeholder'}}" disabled="{{web_edit?'':'disabled'}}" value="" placeholder="朱丽叶" placeholder-class="{{web_edit?'placeholder_a':'placeholder'}}"></input>
 				</view>
 			</view>
-			<view class="font28 invitation_word1">我们诚邀您来参加我们的婚礼</view>
+			<view class="font28 invitation_word1">
+				<input class="input font26"  value="" placeholder="" disabled="{{web_edit?'':'disabled'}}" data-key="description" bindblur="changeBind" value="{{web_submitData.description}}"></input>
+			</view>
 			<view class="time flex">
 				<view class="color">时间：</view>
 	   			<view class="choose_time">
@@ -35,13 +37,14 @@
 			</view>
 			<view class="address font28 color flexCenter avoidOverflow">
 				<text class="font24 color">地点:</text>
-				<input class="input font26"  value="" placeholder="地址地址地址地址地址地址地址地址地址地址地址地址" disabled="{{web_edit?'':'disabled'}}"></input>
+				<input class="input font26"  value="" placeholder="地址地址地址地址地址地址地址地址地址地址地址地址" disabled="{{web_edit?'':'disabled'}}" data-key="address" bindblur="changeBind" value="{{web_submitData.address}}"></input>
 			</view>
 		</view>
 		<view class="move_up">
          <image src="/images/up.png"></image>
       </view>
 	</view>
+
 	<view class="invitationFirstOne w690" id="two1">
 		<view class="invitationFirstOne_tlt1 color">
 			爱情
@@ -49,16 +52,17 @@
 		<view class="font28 color invitationFirstOne_tlt2">你陪着我 我牵着你</view> 
 		<view class="font28 color invitationFirstOne_tlt2">不用多语 静静地走下去</view>
 		<view class="invitationFirstOne_img {{scrollindex==1?'fadeUp':'viewOpacity'}}" >
-			<image src="/images/img2.jpg"></image>
-			<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+			<image src="{{web_submitData.mainImg['1-1'].url?web_submitData.mainImg['1-1'].url:'/images/img7@2x.png'}}"></image>
+			<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="1-1">+</view>
 		</view>
 	</view>
+
 	<view id="two2" style="height:100%;overflow: hidden;">
 		<view class="w690">
 			<view class="invitationFirstTwo flex">
 				<view class="invitationFirstTwo_left {{scrollindex==2?'fadeRight':'viewOpacity'}}">
-					<image src="/images/img2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					<image src="{{web_submitData.mainImg['2-1'].url?web_submitData.mainImg['2-1'].url:'/images/img7@2x.png'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="2-1">+</view>
 				</view>
 				<view class="invitationFirstTwo_right">
 					<view class="invitationFirstTwo_tit color">
@@ -71,8 +75,9 @@
 				</view>
 			</view>
 			<view class="invitationFirstTwo_bottom {{scrollindex==2?'fadeUp':''}}">
-				<image src="/images/banner.jpg"></image>
-				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+
+				<image src="{{web_submitData.mainImg['2-2'].url?web_submitData.mainImg['2-2'].url:'/images/banner.jpg'}}"></image>
+				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="2-2">+</view>
 			</view>
 		</view>
 	</view>
@@ -88,21 +93,22 @@
 				</view>
 			</view>
 			<view class="invitationFirstThree_center {{scrollindex==3?'fadeUp':'viewOpacity'}}">
-				<image src="/images/banner.jpg"></image>
-				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+				<image src="{{web_submitData.mainImg['3-1'].url?web_submitData.mainImg['3-1'].url:'/images/banner.jpg'}}"></image>
+				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="3-1">+</view>
 			</view>
 			<view class="invitationFirstThree_bottom flexRowBetween">
 				<view class="invitationFirstThree_item {{scrollindex==3?'fadeUp dalay-1s':'viewOpacity'}}">
-					<image src="/images/img2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					
+					<image src="{{web_submitData.mainImg['3-2'].url?web_submitData.mainImg['3-2'].url:'/images/img2.jpg'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="3-2">+</view>
 				</view>
 				<view class="invitationFirstThree_item {{scrollindex==3?'fadeUp dalay-2s':'viewOpacity'}}">
-					<image src="/images/img2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					<image src="{{web_submitData.mainImg['3-3'].url?web_submitData.mainImg['3-3'].url:'/images/img2.jpg'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="3-3">+</view>
 				</view>
 				<view class="invitationFirstThree_item {{scrollindex==3?'fadeUp dalay-3s':'viewOpacity'}}">
-					<image src="/images/img2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					<image src="{{web_submitData.mainImg['3-4'].url?web_submitData.mainImg['3-4'].url:'/images/img2.jpg'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="3-4">+</view>
 				</view>
 			</view>
 		</view>
@@ -114,13 +120,13 @@
 					<image src="/images/invitationOne_love4.png"></image>
 			</view>
 			<view class="invitationFirstFour_center {{scrollindex==4?'fadeRight':'viewOpacity'}}">
-				<image src="/images/banner.jpg"></image>
-				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+				<image src="{{web_submitData.mainImg['4-1'].url?web_submitData.mainImg['4-1'].url:'/images/banner.jpg'}}"></image>
+				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="4-1">+</view>
 			</view>
 			<view class="invitationFirstFour_bottom flexRowBetween">
 				<view class="invitationFirstFour_left {{scrollindex==4?'fadeRight':'viewOpacity'}}">
-					<image src="/images/img2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					<image src="{{web_submitData.mainImg['4-2'].url?web_submitData.mainImg['4-2'].url:'/images/img2.jpg'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="4-2">+</view>
 				</view>
 				<view  class="invitationFirstFour_right {{scrollindex==4?'fadeLeft':'viewOpacity'}}" style="text-align:right;">
 					<image src="/images/lover4.png"></image>
@@ -138,18 +144,20 @@
 				<view class="invitationFirstFive_left">
 					<view class="invitationFirstFive_left_bg"></view>
 					<view class="invitationFirstFive_left_cont bg1 ">
-						<view class="firstFive">
-							<image src="/images/invitationOne_img6.jpg" class=" {{scrollindex==5?'fadeUp':'viewOpacity'}}"></image>
-							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+						<view class="firstFive"  class=" {{scrollindex==5?'fadeUp':'viewOpacity'}}">
+						
+							<image src="{{web_submitData.mainImg['5-1'].url?web_submitData.mainImg['5-1'].url:'/images/invitationOne_img6.jpg'}}"></image>
+							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="5-1">+</view>
+							
 						</view>
 					</view>
 				</view>
 				<view class="invitationFirstFive_right">
 					<view class="invitationFirstFive_right_bg"></view>
 					<view class="invitationFirstFive_right_cont bg1 rotateImg">
-						<view class="firstFive1">
-							<image src="/images/invitationOne_img6.jpg" class="opcityView {{scrollindex==5?'fadeRight':'viewOpacity'}}"></image>
-							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+						<view class="firstFive1" class="opcityView {{scrollindex==5?'fadeRight':'viewOpacity'}}">
+							<image src="{{web_submitData.mainImg['5-2'].url?web_submitData.mainImg['5-2'].url:'/images/invitationOne_img6.jpg'}}"></image>
+							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="5-2">+</view>
 						</view>
 					</view>
 				</view>
@@ -170,16 +178,16 @@
 				</view>
 				<view class="invitationFirstSix_Tright">
 					<view class="firstSix">
-						<image src="/images/invitationOne_img6.jpg" class="rotateImg"></image>
-						<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+						<image src="{{web_submitData.mainImg['6-1'].url?web_submitData.mainImg['6-1'].url:'/images/invitationOne_img6.jpg'}}"></image>
+							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="6-1">+</view>
 					</view>
 				</view>
 			</view>
 			<view class="invitationFirstSix_top  invitationFirstSix_bottom flex">
 				<view class="invitationFirstSix_Bright">
 					<view class="firstSix1">
-						<image src="/images/invitationOne_img6.jpg"></image>
-						<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+						<image src="{{web_submitData.mainImg['6-2'].url?web_submitData.mainImg['6-2'].url:'/images/invitationOne_img6.jpg'}}"></image>
+							<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="6-2">+</view>
 					</view>
 				</view>
 				<view class="invitationFirstSix_Bleft">
@@ -192,8 +200,10 @@
 	<view id="two7" style="height:100%;overflow:hidden;">
 		<view class="w690">
 			<view class="invitationFirstSeven_top">
-				<image src="/images/invitationOne_img8.jpg" class=" {{scrollindex==7?'fadeRight':'viewOpacity'}}"></image>
-				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+				
+
+				<image src="{{web_submitData.mainImg['7-1'].url?web_submitData.mainImg['7-1'].url:'/images/invitationOne_img8.jpg'}}" class=" {{scrollindex==7?'fadeRight':'viewOpacity'}}"></image>
+				<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="7-1">+</view>
 			</view>
 			<view class="invitationFirstSeven_center flex">
 				<view class="invitationFirstSeven_left">
@@ -208,12 +218,14 @@
 			</view>
 			<view class="invitationFirstSeven_bottom flexRowBetween">
 				<view class="invitationFirstSeven_Bleft {{scrollindex==7?'fadeRight':'viewOpacity'}}">
-					<image src="/images/invitationOne1.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					
+
+					<image src="{{web_submitData.mainImg['7-2'].url?web_submitData.mainImg['7-2'].url:'/images/invitationOne1.jpg'}}" class=" {{scrollindex==7?'fadeRight':'viewOpacity'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="7-2">+</view>
 				</view>
 				<view class="invitationFirstSeven_Bright {{scrollindex==7?'fadeLeft':'viewOpacity'}}">
-					<image src="/images/invitationOne2.jpg"></image>
-					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="uploadImg">+</view>
+					<image src="{{web_submitData.mainImg['7-3'].url?web_submitData.mainImg['7-3'].url:'/images/invitationOne1.jpg'}}" class=" {{scrollindex==7?'fadeRight':'viewOpacity'}}"></image>
+					<view class="addone" style="{{web_edit?'display:block':'display:none'}}" bindtap="upLoadImg" data-position="7-3">+</view>
 				</view>
 			</view>
 		</view>
@@ -276,8 +288,9 @@
 	</view>
    <view class="search flex">
       <view class="search_left">
-         <input placeholder="请留下你的祝福" placeholder-class="placeholder" ></input>
+         <input placeholder="请留下你的祝福" placeholder-class="placeholder" data-key="content" bindblur="changeBind" value="{{web_sForm.content}}"></input>
       </view>
+      <view bindtap="blessAdd">发送</view>
       <view class="search_right flex">
          <view class="search_img" bindtap="gift">
             <image src="/images/img8@2x.png"></image>
@@ -294,41 +307,27 @@
    	  	<image src="/images/close_icon.png"></image>
    	  </view>
       <view class="gift_cont flex">
-         <view class="gift_item flex {{currentId ==0?'border_box':''}}" data-id="0" bindtap="choose">
-            <view style="width:100%">
-               <image src="/images/gitf_icon.jpg"></image>
-               <view class="font24 color2">
-                  一座城堡
-               </view>
-               <view class="gift_number font24">
-                  ¥13.14
-               </view>
-            </view>
-            <view class="is_choose" wx:if="{{currentId ==0}}">
-               <image src="/images/gift.png"></image>
-            </view>
-         </view>
-         <view class="gift_item flex {{currentId ==1?'border_box':''}}"  data-id="1" bindtap="choose">
-            <view style="width:100%">
-               <image src="/images/gitf_icon.jpg"></image>
-               <view class="font24 color2">
-                  一座城堡
-               </view>
-               <view class="gift_number font24">
-                  ¥13.14
-               </view>
-            </view>
-            <view class="is_choose"  wx:if="{{currentId ==1}}">
-               <image src="/images/gift.png"></image>
-            </view>
-         </view>
+      	<block wx:for="{{web_giftData}}" wx:key="id">		
+	        <view class="gift_item flex {{web_index==index?'border_box':''}}" data-index="{{index}}" bindtap="choose">
+	            <view style="width:100%">
+	               <image src="{{item.mainImg[0].url}}"></image>
+	               <view class="font24 color2">
+	                  {{item.title}}
+	               </view>
+	               <view class="gift_number font24">
+	                  ¥{{item.price}}
+	               </view>
+	            </view>
+	           
+	        </view>
+        </block>
       </view>
       <view class="send_gift flex">
          <view class="send_gift_left font22 color6">
             小主放心送，礼物金额将全部转至新人的账户
          </view>
-         <view class="send_gift_right" bindtap="send_gift">
-            <button class="submit_into">送出礼物</button>
+         <view class="send_gift_right" bindtap="addOrder"> 
+            <button class="submit_into" >送出礼物</button>
          </view>
       </view>
    </view>
@@ -353,11 +352,11 @@
       </view>
       <view class="send_money_bg">
          <input placeholder="请输入你的姓名"></input>
-         <input placeholder="请输入礼金金额"></input>
+         <input placeholder="请输入礼金金额" data-key="count" bindblur="changeBind" value="{{web_sForm.count}}"></input>
             <view class="notice font24 color1">
             礼金金额全部转至新人的婚礼账户
          </view>
-         <button class="submit_into" style="background:#fbda30;width:400rpx;height:80rpx;line-height:80rpx;color:#3b1c05;border-radius:40rpx;">塞进红包</button>
+         <button class="submit_into" style="background:#fbda30;width:400rpx;height:80rpx;line-height:80rpx;color:#3b1c05;border-radius:40rpx;" bindtap="addOrderTwo">塞进红包</button>
       </view>
       <view class="close_bottom" bindtap="close">
          <image src="/images/close_icon.png"></image >
