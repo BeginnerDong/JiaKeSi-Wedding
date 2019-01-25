@@ -112,7 +112,7 @@ class Token {
                 };
                 console.log('postData',postData)
                 wx.request({
-                    url: 'http://39.98.170.233/api/public/index.php/api/v1/Base/ProgrameToken/get',
+                    url: 'http://solelytest.bj01.bdysite.com/api/public/index.php/api/v1/Base/ProgrameToken/get',
                     method:'POST',
                     data:postData,
                     success:function(res){
@@ -151,7 +151,7 @@ class Token {
                 password:wx.getStorageSync('login').password,
             }
             wx.request({
-                url: 'http://39.98.170.233/api/public/index.php/api/v1/Func/Common/loginByUp',
+                url: 'http://solelytest.bj01.bdysite.com/api/public/index.php/api/v1/Func/Common/loginByUp',
                 method:'POST',
                 data:postData,
                 success:function(res){

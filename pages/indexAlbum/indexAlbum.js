@@ -55,7 +55,8 @@ Page({
       };
       const postData={};
       postData.searchItem = {
-        thirdapp_id:getApp().globalData.thirdapp_id
+        thirdapp_id:getApp().globalData.thirdapp_id,
+        type:1
       };
       postData.getBefore = {
         partner:{

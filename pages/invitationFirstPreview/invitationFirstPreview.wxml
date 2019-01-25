@@ -1,6 +1,6 @@
 <scroll-view scroll-y="true" class="scroll-header"  bindscroll="scroll" bindtouchstart="scrollTouchstart" bindtouchend="scrollTouchend" scroll-into-view="{{'two'+scrollindex}}" scroll-with-animation="true" style="height:{{clientHeight}}px">
 
-	<view class="edit font28 color2 bg" bindtap="edit">{{web_edit?'预览':'编辑'}}{{scrollindex}}</view>
+	<view class="edit font28 color2 bg" bindtap="edit" wx:if="{{!web_type}}">{{web_edit?'预览':'编辑'}}{{scrollindex}}</view>
 	<view class="invitation" id="two0">
 		<image src="/images/invitation.jpg"></image>
 		<view class="invitation_cont bg1">

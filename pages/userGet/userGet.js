@@ -18,9 +18,15 @@ Page({
 
   },
   
-  getMainData(){
-    const  self =this;
+  getMainData(isNew){
+  	const self = this;
+    if(isNew){
+      api.clearPageIndex(self)
+    };
+
+    
     const postData={};
+    postData.paginate = api.cloneForm(self.data.paginate);
     postData.tokenFuncName = 'getProjectToken';
     postData.searchItem = {
       thirdapp_id:getApp().globalData.thirdapp_id,

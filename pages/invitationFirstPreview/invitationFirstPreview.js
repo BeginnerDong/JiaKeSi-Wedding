@@ -50,6 +50,10 @@ Page({
     const self = this;
     api.commonInit(self);
     self.data.id=options.id;
+    if(options.type){
+    	self.data.type=options.type	
+    };
+    
     wx.getSystemInfo({
       success: function (res) {
         self.data.clientHeight = res.windowHeight;
@@ -74,7 +78,10 @@ Page({
     self.scrolltxt();
     self.articleGet();
     self.giftDataGet();
-    self.productData()
+    self.productData();
+    self.setData({
+    	web_type:self.data.type
+    })
   },
 
   articleGet(){

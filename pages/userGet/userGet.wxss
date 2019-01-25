@@ -2,7 +2,6 @@
 
 @import "../../wxParse/wxParse.wxss"; 
 page{
-	overflow:hidden;
 	background:#f4f4f4;
 }
 .invitation{

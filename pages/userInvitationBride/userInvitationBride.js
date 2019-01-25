@@ -15,8 +15,21 @@ Page({
 
   onLoad(options){
     const self = this;
+    var value = wx.getStorageSync('threeInfo').create_time;
+    var len= value.length;
+    var year= value.substring(0,4);
+    var nextYear = parseInt(year)+1
+    var values = value.replace(year,nextYear);
+    console.log(values);
+    var now = Date.parse(new Date())/1000;
+    console.log('now',now);
     api.commonInit(self);
-    self.getMainData();
+    if(api.timeToTimestamp(values)<now){
+        self.getMainData();
+    }else{
+      wx.hideLoading()
+    }
+    
  
   },
 

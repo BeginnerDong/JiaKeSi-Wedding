@@ -9,8 +9,14 @@
 	        <view class="font28 color2" style="margin-bottom:20rpx;">{{item.title}}</view>
 	        <view class="font24 color6 avoidOverflow">{{item.description}}</view>
 	    </view>
-	    <view class="wishEnd">
+	    <view class="wishEnd" wx:if="{{item.title=='扔捧花'}}">
 	    	<view class="submit_info" bindtap="intoPath" data-path="/pages/scanGameDetail/scanGameDetail?id={{item.id}}">查看详情</view>
+	    </view>
+	    <view class="wishEnd" wx:if="{{item.title=='发请帖'}}">
+	    	<view class="submit_info" bindtap="intoPath" data-path="/pages/gameOneBegin/gameOneBegin">查看详情</view>
+	    </view>
+	    <view class="wishEnd" wx:if="{{item.title=='背新娘'}}">
+	    	<view class="submit_info" bindtap="intoPath" data-path="/pages/backBride/backBride">查看详情</view>
 	    </view>
 	</view>
 </block>

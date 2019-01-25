@@ -2,16 +2,16 @@
 <view class="w690">
   <view class="get_number bg1">
     <view class="font32 color number_tlt">我的余额</view>
-    <view class="font28 color" style="color:#fb4a6b">¥2166</view>
+    <view class="font28 color" style="color:#fb4a6b">¥{{web_userData}}</view>
 
   </view>
 </view>
 <view class="tabs font30 flexRowBetween color6">
-    <view class="tabs_item " data-id="0" bindtap="tab">
-        <text class="{{currentId == 0?'tabs_this':''}}">红包列表</text>
+    <view class="tabs_item " data-num="0" bindtap="{{web_buttonCanClick?'tab':''}}">
+        <text class="{{web_num == 0?'tabs_this':''}}">红包列表</text>
     </view>
-    <view class="tabs_item " data-id="1" bindtap="tab">
-        <text class="{{currentId == 1?'tabs_this':''}}">提现记录</text>
+    <view class="tabs_item " data-num="1" bindtap="{{web_buttonCanClick?'tab':''}}">
+        <text class="{{web_num == 1?'tabs_this':''}}">提现记录</text>
     </view>
 </view>
 <view wx:if="{{currentId == 0}}">
@@ -36,13 +36,11 @@
     <view class="w33 color6 font24">2012-5-9</view>
   </view>
 </view>
-<view  wx:if="{{currentId == 1}}" style="margin-top:30rpx;">
-  <view class="record flex">
-    <view class="record_item color9 font24">2012-5-9</view>
-    <view class="record_item color font24">+465</view>
+<view  wx:if="{{web_num == 1}}" style="margin-top:30rpx;">
+  <block wx:for="{{web_mainData}}" wx:key="id">
+   <view class="record flex">
+    <view class="record_item color9 font24">{{item.create_time}}<span style="font-size:22rpx;color:red" >(审核中)</span></view>
+    <view class="record_item color font24">{{item.count}}</view>
   </view>
-  <view class="record flex">
-    <view class="record_item color9 font24">2012-5-9</view>
-    <view class="record_item color font24">+465</view>
-  </view>
+  </block>
 </view>

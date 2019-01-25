@@ -16,7 +16,7 @@ class Base{
     request(params) {
         var that = this;
         getApp().globalData.buttonClick = true;
-        var baseRestUrl = 'http://39.98.170.233/api/public/index.php/api/v1/';
+        var baseRestUrl = 'http://solelytest.bj01.bdysite.com/api/public/index.php/api/v1/';
         var url=baseRestUrl + params.url;
         const callback = (res)=>{
             that.request(params);

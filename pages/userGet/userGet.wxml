@@ -1,6 +1,6 @@
 <view class="w690">
 	<block wx:for="{{web_mainData}}" wx:key="id"> 
-		<view class="invitation w690 bg1 flex" bindtap="intoPath" data-path="/pages/invitationFirstPreview/invitationFirstPreview?id={{item.article[0].id}}">
+		<view class="invitation w690 bg1 flex" bindtap="intoPath" data-path="/pages/invitationFirstPreview/invitationFirstPreview?id={{item.article[0].id}}&type=get">
 			<view class="invitation_infor">
 				<view class="invitation_list flex">
 					<view class="invitation_left color2 font28">新人</view>

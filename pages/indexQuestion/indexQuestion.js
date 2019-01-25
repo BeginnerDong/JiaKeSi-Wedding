@@ -57,7 +57,7 @@ Page({
     const self = this;
     var index = api.getDataSet(e,'index');
     var option = api.getDataSet(e,'option');
-
+    var answer = api.getDataSet(e,'answer')
     if(self.data.mainData[index].hasOption==option){
       self.data.mainData[index].hasOption = '';
       delete self.data.saveAfter[index];
@@ -69,7 +69,7 @@ Page({
         data:{
           passage1:self.data.mainData[index].id,
           title:self.data.mainData[index].title,
-          keywords:option,
+          keywords:answer,
           type:5,
           user_no:wx.getStorageSync('info').user_no,
           thirdapp_id:getApp().globalData.thirdapp_id,
@@ -99,6 +99,7 @@ Page({
       type:4,
       title:time+'-'+wx.getStorageSync('info').nickname,
       user_no:wx.getStorageSync('info').user_no,
+      res:{relation_id:'id'}
     };
     postData.saveAfter = [];  
     if(JSON.stringify(self.data.saveAfter)!='{}'){

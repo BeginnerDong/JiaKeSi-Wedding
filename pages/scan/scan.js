@@ -13,7 +13,10 @@ Page({
   onLoad(options) {
     const self = this;
     api.commonInit(self);  
-    self.data.feast_no = options.feast_no
+    self.data.feast_no = options.feast_no;
+    self.setData({
+    	web_feast_no:self.data.feast_no
+    });
     self.userGet();
     
     

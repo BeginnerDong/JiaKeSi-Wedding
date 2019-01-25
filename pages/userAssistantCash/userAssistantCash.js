@@ -8,10 +8,8 @@ Page({
   data: {
 
     submitData:{
-      cash:'',
-      passage1:'',
-      type:8,
-      class:1
+      count:'',
+      cardNum:''
     },
     isFirstLoadAllStandard:['getUserInfoData']
 
@@ -47,12 +45,18 @@ Page({
   },
 
 
-  messageAdd(){
+  flowLogAdd(){
     const self = this;
     const postData = {};
     postData.tokenFuncName = 'getThreeToken';
-    postData.data = {};
-    postData.data = api.cloneForm(self.data.submitData);
+    postData.data={
+        user_no:wx.getStorageSync('threeInfo').user_no,
+        count:-self.data.submitData.count,
+        cardNum:self.data.submitData.card,
+        trade_info:'提现',
+        status:0,
+        type:2
+    };
     console.log('postData',postData)
     const callback = (res)=>{
       if(res.solely_code==100000){
@@ -63,7 +67,7 @@ Page({
       };
       api.buttonCanClick(self,true);
     };
-    api.messageAdd(postData,callback);
+    api.flowLogAdd(postData,callback);
   },
 
   getUserInfoData(){
@@ -86,12 +90,12 @@ Page({
   submit(){
     const self = this;
     api.buttonCanClick(self);
-    var num = self.data.submitData.cash;
+    var num = self.data.submitData.count;
     const pass = api.checkComplete(self.data.submitData);
     if(pass){  
       console.log(self.data.userData)
       if(self.data.userData&&parseInt(self.data.userData)>=num){
-          self.messageAdd();  
+          self.flowLogAdd();  
      }else{
         api.buttonCanClick(self,true);
         api.showToast('余额不足','none');  

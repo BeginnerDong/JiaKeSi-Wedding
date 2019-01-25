@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 35,
+			"current": 36,
 			"list": [
 				{
 					"id": -1,
@@ -251,6 +251,12 @@
 					"name": "请帖",
 					"pathName": "pages/invitationFirstPreview/invitationFirstPreview",
 					"query": "id=19"
+				},
+				{
+					"id": -1,
+					"name": "婚庆助手",
+					"pathName": "pages/userAssistant/userAssistant",
+					"query": ""
 				}
 			]
 		}

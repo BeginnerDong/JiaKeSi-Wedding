@@ -1,11 +1,13 @@
-<view class="w690 wishList flex">
-    <view class="wishLeft">
-        <view class="user_img">
-          <open-data type="userAvatarUrl"></open-data>
-        </view>
-    </view>
-    <view class="wishRight">
-        <view class="font28 color6">张三</view>
-        <view class="font26 color2">祝你新婚快乐、早生贵子、百年好合。</view>
-    </view>
-</view>
+<block wx:for = "{{web_mainData}}" wx:key="id">
+	<view class="w690 wishList flex">
+	    <view class="wishLeft">
+	        <view class="user_img">
+	          <image src="{{item.user[0].headImgUrl}}" class="user_img"/>
+	        </view>
+	    </view>
+	    <view class="wishRight">
+	        <view class="font28 color6">{{item.user[0].nickname}}</view>
+	        <view class="font26 color2">{{item.content}}</view>
+	    </view>
+	</view>
+</block>

@@ -6,19 +6,19 @@
 				<view class="question_right font28 color2">{{item.title}}</view>
 			</view>
 			<view class="answer flex">
-				<view class="answer_item flex" data-index="{{index}}"  data-option="passage1" bindtap="answer">
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage1" bindtap="answer" data-answer="{{item.passage1}}">
 					<image src="{{item.hasOption=='passage1'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 					<view class="font24 color6">{{item.passage1}}</view>
 				</view>
-				<view class="answer_item flex" data-index="{{index}}"  data-option="passage2" bindtap="answer">
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage2" bindtap="answer" data-answer="{{item.passage2}}">
 					<image src="{{item.hasOption=='passage2'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 					<view class="font24 color6">{{item.passage2}}</view>
 				</view>
-				<view class="answer_item flex" data-index="{{index}}"  data-option="passage3" bindtap="answer">
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage3" bindtap="answer" data-answer="{{item.passage3}}">
 					<image src="{{item.hasOption=='passage3'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 					<view class="font24 color6">{{item.passage3}}</view>
 				</view>
-				<view class="answer_item flex" data-index="{{index}}"  data-option="passage4" bindtap="answer">
+				<view class="answer_item flex" data-index="{{index}}"  data-option="passage4" bindtap="answer" data-answer="{{item.passage4}}">
 					<image src="{{item.hasOption=='passage4'?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 					<view class="font24 color6">{{item.passage4}}</view>
 				</view>

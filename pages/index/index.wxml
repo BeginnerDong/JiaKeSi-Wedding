@@ -141,7 +141,7 @@
         </view>
         <view class="text this-text">首页</view>
     </view>
-    <view class="navbar_item"   bindtap="intoPath" data-path="/pages/scan/scan">
+    <view class="navbar_item"   bindtap="intoPath" data-path="/pages/scan/scan?feast_no=F00001">
         <view class="nav_img">
            <image src="/images/navbar2.png"></image>
         </view>

@@ -107,6 +107,19 @@ class Api extends Base{
         this.request(allParams);
     }
 
+    gamefileGet(param,callback){
+        var allParams ={
+            url:'Common/GameFile/get',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
     gameGet(param,callback){
         var allParams ={
             url:'Common/Game/get',

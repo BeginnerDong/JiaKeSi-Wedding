@@ -1,12 +1,12 @@
 <view class="w690">
     <view class="scan flexRowBetween">
-        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanAlbum/scanAlbum">
+        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanAlbum/scanAlbum?feast_no={{web_feast_no}}">
             <view style="width:100%;text-align: center;">
                 <image src="/images/scan_icon1.png"></image>
                 <view class="font32 color2">新人相册</view>
             </view>
         </view>
-        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanGame/scanGame">
+        <view class="scan_item flex bg1" bindtap="intoPath" data-path="/pages/scanGame/scanGame?feast_no={{web_feast_no}}">
             <view style="width:100%;text-align: center;">
                 <image src="/images/scan_icon2.png"></image>
                 <view class="font32 color2">游戏中心</view>

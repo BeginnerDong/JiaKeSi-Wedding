@@ -13,7 +13,10 @@ Page({
 
   onLoad(options) {
     const self = this;
-    api.commonInit(self);  
+    api.commonInit(self); 
+    if(options.feast_no){
+    	self.data.feast_no = options.feast_no 	
+    };  
     self.getMainData()
     
     
@@ -24,7 +27,9 @@ Page({
     const postData = {};
     postData.tokenFuncName = 'getProjectToken';
     postData.searchItem = {
-    	user_type:2
+    	user_type:2,
+    	type:1,
+    	feast_no:self.data.feast_no
     };
     const callback = (res)=>{
       if(res.info.data.length>0){
