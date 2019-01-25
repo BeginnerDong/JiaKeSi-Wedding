@@ -5,10 +5,9 @@ const app = getApp();
 
 Page({
   data: {
-    marquee:-450,
-    windowWidth:0,
-    maxScroll:0,
-    is_game:true
+    marquee:-450,   //每次移动X坐标
+    windowWidth:0,     //小程序宽度
+    maxScroll:0,     //文本移动至最左侧宽度及文本宽度
   },
   onLoad: function (options) {
     const self = this;
@@ -18,23 +17,12 @@ Page({
       });
 
       self.data.maxScroll = self.data.windowWidth*2;
-      
-  },
-  close(){
-    const self = this;
-    self.data.is_game =false;
-    self.setData({
-      is_game:self.data.is_game
-    })
-  },
-  game(){
-    const self = this;
-    self.scrolltxt();
+      self.scrolltxt();
   },
   scrolltxt:function(){
     var self = this;
     var interval = setInterval(function () {
-      var next = self.data.marquee-1;
+      var next = self.data.marquee-1; //每次移动距离
       console.log('next',self.data.maxScroll);
 
       if(Math.abs(next)>self.data.maxScroll){

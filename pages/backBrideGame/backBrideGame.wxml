@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="game_number color1">
-  你已经背了 0 米
+  你已经背了 800 米
 </view>
 <view class='scrollx'>
   <view style='transform:translateX({{marquee}}px);'>
@@ -24,10 +24,10 @@
       <image src="/images/back_bride1.jpg"></image>
   </view>
 </view>
- <view class="mask" wx:if="{{is_game}}">
+ <view class="mask">
      <view class="dialog flex">
          <view class="dialog_cont">
-              <view class="close" bindtap="close">
+              <view class="close">
                  <image src="/images/close.jpg"></image>
               </view>
               <view class="font30 color1" style="text-align: center;">活动暂未开始</view>
