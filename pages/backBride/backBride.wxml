@@ -1,13 +1,34 @@
-<view class="game">
-    <view class="game_cont">
-        <view class="game_top">
-            <image src="/images/back_bride1.jpg"></image>
-        </view>
-        <view class="game_center">
-            <image src="/images/back_bride3.jpg"></image>
-        </view>
-        <view class="game_top">
-            <image src="/images/back_bride2.jpg"></image>
-        </view>
-    </view>
+<!--index.wxml-->
+<view class='scrollx'>
+  <view style='transform:translateX({{marquee}}px);'>
+      <image src="/images/back_bride2.jpg"></image>
+      <image src="/images/back_bride2.jpg"></image>
+      <image src="/images/back_bride2.jpg"></image>
+      <image src="/images/back_bride2.jpg"></image>
+  </view>
 </view>
+<view class="bride flex">
+  <image src="/images/bride.png"></image>
+</view>
+<view class='scrollx' style="position:fixed;left:0;bottom:0;">
+  <view style='transform:translateX({{marquee}}px);'>
+      <image src="/images/back_bride1.jpg"></image>
+      <image src="/images/back_bride1.jpg"></image>
+      <image src="/images/back_bride1.jpg"></image>
+      <image src="/images/back_bride1.jpg"></image>
+  </view>
+</view>
+
+<!-- <view id="marquee" class="flexRowBetween">
+   <view class="horn"><image src="/images/horn.jpg"></image></view>
+   <view class="marquee_right">
+     <view class="marquee_box flex">
+       <view class="marquee_text font28 flex" style="{{orientation}}:{{marqueeDistance2}}px;width:100%;height:100%;">
+         <image src="/images/back_bride1.jpg"></image><image src="/images/back_bride1.jpg"></image>
+       </view>
+       <view class="marquee_text font28 flex" style="{{orientation}}:{{marqueeDistance2}}px;width:100%;height:100%;">
+         <image src="/images/back_bride1.jpg"></image><image src="/images/back_bride1.jpg"></image>
+       </view>
+     </view>
+   </view>
+</view> -->

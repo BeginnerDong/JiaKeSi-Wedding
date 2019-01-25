@@ -1,29 +1,40 @@
 import {Api} from '../../utils/api.js';
 var api = new Api();
 const app = getApp();
-import {Token} from '../../utils/token.js';
-const token = new Token();
+
 
 Page({
   data: {
-  
+    marquee:-450,   //每次移动X坐标
+    windowWidth:0,     //小程序宽度
+    maxScroll:0,     //文本移动至最左侧宽度及文本宽度
   },
-  onLoad(options){
+  onLoad: function (options) {
     const self = this;
-   
-  },
- 
+      self.data.windowWidth = wx.getSystemInfoSync().windowWidth;
+      self.setData({
+        marquee: -450,
+      });
 
- close(){
-    const self = this;
-    setData({
-      is_close:false,
-    })
+      self.data.maxScroll = self.data.windowWidth*2;
+      self.scrolltxt();
   },
-  intoPath(e){
-    const self = this;
-    api.pathTo(api.getDataSet(e,'path'),'nav');
-  },
+  scrolltxt:function(){
+    var self = this;
+    var interval = setInterval(function () {
+      var next = self.data.marquee-1; //每次移动距离
+      console.log('next',self.data.maxScroll);
+
+      if(Math.abs(next)>self.data.maxScroll){
+        next = -self.data.windowWidth;
+        clearInterval(interval);
+        self.scrolltxt();
+      }
+      self.setData({
+        marquee: next
+      });
+    }, 10);
+  }
 })
 
   
