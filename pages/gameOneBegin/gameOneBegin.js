@@ -10,6 +10,7 @@ Page({
     startY: 0,
     total_number:2,
     move_count:0,
+    is_game:true
   },
   onLoad(options){
     const self = this;
@@ -24,7 +25,13 @@ Page({
       web_move_count:self.data.move_count
     })
   },
-  
+  beginGame(){
+    const self = this;
+    self.data.is_game = false;
+    self.setData({
+      is_game:self.data.is_game
+    })
+  },
   touchstart: function (e) {
     const self = this;
     self.data.totalData.forEach(function (v, i) {
@@ -53,7 +60,7 @@ Page({
  },
  close(){
     const self = this;
-    setData({
+    self.setData({
       is_close:false,
     })
   },

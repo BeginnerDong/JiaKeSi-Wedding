@@ -8,6 +8,16 @@
            <image src="{{item.url}}"></image>
         </view>
     </view>
+    <view class="mask" wx:if="{{is_game}}">
+       <view class="dialog flex">
+           <view class="dialog_cont">
+                <view class="close" bindtap="beginGame">
+                   <image src="/images/close.jpg"></image>
+                </view>
+                <view class="font30 color1" style="text-align: center;">活动暂未开始</view>
+           </view>
+       </view>
+    </view>
     <view class="maskOne" wx:if="{{is_close}}">
         <view class="game_reward">
             <view class="game_reward_tlt font32">
