@@ -24,12 +24,22 @@ page{
 	height:64rpx;
 }
 .sign{
-	width:284rpx;
-	height:284rpx;
+	width:264rpx;
+	height:264rpx;
 	margin:0 auto;
 	border-radius:50%;
 	overflow: hidden;
 	position:relative;
+	background:#7cc4c2;
+	box-shadow:inset 0 0 60rpx #eff9f9;
+}
+.sign_btn{
+	width:264rpx;
+	height:264rpx;
+	margin:0 auto;
+	border-radius:50%;
+	overflow: hidden;
+	box-shadow:0 6rpx 20rpx #9aaaaa;
 }
 .sign image{
 	width:284rpx;
