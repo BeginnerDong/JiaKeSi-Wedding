@@ -14,6 +14,7 @@ Page({
   },
   onLoad(options){
     const self = this;
+    self.data.id = options.id;
     for(var i = 0; i < self.data.total_number; i++) {
        self.data.totalData.push({
         url: '/images/img4@2x.jpg',
@@ -25,6 +26,23 @@ Page({
       web_move_count:self.data.move_count
     })
   },
+
+
+   gamelogAdd(){
+  	const self = this
+  	const postData = {};
+  	postData.tokenFuncName = 'getProjectToken';
+  	postData.data = {
+  		relation_id:self.data.id,
+  		user_no:wx.getStorageSync('info').user_no,
+  		count:self.data.move_count,
+  	};
+  	const callback = (res) =>{
+  		console.log(res)
+  	};
+  	api.gamelogAdd(postData,callback)
+  },
+
   beginGame(){
     const self = this;
     self.data.is_game = false;
