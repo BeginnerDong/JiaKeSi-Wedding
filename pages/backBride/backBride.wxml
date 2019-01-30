@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="game_number color1">
-  你已经背了 0 米
+  你已经背了{{web_move_count}}米
 </view>
 <view class='scrollx'>
   <view style='transform:translateX({{marquee}}px);'>
@@ -12,7 +12,7 @@
 </view>
 <view class="bride">
   <image src="/images/bride.png"></image>
-  <view class="game_btn" bindtap="game">
+  <view class="game_btn" bindtap="click">
     点击
   </view>
 </view>

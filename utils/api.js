@@ -120,6 +120,19 @@ class Api extends Base{
         this.request(allParams);
     }
 
+    gamelogAdd(param,callback){
+        var allParams ={
+            url:'Common/GameLog/add',
+            type:'post',
+            noToken:true,
+            data:param,
+            sCallback: function(data) {
+                callback && callback(data);
+            }
+        };
+        this.request(allParams);
+    }
+
     gameGet(param,callback){
         var allParams ={
             url:'Common/Game/get',

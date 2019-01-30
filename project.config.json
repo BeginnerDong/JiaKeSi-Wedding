@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 37,
+			"current": 38,
 			"list": [
 				{
 					"id": -1,
@@ -261,7 +261,14 @@
 				{
 					"id": -1,
 					"name": "背新娘游戏",
-					"pathName": "pages/backBride/backBride"
+					"pathName": "pages/backBride/backBride",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "游戏",
+					"pathName": "pages/scanGame/scanGame",
+					"query": "feast_no=F00001"
 				}
 			]
 		}

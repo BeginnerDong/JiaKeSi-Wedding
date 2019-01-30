@@ -50,7 +50,8 @@ Page({
     		middleKey:'feast_no',
     		key:'feast_no',
     		searchItem:{
-    			status:1
+    			status:1,
+    			user_no:self.data.userData.user_no
     		},
     		condition:'='
     	}
